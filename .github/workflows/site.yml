@@ -31,6 +31,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt install snapd
+          sudo snap install typst
+      - name: Compile
+        run: |
+          # python3 .github/compile.py
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
