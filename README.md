@@ -3,3 +3,4 @@
 La repo è divisa nel seguente modo:
 - **code/** : codice scritto e vari test per l'implementazione del progetto
 - **typ/** : codice typst per la creazione della documentazione/tesi
+- **site/** : sito web statico per il display della documentazione
