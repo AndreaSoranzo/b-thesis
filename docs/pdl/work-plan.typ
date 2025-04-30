@@ -46,6 +46,10 @@ Il risultato atteso è un  un Web Application Firewall in grado di:
 - *IDE:* Visual Studio Code
 - *Tecnologie:* Burp Suite, firewall, log analysis, F5, cloud (opzionale).
 
+== Date di inizio e fine
+- *Data inizio:* 19-05-2025
+- *Data fine:* 10-07-2025
+
 #pagebreak()
 
 = Pianificazione del lavoro
@@ -97,12 +101,12 @@ Si prevede lo svolgimento dei seguenti obiettivi:
         align: left,
         columns: (27%,64%),
         table.header(table.cell(colspan: 2, align: center)[*Obbligatori*]),
-        align(center+horizon)[O1],[Studio e analisi delle le vulnerabilità da proteggersi],
-        align(center+horizon)[O2],[Studio delle possibili soluzioni],
-        align(center+horizon)[O3],[Studio e ricerca di libreria e assets esistenti],
+        align(center+horizon)[O1],[Studio e analisi delle vulnerabilità],
+        align(center+horizon)[O2],[Studio delle possibili soluzioni adottabili],
+        align(center+horizon)[O3],[Studio e ricerca di librerie e assets esistenti],
         align(center+horizon)[O4],[Implementazione del WAF],
         align(center+horizon)[O5],[Testing e simulazioni di attacchi],
-        align(center+horizon)[O6],[Miglioramento delle regole],
+        align(center+horizon)[O6],[Miglioramento delle regole per ridurre i falsi positivi],
         align(center+horizon)[O7],[Redazione di una documentazione tecnica e metodologica per il progetto],
         table.cell(colspan: 2, align: center)[*Desiderabili*],
         align(center+horizon)[D1],[Valutare il monitoraggio del progresso formativo.],
@@ -110,3 +114,17 @@ Si prevede lo svolgimento dei seguenti obiettivi:
         align(center+horizon)[F1],[Implementazione, gestione ed erogazione del WAF attraverso piattaforme cloud]
     )
 ]
+
+#pagebreak()
+
+= Approvazione
+Il presente piano di lavoro è stato approvato dai seguenti:
+
+\ \ \ 
+──────────────────────────────────────────────────
+
+Stefano Marchetti - Tutor aziendale\
+\ \ \ 
+──────────────────────────────────────────────────
+
+Zanella Marco - Tutor interno
