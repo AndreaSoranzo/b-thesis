@@ -21,28 +21,32 @@
   #link("https://www.kireygroup.com/")[https://www.kireygroup.com/]
 
 = Informazioni sull'azienda
-Kirey Group è un system integrator che guida le aziende nel loro percorso di Digital Transformation, accompagnandole verso la realizzazione di organizzazioni data-driven. Facendo leva su una forte
-competenza in materia di Data & AI, Kirey Group riconosce nei dati un asset strategico per lo sviluppo del business, offrendo una gamma completa di servizi che hanno come filo conduttore i dati e
-l'intelligenza artificiale, e che coprono diversi settori tra cui Cloud, Software Development, Cybersecurity, Infrastructure & Automation e Monitoring.
+Kirey Group è un system integrator che guida le aziende nel loro percorso di Digital Transformation, accompagnandole verso
+la realizzazione di organizzazioni data-driven. Facendo leva su una forte
+competenza in materia di Data & AI, Kirey Group riconosce nei dati un asset strategico per lo sviluppo del business,
+offrendo una gamma completa di servizi che hanno come filo conduttore i dati e
+l'intelligenza artificiale, e che coprono diversi settori tra cui Cloud, Software Development, Cybersecurity,
+Infrastructure & Automation e Monitoring.
 
 #pagebreak()
 
 = Scopo dello stage
-Il progetto mira all'implementazione e ottimizzazione di un Web Application Firewall (WAF) strategico per la protezione del perimetro applicativo web aziendale.
+Il progetto mira all'implementazione e ottimizzazione di un Web Application Firewall (WAF) strategico per la protezione del
+perimetro applicativo web aziendale.
 Le fasi chiave del progetto includono:
 - Analisi vulnerabilità e requisiti.
 - Implementazione del WAF senza impatti operativi.
 - Testing e ottimizzazione delle regole.
 - Monitoraggio attacchi in tempo reale.
 
-Il risultato atteso è un  un Web Application Firewall in grado di:
+Il risultato atteso è un Web Application Firewall in grado di:
 - Proteggere le applicazioni web aziendali da attacchi informatici come SQL injection, XSS, e DDoS.
 - Garantire la continuità operativa riducendo i rischi di downtime dovuti ad attacchi informatici.
 - Monitorare e analizzare il traffico web in tempo reale per identificare comportamenti sospetti.
 - Rispettare gli standard di sicurezza e le normative, come il GDPR, proteggendo i dati sensibili degli utenti.
 
 == Strumenti e metodologia di lavoro
-- *Linguaggio:* Python,HTML
+- *Linguaggio:* Python, HTML
 - *IDE:* Visual Studio Code
 - *Tecnologie:* Burp Suite, firewall, log analysis, F5, cloud (opzionale).
 
@@ -69,16 +73,16 @@ La pianificazione, in termini di quantità di ore di lavoro, sarà così distrib
     table.header[*Durata in ore*][*Descrizione attività*],
     align(center+horizon)[50], [Analisi delle Esigenze
             - Studio approfondito delle applicazioni web esistenti per identificare le vulnerabilità
-            - Decisione dei requisiti specifici per la protezione delle applicazioni],
+            - Definizione dei requisiti specifici per la protezione delle applicazioni],
     align(center+horizon)[130],[Progettazione e Implementazione
-            - Esaminazione delle soluzioni disponibili (F5) e adattarla in modo che soddisfi le necessità dell’organizzazione.
+            - Esaminazione delle soluzioni disponibili (F5) e adattamento in modo che soddisfi le necessità dell’organizzazione.
             - Implementazione del WAF assicurandosi che non interferisca con il normale funzionamento delle applicazioni web.
             - Ricerca librerie e asset esistenti],
     align(center+horizon)[50],[Testing e Ottimizzazione
-            - Testing e simulazioni di attacchi per verificare l’efficienza del WAF
-            - Miglioramento delle regole di sicurezza per ridurre i falsi positivi e ottimizzare le preformance],
+            - Testing e simulazioni di attacchi per verificare l'efficienza del WAF
+            - Miglioramento delle regole di sicurezza per ridurre i falsi positivi e ottimizzare le performance],
     align(center+horizon)[54],[Monitoraggio e Manutenzione
-            - Implementazione sistemi di monitoraggio per rilevare e rispondere agli attacchi in tempo reale],
+            - Implementazione di sistemi di monitoraggio per rilevare e rispondere agli attacchi in tempo reale],
     align(center+horizon)[16],[Revisione della documentazione],
     align(center+horizon)[*Totale ore*],table.cell(stroke:none)[],
     align(center+horizon)[*300*],table.cell(stroke:none)[]
@@ -103,7 +107,7 @@ Si prevede lo svolgimento dei seguenti obiettivi:
         table.header(table.cell(colspan: 2, align: center)[*Obbligatori*]),
         align(center+horizon)[O1],[Studio e analisi delle vulnerabilità],
         align(center+horizon)[O2],[Studio delle possibili soluzioni adottabili],
-        align(center+horizon)[O3],[Studio e ricerca di librerie e assets esistenti],
+        align(center+horizon)[O3],[Studio e ricerca di librerie e assets esistenti per l'implementazione],
         align(center+horizon)[O4],[Implementazione del WAF],
         align(center+horizon)[O5],[Testing e simulazioni di attacchi],
         align(center+horizon)[O6],[Miglioramento delle regole per ridurre i falsi positivi],
@@ -121,10 +125,10 @@ Si prevede lo svolgimento dei seguenti obiettivi:
 Il presente piano di lavoro è stato approvato dai seguenti:
 
 \ \ \ 
-──────────────────────────────────────────────────
+─────────────────────────────────
 
 Stefano Marchetti - Tutor aziendale\
 \ \ \ 
-──────────────────────────────────────────────────
+─────────────────────────────────
 
 Zanella Marco - Tutor interno
