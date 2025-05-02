@@ -57,7 +57,7 @@ html {
 }
 
 header{
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     margin-bottom: 5rem;
 }
 header .limit {
@@ -83,7 +83,20 @@ header #titles h1 {
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: .2rem;
+    position: relative;    
 }
+
+@keyframes updown {
+    0%   {
+      transform: translateY(-5px);
+    }
+    50%  {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+  }
 
 
 header #titles h2 {
@@ -91,6 +104,7 @@ header #titles h2 {
     font-size: 2rem;
     font-weight: 900;
     font-style: italic;
+    animation: updown 2s ease-in-out infinite;
 }
 
 header #theme-changer {
@@ -128,12 +142,10 @@ main {
 
 main #box {
     width: 100%;
-    border-radius: 20px;
     margin: auto;
-    align-self: center;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(53, 39, 66, 0.18);;
     border-radius: 16px;
-    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     padding: 2rem 3rem 3rem 3rem;
@@ -219,20 +231,6 @@ main #box #ppt li {
     padding-left: 3rem;
     list-style: none;
     vertical-align: middle;
-}
-
-
-#back-top {
-    position:fixed;
-    bottom:3rem;
-    left:2rem;
-    background-color: var(--color-3);
-    border-radius: 10px;
-    padding: 1rem 2rem;
-    color: var(--color-1);
-    z-index: 1000;
-    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.2);
-    mix-blend-mode: difference;
 }
 
 footer {
