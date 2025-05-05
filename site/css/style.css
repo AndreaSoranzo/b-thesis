@@ -95,6 +95,8 @@ header #titles h1 {
     font-weight: 900;
     letter-spacing: .2rem;
     position: relative;    
+    line-height: 1;
+    margin-bottom: 1rem;
 }
 
 @keyframes updown {
