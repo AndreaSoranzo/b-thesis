@@ -26,6 +26,9 @@ html {
     background-color: var(--color-1);
     color: var(--color-3);
     scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .limit {
