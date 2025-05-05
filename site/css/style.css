@@ -16,8 +16,8 @@
     --color-1-less:#1f1f1fc8;
     --color-2:#be7afa;
     --color-3: #d1cfc0;
-    --color-3-less: #d1cfc0d4;
-    --color-3-low: #d1cfc06f;
+    --color-3-less: #b9b7a9;
+    --color-3-low: #747369;
     --color-4:#3b82f680;
 }
 
@@ -116,11 +116,11 @@ header #theme-changer {
 }
 
 header #theme-changer:has(input:checked) {
-    background-image: url("../assets/svg/light.svg");
+    background-image: url("../assets/svg/volume-off.svg");
 }
 
 header #theme-changer:has(input:not(:checked)) {
-    background-image: url("../assets/svg/dark.svg");
+    background-image: url("../assets/svg/volume-on.svg");
 }
 
 header #theme-changer input{
