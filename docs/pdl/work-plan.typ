@@ -18,6 +18,7 @@
 *Azienda:*
 - KIREY GROUP S.R.L \ 
   Corso Stati Uniti, 14/B, 35127 Padova PD \ 
+  #link("mailto:HR@Kireygroup.com") \
   #link("https://www.kireygroup.com/")[https://www.kireygroup.com/]
 
 = Informazioni sull'azienda
