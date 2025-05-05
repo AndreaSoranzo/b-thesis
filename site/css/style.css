@@ -50,6 +50,7 @@ html {
       animation: animatedTextGradient 15s linear infinite;
 }
 
+
 @keyframes animatedTextGradient {
     to {
       background-position: 200% center;
@@ -72,6 +73,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+li {
+    padding-left: 3rem;
+    list-style: none;
+    word-break:break-word;
 }
 
 a {
@@ -104,12 +111,12 @@ header #titles h2 {
     font-size: 2rem;
     font-weight: 900;
     font-style: italic;
-    animation: updown 2s ease-in-out infinite;
+    animation: updown 2.5s ease-in-out infinite;
 }
 
 header #theme-changer {
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -181,6 +188,7 @@ main #box li:not(:last-child) {
     margin-bottom: 1rem;
 }
 
+
 main #box .content {
     padding-left: 3rem;
 }
@@ -204,9 +212,6 @@ main #box #logs {
 
 main #box #logs li {
     background: url("../assets/svg/log_marker.svg") no-repeat left center;
-    padding-left: 3rem;
-    list-style: none;
-    vertical-align: middle;
 }
 
 main #box #logs li:after {
@@ -221,16 +226,10 @@ main #box #logs li:after {
 
 main #box #docs li {
     background: url("../assets/svg/docs_marker.svg") no-repeat left center;
-    padding-left: 3rem;
-    list-style: none;
-    vertical-align: middle;
 }
 
 main #box #ppt li {
     background: url("../assets/svg/ppt_marker.svg") no-repeat left center;
-    padding-left: 3rem;
-    list-style: none;
-    vertical-align: middle;
 }
 
 footer {
@@ -261,6 +260,11 @@ footer #desc p {
     max-width: 36rem;
 }
 
+footer #info-container {
+    display: flex;
+    gap: 5rem;
+}
+
 footer #info-container h2 {
     border-bottom: 1px solid var(--color-1-less);
     font-weight: 800;
@@ -269,13 +273,12 @@ footer #info-container h2 {
     font-size: 2.3rem;
 }
 
-footer #info-container {
-    display: flex;
-    gap: 5rem;
-}
-
 footer #student p {
     color: var(--color-1-less);
+}
+
+footer #contacts li {
+    background: url("../assets/svg/mail.svg") no-repeat left center;
 }
 
 footer #contacts a {
@@ -283,10 +286,4 @@ footer #contacts a {
     margin-bottom: 1rem;
     width: fit-content;
     color: var(--color-1-less);
-}
-
-footer #contacts a::before {
-    content: url("../assets/svg/mail.svg");
-    vertical-align: -30%;
-    margin-right: .7rem;
 }
