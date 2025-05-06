@@ -29,7 +29,7 @@
     v(10pt)
 
     text(15pt)[Azienda: \ ]
-    text()[KIREY GROUP S.R.L]
+    text()[KIREY Srl]
 
     v(80pt)
 
@@ -51,7 +51,7 @@
                 rows: (20%,20%,20%),
                 table.cell(align: left, inset: (x: 0%))[Soranzo Mendez Andrea Jesus],table.cell(align: right)[Università],table.cell(rowspan: 3, align: right+horizon)[#image(logo, height: 130%)],
                 table.cell(align: left, inset: (x: 0%))[2075539], table.cell(align: right)[degli Studi],
-                table.cell(align: left, inset: (x: 0%))[Piano di Lavoro stage c/o KIREY GROUP S.R.L], table.cell(align: right)[di Padova]
+                table.cell(align: left, inset: (x: 0%))[Piano di Lavoro stage c/o KIREY Srl], table.cell(align: right)[di Padova]
             )
             #line(length: 100%)
         ],

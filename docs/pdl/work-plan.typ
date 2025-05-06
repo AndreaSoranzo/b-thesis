@@ -16,15 +16,17 @@
   #link("mailto:stefano.marchetti@kireygroup.com") \
 
 *Azienda:*
-- KIREY GROUP S.R.L \ 
+- KIREY Srl \ 
   Corso Stati Uniti, 14/B, 35127 Padova PD \ 
+  #show link: set text(fill: black, weight: "regular")
   #link("mailto:HR@Kireygroup.com") \
+  #show link: set text(fill: blue, weight: "bold")
   #link("https://www.kireygroup.com/")[https://www.kireygroup.com/]
 
 = Informazioni sull'azienda
-Kirey Group è un system integrator che guida le aziende nel loro percorso di Digital Transformation, accompagnandole verso
+Kirey è un system integrator che guida le aziende nel loro percorso di Digital Transformation, accompagnandole verso
 la realizzazione di organizzazioni data-driven. Facendo leva su una forte
-competenza in materia di Data & AI, Kirey Group riconosce nei dati un asset strategico per lo sviluppo del business,
+competenza in materia di Data & AI, Kirey riconosce nei dati un asset strategico per lo sviluppo del business,
 offrendo una gamma completa di servizi che hanno come filo conduttore i dati e
 l'intelligenza artificiale, e che coprono diversi settori tra cui Cloud, Software Development, Cybersecurity,
 Infrastructure & Automation e Monitoring.
