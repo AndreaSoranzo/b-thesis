@@ -14,6 +14,7 @@
 - Stefano Marchetti \
   #show link: set text(fill: black, weight: "regular")
   #link("mailto:stefano.marchetti@kireygroup.com") \
+  #link("tel:00393355700094")[+39 335 570 0094]
 
 *Azienda:*
 - KIREY Srl \ 
@@ -33,6 +34,8 @@ Infrastructure & Automation e Monitoring.
 
 #pagebreak()
 
+
+
 = Scopo dello stage
 Il progetto mira all'implementazione e ottimizzazione di un Web Application Firewall (WAF) strategico per la protezione del
 perimetro applicativo web aziendale.
@@ -48,10 +51,21 @@ Il risultato atteso è un Web Application Firewall in grado di:
 - Monitorare e analizzare il traffico web in tempo reale per identificare comportamenti sospetti.
 - Rispettare gli standard di sicurezza e le normative, come il GDPR, proteggendo i dati sensibili degli utenti.
 
+== Contenuti formativi
+Durante questo progetto di stage lo studente avrà occasione di approfondire le sue conoscenze nei seguenti ambiti:
+- *Sicurezza ad attacchi:* SQL injection, XSS, DDoS e log analysis
+- *Security testing:* Burp Suite, ambienti virtuali
+- *Application Security, Traffic Management, Network Security:* F5
+- *Versionamento:* git, GitHub
+- *Frontend:* HTML
+- *Backend:* Python
+
 == Strumenti e metodologia di lavoro
-- *Linguaggio:* Python, HTML
+- *Linguaggi:* Python, HTML
 - *IDE:* Visual Studio Code
 - *Tecnologie:* Burp Suite, firewall, log analysis, F5, cloud (opzionale).
+- *Modalità di svolgimento tirocinio:* Ibrida (presenza e smart working)
+- *Modalità di interazione col tutor aziendale:* su richiesta dello studente o del tutor
 
 == Date di inizio e fine
 - *Data inizio:* 19-05-2025
@@ -93,6 +107,99 @@ La pianificazione, in termini di quantità di ore di lavoro, sarà così distrib
 ]
 #pagebreak()
 
+== Ripartizione delle attività suddivise per settimane
+=== Prima Settimana
+        #align(center)[
+        #table(
+        align: left,
+        columns: (27%,64%),
+        table.header[*Durata in ore*][*Descrizione attività*],
+        align(center+horizon)[20], [
+                - Incontro con il tutor aziendale e analisi dei requisiti del progetto
+                - Configurazione degli strumenti di lavoro e formazione iniziale],
+        )
+        ]
+=== Seconda Settimana
+        #align(center)[
+        #table(
+        align: left,
+        columns: (27%,64%),
+        table.header[*Durata in ore*][*Descrizione attività*],
+        align(center+horizon)[40], [
+                - Analisi delle applicazione web e identificazione delle vulnerabilità principali
+                - Studio delle funzionalità del Web Application Firewall
+                - Inizio redazione del documento "analisi dei requisiti"],
+        )
+        ]
+=== Terza Settimana
+        #align(center)[
+        #table(
+        align: left,
+        columns: (27%,64%),
+        table.header[*Durata in ore*][*Descrizione attività*],
+        align(center+horizon)[40], [
+                - Progettazione e configurazione iniziale del Web Application Firewall
+                - Personalizzazione delle regole di sicurezza
+                - Inizio redazione del documento "specifica tecnica"],
+        )
+        ]
+=== Quarta Settimana
+        #align(center)[
+        #table(
+        align: left,
+        columns: (27%,64%),
+        table.header[*Durata in ore*][*Descrizione attività*],
+        align(center+horizon)[40], [
+                - Implementazione del Web Application Firewall e test di compatibilità con le applicazioni
+                - Ottimizzazione delle regole],
+        )
+        ]
+=== Quinta Settimana
+        #align(center)[
+        #table(
+        align: left,
+        columns: (27%,64%),
+        table.header[*Durata in ore*][*Descrizione attività*],
+        align(center+horizon)[40], [
+                - Simulazione di attacchi per testare l'efficacia del Web Application Firewall
+                - Analisi dei risultati e ottimizzazione delle configurazioni],
+        )
+        ]
+=== Sesta Settimana
+        #align(center)[
+        #table(
+        align: left,
+        columns: (27%,64%),
+        table.header[*Durata in ore*][*Descrizione attività*],
+        align(center+horizon)[40], [
+                - Configurazione di sistemi di monitoraggio per rilevare attacchi
+                - Verifica della conformità agli standard di sicurezza],
+        )
+        ]
+=== Settima Settimana
+        #align(center)[
+        #table(
+        align: left,
+        columns: (27%,64%),
+        table.header[*Durata in ore*][*Descrizione attività*],
+        align(center+horizon)[40], [
+                - Manutenzione o ottimizzazione del Web Application Firewall
+                - Fine redazione della documentazione],
+        )
+        ]
+=== Ottava Settimana
+        #align(center)[
+        #table(
+        align: left,
+        columns: (27%,64%),
+        table.header[*Durata in ore*][*Descrizione attività*],
+        align(center+horizon)[40], [Analisi delle Esigenze
+                - Revisione finale e presentazione dei risultati
+                - Consegna della documentazione e chiusura del progetto],
+        )
+        ]
+
+#pagebreak()
 = Obiettivi
 Si farà riferimento ai requisiti secondo le seguenti notazioni:
 - *O* per i requisiti obbligatori, vincolanti in quanto obiettivo primario richiesto dal committente.
@@ -131,7 +238,3 @@ Il presente piano di lavoro è stato approvato dai seguenti:
 ─────────────────────────────────
 
 Stefano Marchetti - Tutor aziendale\
-\ \ \ 
-─────────────────────────────────
-
-Zanella Marco - Tutor interno

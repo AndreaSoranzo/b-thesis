@@ -38,7 +38,7 @@
 
     v(80pt)
 
-    text(11pt)[30 aprile 2025]
+    text(11pt)[06 maggio 2025]
     set page(
         margin: (top: 15%, bottom: 10%),
         numbering: "1",
