@@ -31,7 +31,7 @@ def main():
 
     BuildTyp(init_path,"/logs", pdfs) # logs
     BuildTyp(init_path,"/docs", pdfs) # docs
-    BuildPpt(init_path,"/presentation", pdfs)
+    # BuildPpt(init_path,"/presentation", pdfs)
 
     UpdateHtml(html,pdfs)
 
