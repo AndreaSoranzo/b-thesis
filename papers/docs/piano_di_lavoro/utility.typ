@@ -9,7 +9,7 @@
   set rect(stroke: rgb("#5e5e5e"))
   show link: set text(fill: rgb(0, 0, 255), weight: "bold")
 
-  let logo = "../public/media/unipd.png"
+  let logo = "../../public/media/unipd.png"
 
 
   image(logo, width: 30%)
