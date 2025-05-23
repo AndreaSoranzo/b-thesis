@@ -29,9 +29,9 @@ def main():
     html = path.Path('_site/index.html').read_text(encoding="utf8")
     pdfs = {}
 
-    BuildTyp(init_path,"/logs", pdfs) # logs
-    BuildTyp(init_path,"/docs", pdfs) # docs
-    # BuildPpt(init_path,"/presentation", pdfs)
+    BuildTyp(init_path,"papers/logs", pdfs) # logs
+    BuildTyp(init_path,"papers/docs", pdfs) # docs
+    # BuildPpt(init_path,"papers/presentation", pdfs)
 
     UpdateHtml(html,pdfs)
 
@@ -84,7 +84,7 @@ def UpdateHtml(html:str,pdfs:dict[str, list]):
     path.Path('_site/index.html').write_text(html, encoding='utf8')
 
 def MakeLink(pdf:PDF):
-    if "piano_di_lavoro" in pdf.GetName():
+    if "piano_di_lavoro" in pdf.GetName(True):
         return LIST_TEMPLATE.replace("{{doc_link}}",pdf.GetName(True)).replace("{{doc_name}}",pdf.GetName())
     return "<li>"+LIST_TEMPLATE.replace("{{doc_link}}",pdf.GetName(True)).replace("{{doc_name}}",pdf.GetName())+"</li>"
 
