@@ -45,7 +45,7 @@ def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list],):
         if "piano_di_lavoro" in doc:
             pdfs["work_plan"]=[]
             pdfs["work_plan"].append(PDF(doc))
-            cmd.copy(doc+"/signed/"+doc+".pdf",path.Path("../_site/"+doc+".pdf"))
+            cmd.copy(doc+"/signed/"+doc+".pdf",path.Path("../../_site/"+doc+".pdf"))
         else:
             result = subprocess.run(["typst", "compile"] + [path.Path(doc+"/"+doc+".typ")], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
             try:
@@ -53,7 +53,7 @@ def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list],):
             except Exception as _:
                 logging.error(f"Compiling {doc} failed with stderr: \n{result.stderr}")
                 exit(1)
-            cmd.move(doc+"/"+doc+".pdf",path.Path("../_site/"+doc+".pdf"))
+            cmd.move(doc+"/"+doc+".pdf",path.Path("../../_site/"+doc+".pdf"))
             pdfs[d_type].append(PDF(doc,"project_log") if "logs" in file_path else PDF(doc))
     os.chdir(init_path)
 
