@@ -29,9 +29,9 @@ def main():
     html = path.Path('_site/index.html').read_text(encoding="utf8")
     pdfs = {}
 
-    BuildTyp(init_path,"/logs", pdfs) # logs
-    BuildTyp(init_path,"/docs", pdfs) # docs
-    # BuildPpt(init_path,"/presentation", pdfs)
+    BuildTyp(init_path,"papers/logs", pdfs) # logs
+    BuildTyp(init_path,"papers/docs", pdfs) # docs
+    # BuildPpt(init_path,"papers/presentation", pdfs)
 
     UpdateHtml(html,pdfs)
 

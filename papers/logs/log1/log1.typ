@@ -42,3 +42,12 @@ Abbiamo approfondito le nostre competenze pratiche, impiegando applicativi quali
 *Note:*\
 Abbiamo approfondito lo studio delle policy, comprendendo come esse siano applicate per rilevare e bloccare richieste malevole,
 o per notificare l'amministratore del Web Application Firewall in caso di attività sospette che richiedano verifica.
+
+= Giorno 5
+
+*Ordine del giorno*
+- Lettura e lava capitolo 8: *Positive Security Building*,*Enforcement Readlness*,*Compact learning mode*
+
+*Note:*\
+Oggi ci siamo concentrati sul laboratorio del capitolo 7 per approfondire l'utilizzo e il funzionamento di Socket.IO in Juice Shop.
+Nel prosieguo della giornata, abbiamo esaminato come creare e gestire policy su entità (URL, File, Parametri) e item (pattern di attacco), oltre a come queste vengono elaborate dal learning engine.
