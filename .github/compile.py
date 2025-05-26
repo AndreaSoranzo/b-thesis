@@ -38,7 +38,7 @@ def main():
 
 def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list],):
     logging.info(f'Building logs typ files')
-    d_type = file_path.removeprefix("/")
+    d_type = file_path.removeprefix("/papers/")
     pdfs[d_type]=[]
     os.chdir(path.Path(init_path+file_path))
     for doc in os.listdir(path.Path(".")):
@@ -47,7 +47,6 @@ def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list],):
             pdfs["work_plan"].append(PDF(doc))
             cmd.copy(doc+"/signed/"+doc+".pdf",path.Path("../../_site/"+doc+".pdf"))
         else:
-            print(path.Path(doc+"/"+doc+".typ"))
             result = subprocess.run(["typst", "compile", "--root","../../."] + [path.Path(doc+"/"+doc+".typ")], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
             try:
                 result.check_returncode()
@@ -81,6 +80,7 @@ def UpdateHtml(html:str,pdfs:dict[str, list]):
     logging.info(f'Updating the HTML')
     for d_type in pdfs:
         t_doc = d_type.upper()
+
         html = html.replace("{{"+ t_doc +"}}","\n".join(MakeLink(pdf) for pdf in pdfs[d_type]))
     path.Path('_site/index.html').write_text(html, encoding='utf8')
 
