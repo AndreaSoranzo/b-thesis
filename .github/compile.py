@@ -47,7 +47,8 @@ def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list],):
             pdfs["work_plan"].append(PDF(doc))
             cmd.copy(doc+"/signed/"+doc+".pdf",path.Path("../../_site/"+doc+".pdf"))
         else:
-            result = subprocess.run(["typst", "compile", "--root","."] + [path.Path(doc+"/"+doc+".typ")], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+            print(path.Path(doc+"/"+doc+".typ"))
+            result = subprocess.run(["typst", "compile", "--root","../../."] + [path.Path(doc+"/"+doc+".typ")], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
             try:
                 result.check_returncode()
             except Exception as _:
