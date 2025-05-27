@@ -1,5 +1,0 @@
-/.vscode
-/_site
-
-*.pdf
-!**/signed/*.pdf
