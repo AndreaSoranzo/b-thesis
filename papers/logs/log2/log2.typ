@@ -38,4 +38,12 @@ catturare il parametro di ricerca dalla richiesta HTTP.
 Abbiamo concluso lo studio delle funzionalità avanzate e di alto livello di F5 WAF.
 Purtroppo l'esecuzione di alcune parti dei laboratori è stata compromessa dalla mancanza di script facenti parte del materiale didattico originale F5.
 
+= Giorno 5
+
+*Ordine del giorno*
+- Laboratori capitolo 20: *Production senario*,*Local traffic policies*,*API policy*
+
+*Note:*\
+Abbiamo terminato lo studio della documentazione del WAF F5 con dei laboratori e esercizi riassuntivi.
+
 
