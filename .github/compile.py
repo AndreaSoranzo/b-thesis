@@ -30,8 +30,8 @@ def main():
     pdfs = {}
 
     BuildTyp(init_path,"/papers/logs", pdfs) # logs
-    BuildTyp(init_path,"/papers/docs", pdfs) # docs
-    # BuildPpt(init_path,"/papers/presentation", pdfs)
+    BuildTyp(init_path,"/papers/docs", pdfs) # progect docs
+    BuildTyp(init_path,"/papers/thesis", pdfs) # thesis
 
     UpdateHtml(html,pdfs)
 
@@ -58,21 +58,21 @@ def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list],):
 
 
 
-def BuildPpt(init_path:str, file_path:str, pdfs:dict[str, list]):
-    logging.info(f'Building ppt files')
-    d_type = file_path.removeprefix("/")
-    pdfs[d_type]=[]
-    os.chdir(path.Path(init_path+file_path))
-    for ppt in os.listdir(path.Path(".")):
-        result = subprocess.run(["unoconv","-f", "pdf"] + [path.Path(ppt+".pptx")], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
-        try:
-            result.check_returncode()
-        except Exception as _:
-            logging.error(f"Compiling {ppt} failed with stderr: \n{result.stderr}")
-            exit(1)
-        cmd.move(ppt+".pdf",path.Path("../_site/"+ppt+".pdf"))
-        pdfs[d_type].append(PDF(ppt))
-    os.chdir(init_path)
+# def BuildPpt(init_path:str, file_path:str, pdfs:dict[str, list]):
+#     logging.info(f'Building ppt files')
+#     d_type = file_path.removeprefix("/")
+#     pdfs[d_type]=[]
+#     os.chdir(path.Path(init_path+file_path))
+#     for ppt in os.listdir(path.Path(".")):
+#         result = subprocess.run(["unoconv","-f", "pdf"] + [path.Path(ppt+".pptx")], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+#         try:
+#             result.check_returncode()
+#         except Exception as _:
+#             logging.error(f"Compiling {ppt} failed with stderr: \n{result.stderr}")
+#             exit(1)
+#         cmd.move(ppt+".pdf",path.Path("../_site/"+ppt+".pdf"))
+#         pdfs[d_type].append(PDF(ppt))
+#     os.chdir(init_path)
 
 
 def UpdateHtml(html:str,pdfs:dict[str, list]):
