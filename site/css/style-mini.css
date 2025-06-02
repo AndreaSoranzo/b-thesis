@@ -12,6 +12,22 @@ main #box {
     padding: 2rem 2rem 3rem 2rem;
 }
 
+main #box #grade:before {
+    font-size: 6rem;
+} 
+
+main #box #grade:after {
+    width: 270px;
+    height: 270px;
+}
+
+main #box #grade {
+    width: 320px;
+    height: 320px;
+    top: -2rem;
+    right: -3rem;
+}
+
 main #box .content {
     padding-left: 0;
 }
