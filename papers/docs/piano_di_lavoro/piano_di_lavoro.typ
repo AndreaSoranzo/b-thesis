@@ -4,21 +4,19 @@
 = Contatti
 *Studente:*
 
-- Soranzo Mendez Andrea Jesus 2075539 \ 
+- Soranzo Mendez Andrea Jesus 2075539 \
   #show link: set text(fill: black, weight: "regular")
-   #link("mailto:soranzoandrea.mj@gmail.com") \
-   #link("mailto:andreajesus.soranzomendez@studenti.unipd.it") \
-   #link("tel:00390000000000")[+39 \*\*\* \*\*\* \*\*\*\*]
+  #link("mailto:soranzoandrea.mj@gmail.com") \
+  #link("mailto:andreajesus.soranzomendez@studenti.unipd.it") \
 
 *Tutor aziendale:*
 - Stefano Marchetti \
   #show link: set text(fill: black, weight: "regular")
   #link("mailto:stefano.marchetti@kireygroup.com") \
-  #link("tel:00390000000000")[+39 \*\*\* \*\*\* \*\*\*\*]
 
 *Azienda:*
-- KIREY Srl \ 
-  Corso Stati Uniti, 14/B, 35127 Padova PD \ 
+- KIREY Srl \
+  Corso Stati Uniti, 14/B, 35127 Padova PD \
   #show link: set text(fill: black, weight: "regular")
   #link("mailto:HR@Kireygroup.com") \
   #show link: set text(fill: blue, weight: "bold")
@@ -84,120 +82,140 @@ La pianificazione, in termini di quantità di ore di lavoro, sarà così distrib
 #let a_row4_h = 65pt
 
 #align(center)[
-    #table(
+  #table(
     align: left,
-    columns: (27%,64%),
+    columns: (27%, 64%),
     table.header[*Durata in ore*][*Descrizione attività*],
-    align(center+horizon)[50], [Analisi delle Esigenze
-            - Studio approfondito delle applicazioni web esistenti per identificare le vulnerabilità
-            - Definizione dei requisiti specifici per la protezione delle applicazioni],
-    align(center+horizon)[130],[Progettazione e Implementazione
-            - Esaminazione delle soluzioni disponibili (F5) e adattamento in modo che soddisfi le necessità dell’organizzazione.
-            - Implementazione del WAF assicurandosi che non interferisca con il normale funzionamento delle applicazioni web.
-            - Ricerca librerie e asset esistenti],
-    align(center+horizon)[50],[Testing e Ottimizzazione
-            - Testing e simulazioni di attacchi per verificare l'efficienza del WAF
-            - Miglioramento delle regole di sicurezza per ridurre i falsi positivi e ottimizzare le performance],
-    align(center+horizon)[54],[Monitoraggio e Manutenzione
-            - Implementazione di sistemi di monitoraggio per rilevare e rispondere agli attacchi in tempo reale],
-    align(center+horizon)[16],[Revisione della documentazione],
-    align(center+horizon)[*Totale ore*],table.cell(stroke:none)[],
-    align(center+horizon)[*300*],table.cell(stroke:none)[]
-)
+    align(center + horizon)[50], [Analisi delle Esigenze
+      - Studio approfondito delle applicazioni web esistenti per identificare le vulnerabilità
+      - Definizione dei requisiti specifici per la protezione delle applicazioni
+    ],
+    align(center + horizon)[130], [Progettazione e Implementazione
+      - Esaminazione delle soluzioni disponibili (F5) e adattamento in modo che soddisfi le necessità dell’organizzazione.
+      - Implementazione del WAF assicurandosi che non interferisca con il normale funzionamento delle applicazioni web.
+      - Ricerca librerie e asset esistenti
+    ],
+    align(center + horizon)[50], [Testing e Ottimizzazione
+      - Testing e simulazioni di attacchi per verificare l'efficienza del WAF
+      - Miglioramento delle regole di sicurezza per ridurre i falsi positivi e ottimizzare le performance
+    ],
+    align(center + horizon)[54], [Monitoraggio e Manutenzione
+      - Implementazione di sistemi di monitoraggio per rilevare e rispondere agli attacchi in tempo reale
+    ],
+    align(center + horizon)[16], [Revisione della documentazione],
+    align(center + horizon)[*Totale ore*], table.cell(stroke: none)[],
+    align(center + horizon)[*300*], table.cell(stroke: none)[]
+  )
 ]
 #pagebreak()
 
 == Ripartizione delle attività suddivise per settimane
 === Prima Settimana
-        #align(center)[
-        #table(
-        align: left,
-        columns: (27%,64%),
-        table.header[*Durata in ore*][*Descrizione attività*],
-        align(center+horizon)[20], [
-                - Incontro con il tutor aziendale e analisi dei requisiti del progetto
-                - Configurazione degli strumenti di lavoro e formazione iniziale],
-        )
-        ]
+#align(center)[
+  #table(
+    align: left,
+    columns: (27%, 64%),
+    table.header[*Durata in ore*][*Descrizione attività*],
+    align(center + horizon)[20],
+    [
+      - Incontro con il tutor aziendale e analisi dei requisiti del progetto
+      - Configurazione degli strumenti di lavoro e formazione iniziale
+    ],
+  )
+]
 === Seconda Settimana
-        #align(center)[
-        #table(
-        align: left,
-        columns: (27%,64%),
-        table.header[*Durata in ore*][*Descrizione attività*],
-        align(center+horizon)[40], [
-                - Analisi delle applicazione web e identificazione delle vulnerabilità principali
-                - Studio delle funzionalità del Web Application Firewall
-                - Inizio redazione del documento "analisi dei requisiti"],
-        )
-        ]
+#align(center)[
+  #table(
+    align: left,
+    columns: (27%, 64%),
+    table.header[*Durata in ore*][*Descrizione attività*],
+    align(center + horizon)[40],
+    [
+      - Analisi delle applicazione web e identificazione delle vulnerabilità principali
+      - Studio delle funzionalità del Web Application Firewall
+      - Inizio redazione del documento "analisi dei requisiti"
+    ],
+  )
+]
 === Terza Settimana
-        #align(center)[
-        #table(
-        align: left,
-        columns: (27%,64%),
-        table.header[*Durata in ore*][*Descrizione attività*],
-        align(center+horizon)[40], [
-                - Progettazione e configurazione iniziale del Web Application Firewall
-                - Personalizzazione delle regole di sicurezza
-                - Inizio redazione del documento "specifica tecnica"],
-        )
-        ]
+#align(center)[
+  #table(
+    align: left,
+    columns: (27%, 64%),
+    table.header[*Durata in ore*][*Descrizione attività*],
+    align(center + horizon)[40],
+    [
+      - Progettazione e configurazione iniziale del Web Application Firewall
+      - Personalizzazione delle regole di sicurezza
+      - Inizio redazione del documento "specifica tecnica"
+    ],
+  )
+]
 === Quarta Settimana
-        #align(center)[
-        #table(
-        align: left,
-        columns: (27%,64%),
-        table.header[*Durata in ore*][*Descrizione attività*],
-        align(center+horizon)[40], [
-                - Implementazione del Web Application Firewall e test di compatibilità con le applicazioni
-                - Ottimizzazione delle regole],
-        )
-        ]
+#align(center)[
+  #table(
+    align: left,
+    columns: (27%, 64%),
+    table.header[*Durata in ore*][*Descrizione attività*],
+    align(center + horizon)[40],
+    [
+      - Implementazione del Web Application Firewall e test di compatibilità con le applicazioni
+      - Ottimizzazione delle regole
+    ],
+  )
+]
 === Quinta Settimana
-        #align(center)[
-        #table(
-        align: left,
-        columns: (27%,64%),
-        table.header[*Durata in ore*][*Descrizione attività*],
-        align(center+horizon)[40], [
-                - Simulazione di attacchi per testare l'efficacia del Web Application Firewall
-                - Analisi dei risultati e ottimizzazione delle configurazioni],
-        )
-        ]
+#align(center)[
+  #table(
+    align: left,
+    columns: (27%, 64%),
+    table.header[*Durata in ore*][*Descrizione attività*],
+    align(center + horizon)[40],
+    [
+      - Simulazione di attacchi per testare l'efficacia del Web Application Firewall
+      - Analisi dei risultati e ottimizzazione delle configurazioni
+    ],
+  )
+]
 === Sesta Settimana
-        #align(center)[
-        #table(
-        align: left,
-        columns: (27%,64%),
-        table.header[*Durata in ore*][*Descrizione attività*],
-        align(center+horizon)[40], [
-                - Configurazione di sistemi di monitoraggio per rilevare attacchi
-                - Verifica della conformità agli standard di sicurezza],
-        )
-        ]
+#align(center)[
+  #table(
+    align: left,
+    columns: (27%, 64%),
+    table.header[*Durata in ore*][*Descrizione attività*],
+    align(center + horizon)[40],
+    [
+      - Configurazione di sistemi di monitoraggio per rilevare attacchi
+      - Verifica della conformità agli standard di sicurezza
+    ],
+  )
+]
 === Settima Settimana
-        #align(center)[
-        #table(
-        align: left,
-        columns: (27%,64%),
-        table.header[*Durata in ore*][*Descrizione attività*],
-        align(center+horizon)[40], [
-                - Manutenzione o ottimizzazione del Web Application Firewall
-                - Fine redazione della documentazione],
-        )
-        ]
+#align(center)[
+  #table(
+    align: left,
+    columns: (27%, 64%),
+    table.header[*Durata in ore*][*Descrizione attività*],
+    align(center + horizon)[40],
+    [
+      - Manutenzione o ottimizzazione del Web Application Firewall
+      - Fine redazione della documentazione
+    ],
+  )
+]
 === Ottava Settimana
-        #align(center)[
-        #table(
-        align: left,
-        columns: (27%,64%),
-        table.header[*Durata in ore*][*Descrizione attività*],
-        align(center+horizon)[40], [Analisi delle Esigenze
-                - Revisione finale e presentazione dei risultati
-                - Consegna della documentazione e chiusura del progetto],
-        )
-        ]
+#align(center)[
+  #table(
+    align: left,
+    columns: (27%, 64%),
+    table.header[*Durata in ore*][*Descrizione attività*],
+    align(center + horizon)[40],
+    [Analisi delle Esigenze
+      - Revisione finale e presentazione dei risultati
+      - Consegna della documentazione e chiusura del progetto
+    ],
+  )
+]
 
 #pagebreak()
 = Obiettivi
@@ -211,22 +229,22 @@ Le sigle precedentemente indicate saranno seguite da un numero, identificativo u
 Si prevede lo svolgimento dei seguenti obiettivi:
 
 #align(center)[
-    #table(
-        align: left,
-        columns: (27%,64%),
-        table.header(table.cell(colspan: 2, align: center)[*Obbligatori*]),
-        align(center+horizon)[O1],[Studio e analisi delle vulnerabilità],
-        align(center+horizon)[O2],[Studio delle possibili soluzioni adottabili],
-        align(center+horizon)[O3],[Studio e ricerca di librerie e assets esistenti per l'implementazione],
-        align(center+horizon)[O4],[Implementazione del WAF],
-        align(center+horizon)[O5],[Testing e simulazioni di attacchi],
-        align(center+horizon)[O6],[Miglioramento delle regole per ridurre i falsi positivi],
-        align(center+horizon)[O7],[Redazione di una documentazione tecnica e metodologica per il progetto],
-        table.cell(colspan: 2, align: center)[*Desiderabili*],
-        align(center+horizon)[D1],[Valutare il monitoraggio del progresso formativo.],
-        table.cell(colspan: 2, align: center)[*Facoltativi*],
-        align(center+horizon)[F1],[Implementazione, gestione ed erogazione del WAF attraverso piattaforme cloud]
-    )
+  #table(
+    align: left,
+    columns: (27%, 64%),
+    table.header(table.cell(colspan: 2, align: center)[*Obbligatori*]),
+    align(center + horizon)[O1], [Studio e analisi delle vulnerabilità],
+    align(center + horizon)[O2], [Studio delle possibili soluzioni adottabili],
+    align(center + horizon)[O3], [Studio e ricerca di librerie e assets esistenti per l'implementazione],
+    align(center + horizon)[O4], [Implementazione del WAF],
+    align(center + horizon)[O5], [Testing e simulazioni di attacchi],
+    align(center + horizon)[O6], [Miglioramento delle regole per ridurre i falsi positivi],
+    align(center + horizon)[O7], [Redazione di una documentazione tecnica e metodologica per il progetto],
+    table.cell(colspan: 2, align: center)[*Desiderabili*],
+    align(center + horizon)[D1], [Valutare il monitoraggio del progresso formativo.],
+    table.cell(colspan: 2, align: center)[*Facoltativi*],
+    align(center + horizon)[F1], [Implementazione, gestione ed erogazione del WAF attraverso piattaforme cloud]
+  )
 ]
 
 #pagebreak()
@@ -234,7 +252,7 @@ Si prevede lo svolgimento dei seguenti obiettivi:
 = Approvazione
 Il presente piano di lavoro è stato approvato dai seguenti:
 
-\ \ \ 
+\ \ \
 ─────────────────────────────────
 
 Stefano Marchetti - Tutor aziendale\
