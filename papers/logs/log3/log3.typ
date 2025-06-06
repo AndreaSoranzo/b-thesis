@@ -45,8 +45,8 @@ l'obiettivo finale del progetto.
 = Giorno 4
 *Ordine del giorno*
 - Disegno di rete (nel dettaglio)
-- Protezione A1 OWASP implementata
+- Protezione A1,A3 OWASP implementate
 
 *Note:*\
-Nessuna.
-
+Abbiamo raggiunto il 100% di compliance per le vulnerabilità OWASP A1 e A3. Questo risultato è stato ottenuto grazie all'integrazione di attack signature contro gli
+attacchi più comuni e rischiosi, alla protezione delle pagine che richiedono autenticazione, e alla definizione di regole precise per i parametri nelle richieste HTTP.
