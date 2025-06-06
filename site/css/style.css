@@ -159,13 +159,68 @@ main {
 main #box {
     width: 100%;
     margin: auto;
-    background-color: rgba(53, 39, 66, 0.18);;
+    background-color: rgba(53, 39, 66, 0.15);
     border-radius: 16px;
     box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     padding: 2rem 3rem 3rem 3rem;
+    position: relative;
+    overflow: hidden;
 }
+
+main #box #grade:before {
+    content: attr(data-grade);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 8rem;
+    font-weight: 700;
+}
+    
+
+main #box #grade:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 13px dashed rgba(190, 122, 250, 0.6);
+    animation: spin 150s linear 2.5s infinite;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%,-50%) rotateZ(0deg); }
+  100% { transform: translate(-50%,-50%) rotateZ(360deg); }
+}
+
+main #box #grade {
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: -4rem;
+    right: -4rem;
+    z-index: -1;
+    opacity: 0;
+    transform: rotateZ(-13deg);
+    animation: stamp 500ms cubic-bezier(.27,.88,.53,1.18) 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes stamp {
+    0% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: .6;
+    }
+}
+
 
 main #box .section:not(:last-child) {
     margin-bottom: 3rem;
@@ -185,7 +240,7 @@ main #box h2::before {
 }
 
 main #box p {
-    max-width: 46rem;
+    max-width: 44rem;
     font-style: italic;
 }
 
@@ -237,7 +292,7 @@ main #box #docs li {
     background: url("../assets/svg/docs_marker.svg") no-repeat left center;
 }
 
-main #box #ppt li {
+main #box #thesis li {
     background: url("../assets/svg/ppt_marker.svg") no-repeat left center;
 }
 
@@ -251,8 +306,8 @@ footer {
     text-align: left;
     background-image: url("../assets/png/unipd.png");
     background-repeat: no-repeat;
-    background-size: 400px 400px;
-    background-position: right -7rem bottom -9rem;
+    background-size: 430px 430px;
+    background-position: right -6rem bottom -8rem;
 }
 
 footer #desc {
@@ -272,6 +327,7 @@ footer #desc p {
 footer #info-container {
     display: flex;
     gap: 5rem;
+    margin-bottom: 5rem;
 }
 
 footer #info-container h2 {
@@ -290,5 +346,24 @@ footer #contacts a {
     display: block;
     margin-bottom: 1rem;
     width: fit-content;
+    color: var(--color-1-less);
+}
+
+
+footer #music-ref #music-logo{
+    background-image: url("../assets/svg/music.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 22px;
+    margin-right: .8rem;
+    float: left;
+}
+
+footer #music-ref a{
+    display: block;
+    font-size: .9rem;
+    font-style: italic;
     color: var(--color-1-less);
 }
