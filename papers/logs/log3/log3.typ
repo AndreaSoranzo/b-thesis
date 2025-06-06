@@ -29,14 +29,24 @@ decidendo per #link("https://github.com/OWASP/NodeGoat")[NodeGoat] come web app 
 termine previsto per lo stage, affronteremo la sfida di mettere in sicurezza un'applicazione ancora più complessa.
 Il progetto consiste del creare una policy che rispetti e mitighi le OWASP Top 10.
 
-\
+#pagebreak()
 = Giorno 3
 
 *Ordine del giorno*
 - Prima versione del diagramma dei casi d'uso
-- Diagramma della rete (semplificato)
+- Disegno di rete (semplificato)
 - Inizio progetto
 
 *Note:*\
 È stata completata la configurazione iniziale e di base per successivamente procedere con l'aggiunta delle regole specifiche per la web app al fine di raggiungere
 l'obiettivo finale del progetto.
+
+\
+= Giorno 4
+*Ordine del giorno*
+- Disegno di rete (nel dettaglio)
+- Protezione A1 OWASP implementata
+
+*Note:*\
+Nessuna.
+
