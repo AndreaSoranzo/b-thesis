@@ -27,4 +27,16 @@ La ricerca ha individuato le seguenti possibili applicazioni web:
 La nostra call con l'esperto F5 ha risolto con successo alcune domande sulle attack signature e i parameters in modalità enforced. Abbiamo concluso la giornata
 decidendo per #link("https://github.com/OWASP/NodeGoat")[NodeGoat] come web app vulnerabile per il nostro progetto. Abbiamo anche concordato che, se dovessimo completare le consegne del progetto prima del
 termine previsto per lo stage, affronteremo la sfida di mettere in sicurezza un'applicazione ancora più complessa.
+Il progetto consiste del creare una policy che rispetti e mitighi le OWASP Top 10.
 
+\
+= Giorno 3
+
+*Ordine del giorno*
+- Prima versione del diagramma dei casi d'uso
+- Diagramma della rete (semplificato)
+- Inizio progetto
+
+*Note:*\
+È stata completata la configurazione iniziale e di base per successivamente procedere con l'aggiunta delle regole specifiche per la web app al fine di raggiungere
+l'obiettivo finale del progetto.
