@@ -1,7 +1,7 @@
 #import "./glossary.typ" : glos
 
 = Sommario 
-\
+
 Il presente documento descrive il lavoro svolto durante il periodo di stage aziendale, con l'obiettivo di fornire una soluzione efficace per la protezione delle
 applicazioni web dagli attacchi informatici.
 La tesi affronta la sfida di analizzare i più noti vettori d'attacco e di comprendere come possano consentire a un utente malintenzionato di compromettere l'intera 

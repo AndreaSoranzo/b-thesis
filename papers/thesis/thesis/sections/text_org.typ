@@ -1,6 +1,6 @@
 = Organizzazione del documento 
 == Struttura del documento 
-\
+
 - Il #link("ch1")[terzo capitolo] è dedicato alla presentazione dell'azienda presso cui ho avuto l'opportunità di svolgere il periodo di stage, contestualizzando l'ambiente lavorativo e illustrando le motivazioni che mi hanno spinto a scegliere questa specifica esperienza formativa. \
 - Il #link("ch2")[quarto capitolo] presenta gli studi e delle ricerche condotte nella fase antecedente l'avvio del progetto. \
 - Il #link("ch3")[quinto capitolo] descrive nel dettaglio i processi e le metodologie adottate per lo sviluppo del progetto. Include l'analisi dei requisiti, la pianificazione del lavoro e una descrizione dell' approccio operativo. \
