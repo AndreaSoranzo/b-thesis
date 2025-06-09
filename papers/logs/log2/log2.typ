@@ -1,6 +1,8 @@
 #import "./utility.typ": *
 #show: doc => cover(doc)
 
+#set heading(numbering: none)
+
 = Giorno 1
 
 *Ordine del giorno:*
