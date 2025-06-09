@@ -36,7 +36,7 @@
               ) {
                 pagesLink += link(label(word + "link" + str(i)))[#text(fill: rgb("#2C5E77"))[ #str(newPage.at(0))].]
               } else {
-                pagesLink += link(label(word + "link" + str(i)))[#text(fill: rgb("#2C5E77"))[#str(newPage.at(0))], ]
+                pagesLink += link(label(word + "link" + str(i)))[#text(fill: rgb("#2C5E77"))[#str(newPage.at(0))],]
               }
             } else {
               pagesLink += link(label(word + "link" + str(i)))[#text(fill: rgb("#2C5E77"))[ #str(newPage.at(0))].]
@@ -46,7 +46,9 @@
         },
         pagesLink,
       ).at(4)]
+
     wrap-content(w, d)
+    linebreak()
   }
 }
 
@@ -79,7 +81,7 @@
       linkText = [#abbr.at(word) (#word)]
     },
     if (abbrOnly == true) {
-      output = text(style: "italic", fill: rgb("#2C5E77"))[#link(label(labelText))[#linkText#sub(size: 0.7em)[g]]#label(
+      output = text(style: "italic", fill: rgb("#2C5E77"))[#link(label(labelText))[#linkText#sub(size: 0.7em)[a]]#label(
           word + "abbr" + str(counter(word + "abbr").get().at(0)),
         )]
     } else {
