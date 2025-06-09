@@ -9,9 +9,6 @@
 #pagebreak()
 
 #include "sections/stage.typ"
-#pagebreak()
-
-
 
 
 
