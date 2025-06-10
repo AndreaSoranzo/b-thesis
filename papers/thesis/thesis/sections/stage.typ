@@ -1,5 +1,5 @@
 #import "./glossary.typ": glos
-#import "./bsgraphy.typ"
+// #import "./bsgraphy.typ"
 
 = Lavoro in KIREY SRL <ch1>
 == L' azienda
@@ -7,14 +7,12 @@
   #image("../../../public/media/kirey.png", width: 70%)
 ]
 \ \
-KIREY SRL è un system integrator con radici italiane che si è affermato come un protagonista globale nel guidare le
-aziende attraverso il loro percorso di Digital Transformation. La sua missione principale è accompagnare le imprese
-verso la realizzazione di organizzazioni data-driven, sfruttando il dato come asset strategico per lo sviluppo del
-business.
-
-Grazie a una forte competenza in materia di Data & AI, offre una gamma completa di servizi che hanno come filo
-conduttore proprio i dati e l'intelligenza artificiale. Questi servizi coprono settori chiave della trasformazione
-digitale, tra cui Cloud, Software Development e Dev-Ops, Cybersecurity, Infrastructure & Automation e Monitoring.
+KIREY SRL è un system integrator con radici italiane che si è affermato come un attore globale nel guidare le imprese
+attraverso il loro percorso di trasformazione digitale. La sua missione principale consiste nell'accompagnare le
+organizzazioni verso la realizzazione di strutture data-driven, riconoscendo nei dati un asset strategico fondamentale
+per lo sviluppo del business. L'offerta di servizi di KIREY SRL è completa, con un filo conduttore incentrato sui dati
+e l'intelligenza artificiale, e si estende a settori cruciali quali Cloud, Software Development, Cybersecurity,
+Infrastructure & Automation, e Monitoring.
 
 Nata come una piccola realtà locale, ha saputo espandersi a livello internazionale attraverso acquisizioni
 strategiche, consolidando la sua presenza in paesi come Spagna, Portogallo, Croazia, Romania, Bulgaria, Serbia,
@@ -36,8 +34,8 @@ approfondire il loro way of working, grazie anche al prezioso supporto del tutor
 Marchetti Stefano, che mi ha garantito un'introduzione completa all'ambiente e alle dinamiche interne.
 
 Le sede di Padova adotta un modello di lavoro ibrido, prediligendo il lavoro da remoto e dedicando un
-giorno a settimana all'incontro in presenza per un allineamento generale del team, a cui ho regolarmente partecipato, inoltre
-conta circa 15 dipendenti, a cui si aggiunge un numero variabile di stagisti, contribuendo a un
+giorno a settimana all'incontro in presenza per un allineamento generale del team, a cui ho regolarmente partecipato,
+inoltre conta circa 15 dipendenti, a cui si aggiunge un numero variabile di stagisti, contribuendo a un
 ambiente dinamico e collaborativo.
 
 Un aspetto particolarmente arricchente del tirocinio è stata la possibilità di collaborare con un altro stagista allo
@@ -78,18 +76,20 @@ l'organizzazione aziendale. L'orario di lavoro, dal lunedì al venerdì, prevede
 di pausa pranzo.
 Per facilitare lo svolgimento del progetto e lo studio, l'azienda ha fornito un computer portatile aziendale,
 indispensabile data la necessità di licenze a pagamento per i software utilizzati. Fin dal primo giorno, ho avuto
-accesso a un'ampia risorsa bibliografica e al corso ufficiale completo di #glos("F5") @FDOC, elementi che hanno costituito la base
-fondamentale per il mio percorso di studio e apprendimento.
+accesso a un'ampia risorsa bibliografica e al corso ufficiale completo di #glos("F5") @FDOC, elementi che hanno
+costituito la base per il mio percorso di studio e apprendimento.
 Oltre a queste risorse, sono stato affiancato da due tutor: uno con un'orientamento più specifico sulla creazione
 di firewall e quello aziendale. Entrambi mi hanno seguito quotidianamente tramite stand-up meeting e si sono
 dimostrati costantemente disponibili per chiarire ogni dubbio. Questi confronti regolari sono stati cruciali per
 riadattare e scalare il progetto in base al tempo a disposizione e al nostro ritmo di apprendimento.
 Inoltre, durante il periodo di formazione, ho avuto l'opportunità di confrontarmi, tramite #glos("Microsoft Teams"),
-con un specialista di #glos("F5") per affrontare e risolvere le problematiche e le incertezze più complesse.
+con uno specialista di #glos("F5") per affrontare e risolvere le problematiche e le incertezze più complesse.
 
 === Il motivo della scelta
 
-Il settore della sicurezza informatica ha rappresentato per me, fino a tempi recenti, un'area poco chiara e
+Ho optato per un tirocinio esterno con l'obiettivo di confrontarmi con la realtà del mondo del lavoro, diversa
+dall'ambiente universitario, e maturare una scelta più consapevole riguardo al prosieguo dei miei studi.
+Inoltre il settore della sicurezza informatica ha rappresentato per me, fino a tempi recenti, un'area poco chiara e
 raramente esaminata nel percorso accademico tradizionale. È stato solo a partire dal secondo anno universitario,
 grazie alla partecipazione a un corso facoltativo, che ho potuto acquisire una comprensione basilare e
 un'esperienza pratica delle sue dinamiche. Questa esposizione ha acceso in me un profondo interesse e la volontà di
@@ -98,5 +98,5 @@ Tuttavia, la sicurezza informatica si rivela essere una disciplina intrinsecamen
 risorse di apprendimento efficaci, specialmente quelle gratuite o che offrano un affiancamento costante da parte di
 esperti, è ardua. Nonostante fossi a conoscenza dell'esistenza di percorsi di laurea magistrale interamente
 dedicati a questi argomenti, il mio intento era quello di iniziare a familiarizzare con le tematiche fondamentali.
-Questo mi ha permesso di gettare le basi per una futura specializzazione e di comprendere l'applicabilità
+Questo mi ha permesso di gettare le basi per una possibile futura specializzazione e di comprendere l'applicabilità
 pratica nel settore, verificando al contempo il mio effettivo interesse per un'eventuale mansione in quest'ambito.
