@@ -7,18 +7,18 @@
     font-weight: 500;
     font-style: normal;
     font-variation-settings:
-    "wdth" 100;
+        "wdth" 100;
     line-height: 1.5;
 }
 
 :root {
-    --color-1:#1f1f1f;
-    --color-1-less:#1f1f1fc8;
-    --color-2:#be7afa;
+    --color-1: #1f1f1f;
+    --color-1-less: #1f1f1fc8;
+    --color-2: #be7afa;
     --color-3: #d1cfc0;
     --color-3-less: #adab9e;
     --color-3-low: #747369;
-    --color-4:#3b82f680;
+    --color-4: #3b82f680;
 }
 
 
@@ -38,34 +38,33 @@ html {
 }
 
 .textgradient {
-    background: radial-gradient(
-        circle at 100%,
-        var(--color-2),
-        var(--color-3) 50%,
-        var(--color-2) 75%,
-        var(--color-2) 75%
-      );
-      font-weight: 600;
-      background-size: 200% auto;
-      color: #000;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: animatedTextGradient 15s linear infinite;
+    background: radial-gradient(circle at 100%,
+            var(--color-2),
+            var(--color-3) 50%,
+            var(--color-2) 75%,
+            var(--color-2) 75%);
+    font-weight: 600;
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animatedTextGradient 15s linear infinite;
 }
 
 
 @keyframes animatedTextGradient {
     to {
-      background-position: 200% center;
+        background-position: 200% center;
     }
 }
 
-header{
+header {
     padding: 2rem 2rem 1rem 2rem;
     margin-bottom: 5rem;
 }
+
 header .limit {
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,14 +80,14 @@ body {
 li {
     padding-left: 3rem;
     list-style: none;
-    word-break:break-word;
+    word-break: break-word;
 }
 
 a {
     color: var(--color-2);
 }
 
-p{
+p {
     color: var(--color-1-less);
 }
 
@@ -97,22 +96,24 @@ header #titles h1 {
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: .2rem;
-    position: relative;    
+    position: relative;
     line-height: 1;
     margin-bottom: 1rem;
 }
 
 @keyframes updown {
-    0%   {
-      transform: translateY(-5px);
+    0% {
+        transform: translateY(-5px);
     }
-    50%  {
+
+    50% {
         transform: translateY(5px);
     }
+
     100% {
         transform: translateY(-5px);
     }
-  }
+}
 
 
 header #titles h2 {
@@ -123,7 +124,7 @@ header #titles h2 {
     animation: updown 2.5s ease-in-out infinite;
 }
 
-header #theme-changer {
+header #mute-music {
     width: 50px;
     height: 50px;
     background-position: center center;
@@ -131,19 +132,19 @@ header #theme-changer {
     background-repeat: no-repeat;
 }
 
-header #theme-changer:has(input:checked) {
+header #mute-music:has(input:checked) {
     background-image: url("../assets/svg/volume-off.svg");
 }
 
-header #theme-changer:has(input:not(:checked)) {
+header #mute-music:has(input:not(:checked)) {
     background-image: url("../assets/svg/volume-on.svg");
 }
 
-header #theme-changer input{
-    padding:0;
-    margin:0;
+header #mute-music input {
+    padding: 0;
+    margin: 0;
     appearance: none;
-    outline:none;
+    outline: none;
     pointer-events: none;
 }
 
@@ -174,40 +175,45 @@ main #box #grade:before {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 8rem;
     font-weight: 700;
 }
-    
+
 
 main #box #grade:after {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border: 13px dashed rgba(190, 122, 250, 0.6);
     animation: spin 150s linear 2.5s infinite;
-    width: 340px;
-    height: 340px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
 }
 
 @keyframes spin {
-  0% { transform: translate(-50%,-50%) rotateZ(0deg); }
-  100% { transform: translate(-50%,-50%) rotateZ(360deg); }
+    0% {
+        transform: translate(-50%, -50%) rotateZ(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
 }
 
 main #box #grade {
-    width: 420px;
-    height: 420px;
+    width: 400px;
+    height: 400px;
     position: absolute;
     top: -4rem;
     right: -4rem;
     z-index: -1;
     opacity: 0;
     transform: rotateZ(-13deg);
-    animation: stamp 500ms cubic-bezier(.27,.88,.53,1.18) 2s;
+    animation: stamp 500ms cubic-bezier(.27, .88, .53, 1.18) 2s;
     animation-fill-mode: forwards;
 }
 
@@ -216,6 +222,7 @@ main #box #grade {
         opacity: 0;
         transform: scale(1.5);
     }
+
     100% {
         opacity: .6;
     }
@@ -232,8 +239,9 @@ main #box h2 {
     border-bottom: 1px solid var(--color-3-low);
     margin-bottom: 1rem;
 }
+
 main #box h2::before {
-    content:'/ ';
+    content: '/ ';
     font-size: 3rem;
     font-weight: 500;
     color: var(--color-2);
@@ -280,7 +288,7 @@ main #box #logs li {
 
 main #box #logs li:after {
     counter-increment: logs;
-    content: "_#"counter(logs,custom-counter);
+    content: "_#" counter(logs, custom-counter);
 }
 
 @counter-style custom-counter {
@@ -293,7 +301,7 @@ main #box #docs li {
 }
 
 main #box #thesis li {
-    background: url("../assets/svg/ppt_marker.svg") no-repeat left center;
+    background: url("../assets/svg/thesis_marker.svg") no-repeat left center;
 }
 
 footer {
@@ -350,7 +358,7 @@ footer #contacts a {
 }
 
 
-footer #music-ref #music-logo{
+footer #music-ref #music-logo {
     background-image: url("../assets/svg/music.svg");
     background-size: cover;
     background-position: center center;
@@ -361,7 +369,7 @@ footer #music-ref #music-logo{
     float: left;
 }
 
-footer #music-ref a{
+footer #music-ref a {
     display: block;
     font-size: .9rem;
     font-style: italic;

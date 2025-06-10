@@ -42,7 +42,7 @@ def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list],):
     pdfs[d_type]=[]
     os.chdir(path.Path(init_path+file_path))
     for doc in os.listdir(path.Path(".")):
-        result = subprocess.run(["typst", "compile", "--root","../../."] + [path.Path(doc+"/"+doc+".typ")], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+        result = subprocess.run(["typst", "compile", "--root","../../." , "--font-path", "../../public/font"] + [path.Path(doc+"/"+doc+".typ")], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
         try:
             result.check_returncode()
         except Exception as _:
@@ -55,24 +55,6 @@ def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list],):
         else:
             pdfs[d_type].append(PDF(doc,"project_log") if "logs" in file_path else PDF(doc))
     os.chdir(init_path)
-
-
-
-# def BuildPpt(init_path:str, file_path:str, pdfs:dict[str, list]):
-#     logging.info(f'Building ppt files')
-#     d_type = file_path.removeprefix("/")
-#     pdfs[d_type]=[]
-#     os.chdir(path.Path(init_path+file_path))
-#     for ppt in os.listdir(path.Path(".")):
-#         result = subprocess.run(["unoconv","-f", "pdf"] + [path.Path(ppt+".pptx")], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
-#         try:
-#             result.check_returncode()
-#         except Exception as _:
-#             logging.error(f"Compiling {ppt} failed with stderr: \n{result.stderr}")
-#             exit(1)
-#         cmd.move(ppt+".pdf",path.Path("../_site/"+ppt+".pdf"))
-#         pdfs[d_type].append(PDF(ppt))
-#     os.chdir(init_path)
 
 
 def UpdateHtml(html:str,pdfs:dict[str, list]):
