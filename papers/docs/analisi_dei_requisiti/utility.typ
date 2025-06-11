@@ -87,3 +87,8 @@
   set par(leading: 1em) //sarebbe line height ma 1.5em per me è veramente tanto
   doc
 }
+
+#let Rid(counter) = {
+  counter.step()
+  counter.display()
+}
