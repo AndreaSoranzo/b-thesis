@@ -27,3 +27,17 @@ pienamente la compliance A2, che richiede la comunicazione client-server criptat
 i requisiti, poiché queste sono attività di competenza del responsabile della sicurezza e dell'implementazione della web application, come l'aggiornamento delle
 tecnologie e il monitoraggio delle potenziali vulnerabilità.
 \
+
+= Giorno 3
+
+*Ordine del giorno:*
+- Compliance A4 implementata
+- Installazione di f5-waf-tester
+- Troubleshooting IDOR
+
+*Note:*\
+Abbiamo implementato manualmente la compliance A4, poiché alcuni requisiti riguardano accorgimenti specifici del team di sviluppatori e non competono
+all'amministratore del WAF.
+La maggior parte della giornata è stata dedicata al tentativo di implementare una regola per prevenire un attacco di tipo IDOR (Insecure Direct Object References)
+nell'ambiente WAF. Non siamo ancora riusciti a implementarla e riteniamo che ciò non sia possibile a causa della struttura attuale della web app, che non lo consente.
+\
