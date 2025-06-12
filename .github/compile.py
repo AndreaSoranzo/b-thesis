@@ -53,7 +53,7 @@ def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list],):
             pdfs["work_plan"]=[]
             pdfs["work_plan"].append(PDF(doc))
         else:
-            pdfs[d_type].append(PDF(doc,"project_log") if "logs" in file_path else PDF(doc))
+            pdfs[d_type].append(PDF(doc,"stage_log") if "logs" in file_path else PDF(doc))
     os.chdir(init_path)
 
 
