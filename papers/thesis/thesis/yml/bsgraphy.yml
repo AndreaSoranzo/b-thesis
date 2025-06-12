@@ -1,5 +1,14 @@
-TypeScript:
-  type: Web
-  title: TypeScript
-  url: https://www.typescriptlang.org/
+# Libri e siti utili per la realizzazione del progetto
+FDOC:
+  type: Book
+  title: Configuring F5 Advanced Web Application Firewall for Modern Applications
+  author: F5
+  publisher: OnFulfillment F5 Network Ltd
+  page-total: 630
+  date: 2022
 
+IPI:
+  type: Web
+  title: Ishkur's Guide to Electronic Music
+  author: Ishkur
+  url: http://www.techno.org/electronic-music-guide/
