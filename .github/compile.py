@@ -42,7 +42,7 @@ def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list],):
     pdfs[d_type]=[]
     os.chdir(path.Path(init_path+file_path))
     for doc in os.listdir(path.Path(".")):
-        result = subprocess.run(["typst", "compile", "--root","../../." , "--font-path", "../../public/font"] + [path.Path(doc+"/"+doc+".typ")], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+        result = subprocess.run(["typst", "compile", "--root", path.Path("../../.")]+ [path.Path(doc+"/"+doc+".typ")] + ["--font-path", path.Path("../public/font/")], stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
         try:
             result.check_returncode()
         except Exception as _:
