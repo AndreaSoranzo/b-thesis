@@ -124,7 +124,7 @@ header #titles h2 {
     animation: updown 2.5s ease-in-out infinite;
 }
 
-header #theme-changer {
+header #mute-music {
     width: 50px;
     height: 50px;
     background-position: center center;
@@ -132,11 +132,11 @@ header #theme-changer {
     background-repeat: no-repeat;
 }
 
-header #theme-changer:has(input:checked) {
+header #mute-music:has(input:checked) {
     background-image: url("../assets/svg/volume-off.svg");
 }
 
-header #theme-changer:has(input:not(:checked)) {
+header #mute-music:has(input:not(:checked)) {
     background-image: url("../assets/svg/volume-on.svg");
 }
 
@@ -189,8 +189,8 @@ main #box #grade:after {
     transform: translate(-50%, -50%);
     border: 13px dashed rgba(190, 122, 250, 0.6);
     animation: spin 200s linear 2.5s infinite;
-    width: 340px;
-    height: 340px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
 }
 
@@ -205,8 +205,8 @@ main #box #grade:after {
 }
 
 main #box #grade {
-    width: 420px;
-    height: 420px;
+    width: 400px;
+    height: 400px;
     position: absolute;
     top: -4rem;
     right: -4rem;
@@ -301,7 +301,7 @@ main #box #docs li {
 }
 
 main #box #thesis li {
-    background: url("../assets/svg/ppt_marker.svg") no-repeat left center;
+    background: url("../assets/svg/thesis_marker.svg") no-repeat left center;
 }
 
 footer {

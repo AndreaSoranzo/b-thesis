@@ -1,1 +1,18 @@
-WAF: "brombs"
+# definizioni di parole
+WAF: 
+  "Firewall specializzato che protegge le applicazioni web da attacchi e traffico internet 
+  indesiderato (es. botnet, attacchi DoS), analizzando il traffico HTTP e HTTPS."
+
+Microsoft Teams:
+  "Piattaforma di collaborazione sviluppata da Microsoft basata su cloud che integra chat,
+   riunioni video, chiamate, condivisione di file e applicazioni, progettata per
+    facilitare la comunicazione e il lavoro di squadra all'interno delle organizzazioni."
+
+F5:
+  "Azienda leader nella fornitura di soluzioni per la sicurezza delle applicazioni,
+  l'ottimizzazione della rete e la gestione del traffico.
+  I suoi prodotti principali, come i Big-IP, sono spesso utilizzati per il bilanciamento del carico, creazione
+  di Web Application Firewall (WAF) e la gestione delle API."
+
+OWASP:
+  "Organizzazione no-profit che si dedica a migliorare la sicurezza del software."

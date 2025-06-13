@@ -5,6 +5,3 @@
 // Hayagriva format
 = Bibliografia e Sitografia
 #bibliography("../yml/bsgraphy.yml", title: none, style: "springer-lecture-notes-in-computer-science")
-
-// Biblatex
-// #bibliography("bibliography.bib")
