@@ -5,7 +5,7 @@
 I requisiti del progetto sono stati definiti dopo il periodo di formazione, durante una breve riunione tra noi stagisti e i due tutor aziendali. Di seguito sono presentate le tabelle che illustrano i diversi tipi di requisiti (funzionali, di qualità e di vincolo), dove ciascun requisito è identificato da una nomenclatura che ne indica la classificazione:
 - *M*: Obbligatorio
 - *D*: Desiderabile
-- *M*: Opzionale
+- *O*: Opzionale
 
 
 == Requisiti funzionali
@@ -13,7 +13,7 @@ I requisiti del progetto sono stati definiti dopo il periodo di formazione, dura
 #let RF = counter("RF")
 
 #table(
-  columns: (1fr, 3fr, 1fr, 1fr),
+  columns: (1fr, 4fr, 1.5fr, 1.5fr),
   fill: (_, j) => {
     if calc.odd(j + 1) {
       return luma(255)
@@ -60,19 +60,20 @@ I requisiti del progetto sono stati definiti dopo il periodo di formazione, dura
   [RF#context { Rid(RF) }], [L'admin F5 deve definire le tecnologie utilizzate dall'applicazione web], [M], [-],
   [RF#context { Rid(RF) }], [L'admin F5 deve importare le threat campigns], [M], [-],
   [RF#context { Rid(RF) }], [L'admin F5 deve creare e definire le pagine di blocco], [M], [-],
-  [RF#context { Rid(RF) }], [L'admin F5 Honeypot], [O], [-],
 
   // admin - log
   [RF#context { Rid(RF) }], [L'admin F5 deve creare dei profili di logging], [M], [-],
   [RF#context { Rid(RF) }], [L'admin F5 deve instaurare il collegamento con il server syslog per memorizzare tutti i log creati del WAF], [D], [-],
 )
 
+#pagebreak()
+
 == Requisiti qualitativi
 
 #let RQ = counter("RQ")
 
 #table(
-  columns: (1fr, 3fr, 1fr, 1fr),
+  columns: (1fr, 4fr, 1.5fr, 1.5fr),
   fill: (_, j) => {
     if calc.odd(j + 1) {
       return luma(255)
@@ -87,6 +88,14 @@ I requisiti del progetto sono stati definiti dopo il periodo di formazione, dura
   [Il WAF deve essere testato tramite il tool f5-waf-tester per verificarne la sua efficacia],
   [M],
   [-],
+  // mitigazione attacchi
+  [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di bloccare gli attacchi ti di tipo JS e SQL injection], [M], [-],
+  [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di bloccare gli attacchi di session hijacking e tampering], [M], [-],
+  [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di bloccare gli attacchi XSS], [M], [-],
+  [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di bloccare gli attacchi IDOR], [O], [-],
+  [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di mascherare le informazioni sensibili degli utenti], [M], [-],
+  [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di rilevare e bloccare attacchi DoS], [M], [-],
+  [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di rilevare e bloccare attacchi di brute force], [M], [-],
 )
 
 
@@ -95,7 +104,7 @@ I requisiti del progetto sono stati definiti dopo il periodo di formazione, dura
 #let RV = counter("RV")
 
 #table(
-  columns: (1fr, 3fr, 1fr, 1fr),
+  columns: (1fr, 4fr, 1.5fr, 1.5fr),
   fill: (_, j) => {
     if calc.odd(j + 1) {
       return luma(255)
@@ -105,10 +114,19 @@ I requisiti del progetto sono stati definiti dopo il periodo di formazione, dura
   },
   align: horizon + center,
   [*Requisito*], [*Descrizione*], [*Classificazione*], [*Fonte*],
-  [RV#context { Rid(RV) }], [Utilizzo del modulo LTM di BIG-IP per la creazione di pool e virtual server], [M], [-],
   [RV#context { Rid(RV) }],
-  [Utilizzo del modulo ASM di BIG-IP per la creazione di policy da assegnare al virtual server],
+  [Utilizzo del modulo LTM di BIG-IP per abilitare funzioni di bilanciamento delle risorse e monitoraggio dello stato],
   [M],
+  [-],
+
+  [RV#context { Rid(RV) }],
+  [Utilizzo del modulo ASM di BIG-IP per analizzare i pacchetti HTTP e HTTPS in modo tale da proteggere l'applicazione da attacchi],
+  [M],
+  [-],
+
+  [RV#context { Rid(RV) }],
+  [Utilizzo di RSYSLOG per il server dedicato al tracciamento di tutti i log del WAF],
+  [D],
   [-],
 )
 
