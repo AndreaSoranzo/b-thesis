@@ -61,7 +61,7 @@ visione chiara delle risorse disponibili, garantendo una gestione ottimale dei t
 
 L'azienda ha individuato nella protezione delle applicazioni web una priorità strategica, proponendo
 l'implementazione e la configurazione di un #glos("WAF") #glos("F5") che risolvesse le #glos("OWASP") top 10.
-L'obiettivo principale delle OWASP Top 10 è aumentare la consapevolezza sui rischi di sicurezza delle applicazioni web
+L'obiettivo principale delle #glos("OWASP") Top 10 è aumentare la consapevolezza sui rischi di sicurezza delle applicazioni web
 e fornire una base comune per la protezione contro gli attacchi più diffusi.
 Non è un elenco esaustivo di tutte le vulnerabilità, ma si concentra su quelle che hanno il maggiore impatto potenziale e sono più frequentemente sfruttate.
 Questa scelta mira a fornire ai clienti un'opzione di sicurezza avanzata a livello applicativo e per la protezione delle API utilizzate.
