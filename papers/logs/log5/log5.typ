@@ -16,3 +16,12 @@ Questa VM simula un server remoto dedicato all'archiviazione centralizzata dei l
 per l'ascolto e il salvataggio dei messaggi di log.
 La giornata si è conclusa con il raggiungimento della compliance OWASP Top 10, sebbene sia ancora necessario del fine tuning.
 \
+
+= Giorno 2
+
+*Ordine del giorno:*
+- Diagramma dei casi d'uso
+- Consegna capitoli "introduzione", "Descrizione stage" della tesi
+
+*Note:*\
+Nessuna.
