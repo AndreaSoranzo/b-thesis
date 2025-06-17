@@ -85,8 +85,11 @@
   set text(11pt)
   show heading: set block(above: 20pt, below: 10pt)
   set par(leading: 1em) //sarebbe line height ma 1.5em per me è veramente tanto
+  outline(title: "Elenco delle figure", target: figure.where(kind: image))
+  pagebreak()
   doc
 }
+
 
 #let Rid(counter) = {
   counter.step()
