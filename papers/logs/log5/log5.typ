@@ -25,3 +25,13 @@ La giornata si è conclusa con il raggiungimento della compliance OWASP Top 10, 
 
 *Note:*\
 Nessuna.
+
+= Giorno 3
+
+*Ordine del giorno:*
+- Descrizione casi d'uso
+- Correzione errori capitoli "introduzione", "Descrizione stage" della tesi
+- Aggiornamento azienda (nome,logo) nella tesi
+
+*Note:*\
+Oggi l'azienda ha leggermente modificato il proprio nome, rimuovendo la dicitura "Group", e ha cambiato logo; ho quindi aggiornato di conseguenza il documento della tesi.
