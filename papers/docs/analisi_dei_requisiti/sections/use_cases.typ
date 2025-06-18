@@ -21,7 +21,7 @@
 
 === UC1.1 - Visualizza blocking page
 #figure(
-  image("../uc/uc1.2.svg", width: 90%),
+  image("../uc/uc1.1.svg", width: 90%),
   caption: [UC1.1 - Visualizza blocking page],
 )
 - *Attore primario:*
