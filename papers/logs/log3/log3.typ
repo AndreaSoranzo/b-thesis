@@ -1,5 +1,6 @@
 #import "./utility.typ": *
 #show: doc => cover(doc)
+#show heading: set block(below: 2em)
 
 #set heading(numbering: none)
 
@@ -14,8 +15,7 @@ La ricerca ha individuato le seguenti possibili applicazioni web:
 - #link("http://www.itsecgames.com/")[bWAPP]
 - #link("https://www.vulnhub.com/entry/badstore-123,41/")[BadStore]
 - #link("https://github.com/s4n7h0/xvwa")[XVWA - Extreme Vulnerable Web Application]
-
-\
+\ \
 = Giorno 2
 
 *Ordine del giorno:*
@@ -28,7 +28,7 @@ La nostra call con l'esperto F5 ha risolto con successo alcune domande sulle att
 decidendo per #link("https://github.com/OWASP/NodeGoat")[NodeGoat] come web app vulnerabile per il nostro progetto. Abbiamo anche concordato che, se dovessimo completare le consegne del progetto prima del
 termine previsto per lo stage, affronteremo la sfida di mettere in sicurezza un'applicazione ancora più complessa.
 Il progetto consiste del creare una policy che rispetti e mitighi le OWASP Top 10.
-
+\ \
 #pagebreak()
 = Giorno 3
 

@@ -1,5 +1,6 @@
 #import "./utility.typ": *
 #show: doc => cover(doc)
+#show heading: set block(below: 2em)
 
 #set heading(numbering: none)
 
@@ -12,8 +13,7 @@
 
 *Note:*\
 L'installazione dell'ambiente di lavoro ha richiesto un notevole impiego di tempo per la *risoluzione di problematiche* impreviste. Di conseguenza, è stato possibile completare solo una parte dell'infrastruttura prevista.
-
-\
+\ \
 = Giorno 2
 
 *Ordine del giorno:*
@@ -24,8 +24,7 @@ L'installazione dell'ambiente di lavoro ha richiesto un notevole impiego di temp
 
 *Note:*\
 La fase di configurazione iniziale è stata ultimata con successo. Di conseguenza, si è proceduto con l'attività di formazione, attenendosi alla documentazione ufficiale di *F5 Advanced WAF*.
-
-\
+\ \
 = Giorno 3
 
 *Ordine del giorno:*
@@ -44,7 +43,7 @@ Abbiamo approfondito le nostre competenze pratiche, impiegando applicativi quali
 *Note:*\
 Abbiamo approfondito lo studio delle policy, comprendendo come esse siano applicate per rilevare e bloccare richieste malevole,
 o per notificare l'amministratore del Web Application Firewall in caso di attività sospette che richiedano verifica.
-
+\ \
 = Giorno 5
 
 *Ordine del giorno*

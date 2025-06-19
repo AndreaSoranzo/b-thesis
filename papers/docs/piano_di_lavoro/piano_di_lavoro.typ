@@ -1,5 +1,6 @@
 #import "./utility.typ": *
 #show: doc => cover(doc)
+#show heading: set block(below: 2em)
 
 = Contatti
 *Studente:*
@@ -21,7 +22,7 @@
   #link("mailto:HR@Kireygroup.com") \
   #show link: set text(fill: blue, weight: "bold")
   #link("https://www.kireygroup.com/")[https://www.kireygroup.com/]
-
+\
 = Informazioni sull'azienda
 Kirey è un system integrator che guida le aziende nel loro percorso di Digital Transformation, accompagnandole verso
 la realizzazione di organizzazioni data-driven. Facendo leva su una forte
