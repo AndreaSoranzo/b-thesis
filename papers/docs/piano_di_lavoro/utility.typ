@@ -4,7 +4,7 @@
   set text(lang: "it")
   set align(center)
   set list(indent: 10pt)
-  set text(18pt, font: "")
+  set text(18pt, font: "Merriweather 24pt")
   set par(justify: true)
   set rect(stroke: rgb("#5e5e5e"))
   show link: set text(fill: rgb(0, 0, 255), weight: "bold")
@@ -40,7 +40,7 @@
 
   text(11pt)[06 maggio 2025]
   set page(
-    margin: (top: 15%, bottom: 10%),
+    margin: (top: 15%, bottom: 10%, left: 13%, right: 13%),
     numbering: "1",
     header: [
       #v(1em)
