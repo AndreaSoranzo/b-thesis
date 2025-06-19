@@ -4,9 +4,9 @@
 = Lavoro in KIREY SRL <ch1>
 == L' azienda
 #align(center)[
-  #image("../../../public/media/kirey.png", width: 70%)
+  #image("../../../public/media/kirey.svg", width: 60%)
 ]
-\ \
+\
 KIREY SRL è un system integrator con radici italiane che si è affermato come un attore globale nel guidare le imprese
 attraverso il loro percorso di trasformazione digitale. La sua missione principale consiste nell'accompagnare le
 organizzazioni verso la realizzazione di strutture data-driven, riconoscendo nei dati un asset strategico fondamentale
@@ -57,7 +57,7 @@ visione chiara delle risorse disponibili, garantendo una gestione ottimale dei t
 \
 == Il progetto
 
-=== Le necessita aziendali
+=== Le necessità aziendali
 
 L'azienda ha individuato nella protezione delle applicazioni web una priorità strategica, proponendo
 l'implementazione e la configurazione di un #glos("WAF") #glos("F5") che risolvesse le #glos("OWASP") top 10.
