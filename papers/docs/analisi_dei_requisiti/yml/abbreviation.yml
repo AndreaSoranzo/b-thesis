@@ -11,12 +11,12 @@ LTM: "Local Traffic Manager"
 
 ASM: "Application Security Manager"
 
-CSRF: ""
+CSRF: "Cross-Site Request Forgery"
 
-SSRF: ""
+SSRF: "Server-Side Request Forgery"
 
-IDOR: ""
+IDOR: "Insecure Direct Object Reference"
 
-JS: ""
+JS: "Javascript"
 
-XSS: ""
+XSS: "Cross-Site Scripting"
