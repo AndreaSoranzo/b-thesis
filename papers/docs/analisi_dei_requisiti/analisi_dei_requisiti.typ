@@ -5,9 +5,7 @@
 #include "sections/use_cases.typ"
 #pagebreak()
 
-
 #include "sections/requisiti.typ"
-#pagebreak()
 
 
 #include "./sections/glossary.typ"
