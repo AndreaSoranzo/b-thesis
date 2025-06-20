@@ -28,7 +28,7 @@ I requisiti del progetto sono stati definiti dopo il periodo di formazione, dura
   [RF#context { Rid(RF) }], [L'utente deve visualizzare il CAPTCHA nel caso il WAF rilevi troppe richieste in brevi periodi di tempo], [M], [-],
   [RF#context { Rid(RF) }], [L'utente deve visualizzare una pagina di blocco nel caso in cui una richiesta venga rilevata sospetta e venga bloccata dal WAF], [M], [-],
   // admin - vs
-  [RF#context { Rid(RF) }], [L'admin F5 deve gestire e creare dei virtual servers in modo da per mettere gli utenti di collegarsi all'applicazione web], [M], [-],
+  [RF#context { Rid(RF) }], [L'admin F5 deve gestire e creare dei virtual server in modo da per mettere gli utenti di collegarsi all'applicazione web], [M], [-],
   [RF#context { Rid(RF) }], [L'admin F5 deve gestire e creare i server pools], [M], [-],
   [RF#context { Rid(RF) }], [L'admin F5 deve definire le regole per la protezione ad attacchi DoS], [M], [-],
   [RF#context { Rid(RF) }], [L'admin F5 deve definire le regole di protezione ad attacchi da parte di BOT e BOTNET], [M], [-],
@@ -58,7 +58,7 @@ I requisiti del progetto sono stati definiti dopo il periodo di formazione, dura
   [RF#context { Rid(RF) }], [L'admin F5 deve definire le attack signatures], [M], [-],
   [RF#context { Rid(RF) }], [L'admin F5 deve configurare le modalità di apprendimento del WAF], [M], [-],
   [RF#context { Rid(RF) }], [L'admin F5 deve definire le tecnologie utilizzate dall'applicazione web], [M], [-],
-  [RF#context { Rid(RF) }], [L'admin F5 deve importare le threat campigns], [M], [-],
+  [RF#context { Rid(RF) }], [L'admin F5 deve importare le threat campaign], [M], [-],
   [RF#context { Rid(RF) }], [L'admin F5 deve creare e definire le pagine di blocco], [M], [-],
 
   // admin - log
@@ -90,7 +90,7 @@ I requisiti del progetto sono stati definiti dopo il periodo di formazione, dura
   [-],
   // mitigazione attacchi
   [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di bloccare gli attacchi ti di tipo JS e SQL injection], [M], [-],
-  [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di bloccare gli attacchi di session hijacking e tampering], [M], [-],
+  [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di bloccare gli attacchi di manomissione cookie e sessioni utente], [M], [-],
   [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di bloccare gli attacchi XSS], [M], [-],
   [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di bloccare gli attacchi IDOR], [O], [-],
   [RQ#context { Rid(RF) }], [Il WAF deve essere in grado di mascherare le informazioni sensibili degli utenti], [M], [-],

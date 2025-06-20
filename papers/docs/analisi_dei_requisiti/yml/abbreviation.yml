@@ -1,3 +1,22 @@
+# auto abbr nel testo
 WAF: "Web Application Firewall"
+
+OWASP: "Open Worldwide Application Security Project"
+
+HTTP: "Hypertext Transfer Protocol"
+
+DoS: "Denial of Service"
+
+LTM: "Local Traffic Manager"
+
+ASM: "Application Security Manager"
+
+CSRF: ""
+
+SSRF: ""
+
+IDOR: ""
+
+JS: ""
 
 XSS: ""

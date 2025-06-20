@@ -137,7 +137,7 @@
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
-  - L'admin può definire regole di Data Guard che permettono al WAF di identificare e censurare automaticamente informazioni sensibili degli utenti all'interno delle
+  - L'admin può definire regole di data guard che permettono al WAF di identificare e censurare automaticamente informazioni sensibili degli utenti all'interno delle
   risposte HTTP da parte del server. Questo impedisce a potenziali attaccanti di visualizzare tali dati
 - *Precondizioni:*
   - La policy alla quale si vuole assegnare queste regole deve essere presente
@@ -166,10 +166,10 @@
   - La funzione di rilevamento di codici fiscali è attiva
 
 
-==== UC2.4.2 - Gestione dei parametri url
+==== UC2.4.2 - Gestione dei parametri URL
 #figure(
   image("../uc/uc2.4.2.svg", width: 90%),
-  caption: [UC2.4.2 - Gestione dei parametri url],
+  caption: [UC2.4.2 - Gestione dei parametri URL],
 )
 - *Attore primario:*
   - Admin del WAF F5
@@ -179,14 +179,14 @@
   - La policy alla quale si vuole assegnare queste regole deve essere presente
   - Tutti i parametri URL sono permessi indipendentemente dalla loro struttura
 - *Postcondizioni:*
-  - La policy possiede le regole riguardanti la struttura dei parametri url
+  - La policy possiede le regole riguardanti la struttura dei parametri URL
 
 
 ===== UC2.4.2.1 - Decisione tipo di valore
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
-  - L'admin può decidere che tipo di valore deve essere il parametro url nella richiesta HTTP
+  - L'admin può decidere che tipo di valore deve essere il parametro URL nella richiesta HTTP
 - *Precondizioni:*
   - Il tipo di valore è impostato su "qualsiasi"
 - *Postcondizioni:*
@@ -196,29 +196,29 @@
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
-  - L'admin può decidere la lunghezza massima del parametro url nella richiesta HTTP, per evitare attacchi di buffer overflow
+  - L'admin può decidere la lunghezza massima del parametro URL nella richiesta HTTP, per evitare attacchi di buffer overflow
 - *Precondizioni:*
   - La lunghezza massima è impostata su "qualsiasi"
 - *Postcondizioni:*
   - La lunghezza massima è impostata al valore deciso dall'admin
 
 
-===== UC2.4.2.3 - Decisione di meta caratteri permessi
+===== UC2.4.2.3 - Decisione di meta-caratteri permessi
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
-  - L'admin può decidere quali meta caratteri sono permessi e quali no all'interno del valore di un input in una richiesta HTTP
+  - L'admin può decidere quali meta-caratteri sono permessi e quali no all'interno del valore di un input in una richiesta HTTP
 - *Precondizioni:*
-  - Nessun meta carattere è permesso
+  - Tutti i meta-caratteri non sono permessi
 - *Postcondizioni:*
   - La configurazione decisa dall'admin viene applicata
 
 
 
-==== UC2.4.3 - Gestione url
+==== UC2.4.3 - Gestione URL
 #figure(
   image("../uc/uc2.4.3.svg", width: 90%),
-  caption: [UC2.4.3 - Gestione url],
+  caption: [UC2.4.3 - Gestione URL],
 )
 - *Attore primario:*
   - Admin del WAF F5
@@ -231,7 +231,7 @@
   - La policy possiede le regole riguardanti quali URL sono permessi e quali no
 
 
-===== UC2.4.3.1 - Gestione url permessi
+===== UC2.4.3.1 - Gestione URL permessi
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -242,7 +242,7 @@
   - Solo gli URL elencati dall'admin sono permessi
 
 
-===== UC2.4.3.2 - Gestione url non permessi
+===== UC2.4.3.2 - Gestione URL non permessi
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -250,7 +250,7 @@
 - *Precondizioni:*
   - Tutti gli URL sono permessi
 - *Postcondizioni:*
-  - Gli url elencati dall'admin non sono permessi
+  - Gli URL elencati dall'admin non sono permessi
 
 
 ==== UC2.4.4 - Gestione delle sessioni utente
@@ -278,7 +278,7 @@
 - *Postcondizioni:*
   - Vengono applicate le condizioni di successo definite dall'admin
 
-===== UC2.4.4.2 - Definizione url protetti da autenticazione
+===== UC2.4.4.2 - Definizione URL protetti da autenticazione
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -289,7 +289,7 @@
   - Vengono applicati dei controlli di sessione agli URL definiti
 
 
-===== UC2.4.4.3 - Definizione url di login e logout
+===== UC2.4.4.3 - Definizione URL di login e logout
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -380,11 +380,11 @@
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
-  - L'admin può gestire e creare regole per individuare e mitigare attacchi di tipo CSFR
+  - L'admin può gestire e creare regole per individuare e mitigare attacchi di tipo CSRF
 - *Precondizioni:*
   - La policy alla quale si vuole assegnare queste regole deve essere presente
 - *Postcondizioni:*
-  - La policy possiede regole per individuare e mitigare attacchi di tipo CSFR
+  - La policy possiede regole per individuare e mitigare attacchi di tipo CSRF
 
 ==== UC2.4.8 - Gestione attacchi SSRF
 #figure(
@@ -512,7 +512,7 @@
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
-  - L'admin ha la possibilità di archiviare tutti i log generati in un server esterno per diminuire il carico e l'utilizzo della memoria utilizzata dal WAF
+  - L'admin ha la possibilità di archiviare tutti i log generati in un server syslog esterno per diminuire il carico e l'utilizzo della memoria utilizzata dal WAF
 - *Precondizioni:*
   - L'amministratore intende minimizzare il carico del firewall spostando l'archiviazione dei dati su un server esterno
 - *Postcondizioni:*

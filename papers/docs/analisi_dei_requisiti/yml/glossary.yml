@@ -1,3 +1,81 @@
-WAF: "brombs"
+# definizioni di parole
+WAF: 
+  "Firewall specializzato che protegge le applicazioni web da attacchi e traffico internet 
+  indesiderato (es. botnet, attacchi DoS), analizzando il traffico HTTP e HTTPS."
 
-XSS: ""
+F5:
+  "Azienda leader nella fornitura di soluzioni per la sicurezza delle applicazioni,
+  l'ottimizzazione della rete e la gestione del traffico.
+  I suoi prodotti principali, come i Big-IP, sono spesso utilizzati per il bilanciamento del carico, creazione
+  di Web Application Firewall (WAF) e la gestione delle API."
+
+OWASP:
+  "Organizzazione no-profit che si dedica a migliorare la sicurezza del software."
+
+HTTP: 
+  "Protocollo fondamentale su cui si basa la comunicazione dati sul World Wide Web. 
+  Definisce le regole e il formato con cui browser web e server scambiano messaggi."
+
+DoS: 
+  "Categoria di attacchi informatici il cui obiettivo principale è rendere
+  inaccessibile un servizio, una risorsa di rete o un server ai suoi utenti legittimi.
+  Questo tipo di attacco non mira solitamente a rubare informazioni, ma a impedirne il corretto funzionamento o l'accessibilità."
+
+Virtual server: 
+  "Componente logica fondamentale sui sistemi F5 BIG-IP. Funziona come un punto di ascolto virtuale (un indirizzo IP virtuale e una porta)
+  sul dispositivo F5, attraverso il quale il traffico di rete viene intercettato, ispezionato e bilanciato prima di essere inoltrato ai server reali." 
+
+Pool :
+  "Una Pool F5 è una componente logica essenziale all'interno di un dispositivo F5 BIG-IP che rappresenta una collezione di server reali
+  che ospitano la stessa applicazione o servizio."
+
+Bot:
+ ""
+
+Botnet:
+  ""
+
+Data guard :
+ ""
+
+Policy :
+ ""
+
+Buffer overflow : 
+ ""
+
+Meta-caratteri:
+ ""
+
+Brute force:
+  ""
+
+CSRF :
+  ""
+
+SSRF: 
+  ""
+
+Attack signatures: 
+  ""
+
+Syslog : 
+  ""
+
+CAPTCHA: 
+  ""
+
+Threat campaign: 
+  ""
+
+IDOR: 
+  ""
+
+SQL injection: 
+  ""
+
+XSS: 
+  ""
+
+Rsyslog: 
+  ""
