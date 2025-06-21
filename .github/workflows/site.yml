@@ -29,6 +29,10 @@ jobs:
           sudo apt install unoconv
           sudo apt install snapd
           sudo snap install typst
+          pip install pyyaml
+      - name: Apply glossary and abbrs
+        run: |
+          python3 .github/glossify.py
       - name: Compile
         run: |
           python3 .github/compile.py
