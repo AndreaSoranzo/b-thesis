@@ -25,7 +25,6 @@ def GetYMLKeys(yml_path):
 
 def Glossify(doc_path):
     glossary = GetYMLKeys(doc_path / "yml/glossary.yml")
-    # print(glossary)
     sections_path= doc_path/"sections"
     for section in os.listdir(sections_path):
         if section in IGNORE_SECTION:
@@ -34,9 +33,8 @@ def Glossify(doc_path):
         original_text=s_path.read_text(encoding="utf-8")
         
         modified_text = original_text
-        print(original_text)
         for word in glossary:
-            modified_text=modified_text.replace(" "+word+" ","#glos(\""+word+"\")") 
+            modified_text=modified_text.replace(word,"#glos(\""+word+"\")") 
         
         s_path.write_text(modified_text,encoding="utf-8")
 
