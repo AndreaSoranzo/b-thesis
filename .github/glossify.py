@@ -11,7 +11,7 @@ IGNORE_SECTION = ["abbreviation.typ","bsgraphy.typ","glossary.typ"]
 def main():
     logging.basicConfig(level=os.getenv('LOGLEVEL', 'INFO'))
     init_path = os.getcwd()
-    glos_docs_list = ["/papers/thesis"]
+    glos_docs_list = ["/papers/thesis","/papers/docs"]
     for docs in glos_docs_list:
         os.chdir(path.Path(init_path+docs))
         for doc in os.listdir(path.Path(".")):
@@ -23,6 +23,9 @@ def GetYMLKeys(yml_path):
     return list(yml.keys())
 
 def Glossify(doc_path):
+    if not os.path.isdir(doc_path / "yml"):
+        return
+
     glossary = GetYMLKeys(doc_path / "yml/glossary.yml")
     abbrs = GetYMLKeys(doc_path / "yml/abbreviation.yml")
 
@@ -33,7 +36,7 @@ def Glossify(doc_path):
     for section in os.listdir(sections_path):
         if section in IGNORE_SECTION:
             continue
-        
+
         s_path = sections_path/section
         original_text=s_path.read_text(encoding="utf-8")
         
