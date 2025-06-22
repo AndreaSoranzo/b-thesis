@@ -50,7 +50,7 @@ Data & AI – ciascuno con i propri sotto-team. Per gestire la complessità deri
 numerosi progetti e contratti, l'azienda fa leva su strumenti digitali avanzati che assicurano una comunicazione
 rapida e una gestione efficiente delle attività.
 
-In particolare, #glos("Microsoft Teams") si è rivelato la piattaforma di comunicazione interna centrale. Consente una
+In particolare, Microsoft Teams si è rivelato la piattaforma di comunicazione interna centrale. Consente una
 condivisione istantanea di informazioni, documenti e aggiornamenti sui progetti, fungendo anche da calendario del
 team. Questa integrazione tecnologica non solo ottimizza la comunicazione e la pianificazione, ma offre anche una
 visione chiara delle risorse disponibili, garantendo una gestione ottimale dei tempi e delle competenze.
@@ -60,8 +60,8 @@ visione chiara delle risorse disponibili, garantendo una gestione ottimale dei t
 === Le necessità aziendali
 
 L'azienda ha individuato nella protezione delle applicazioni web una priorità strategica, proponendo
-l'implementazione e la configurazione di un #glos("WAF") #glos("F5") che risolvesse le #glos("OWASP") top 10.
-L'obiettivo principale delle #glos("OWASP") Top 10 è aumentare la consapevolezza sui rischi di sicurezza delle applicazioni web
+l'implementazione e la configurazione di un WAF F5 che risolvesse le OWASP top 10.
+L'obiettivo principale delle WASP Top 10 è aumentare la consapevolezza sui rischi di sicurezza delle applicazioni web
 e fornire una base comune per la protezione contro gli attacchi più diffusi.
 Non è un elenco esaustivo di tutte le vulnerabilità, ma si concentra su quelle che hanno il maggiore impatto potenziale e sono più frequentemente sfruttate.
 Questa scelta mira a fornire ai clienti un'opzione di sicurezza avanzata a livello applicativo e per la protezione delle API utilizzate.
@@ -76,14 +76,14 @@ l'organizzazione aziendale. L'orario di lavoro, dal lunedì al venerdì, prevede
 di pausa pranzo.
 Per facilitare lo svolgimento del progetto e lo studio, l'azienda ha fornito un computer portatile aziendale,
 indispensabile data la necessità di licenze a pagamento per i software utilizzati. Fin dal primo giorno, ho avuto
-accesso a un'ampia risorsa bibliografica e al corso ufficiale completo di #glos("F5") @FDOC, elementi che hanno
+accesso a un'ampia risorsa bibliografica e al corso ufficiale completo di F5 @FDOC, elementi che hanno
 costituito la base per il mio percorso di studio e apprendimento.
 Oltre a queste risorse, sono stato affiancato da due tutor: uno con un'orientamento più specifico sulla creazione
 di firewall e quello aziendale. Entrambi mi hanno seguito quotidianamente tramite stand-up meeting e si sono
 dimostrati costantemente disponibili per chiarire ogni dubbio. Questi confronti regolari sono stati cruciali per
 riadattare e scalare il progetto in base al tempo a disposizione e al nostro ritmo di apprendimento.
-Inoltre, durante il periodo di formazione, ho avuto l'opportunità di confrontarmi, tramite #glos("Microsoft Teams"),
-con uno specialista di #glos("F5") per affrontare e risolvere le problematiche e le incertezze più complesse.
+Inoltre, durante il periodo di formazione, ho avuto l'opportunità di confrontarmi, tramite Microsoft Teams,
+con uno specialista di F5 per affrontare e risolvere le problematiche e le incertezze più complesse.
 
 === Il motivo della scelta
 
