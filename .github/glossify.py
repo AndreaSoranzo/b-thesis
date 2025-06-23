@@ -10,7 +10,7 @@ IGNORE_SECTION = ["abbreviation.typ","bsgraphy.typ","glossary.typ"]
 def main():
     logging.basicConfig(level=os.getenv('LOGLEVEL', 'INFO'))
     init_path = os.getcwd()
-    glos_docs_list = ["/papers/thesis"]
+    glos_docs_list = ["/papers/thesis","/papers/docs"]
     for docs in glos_docs_list:
         os.chdir(path.Path(init_path+docs))
         for doc in os.listdir(path.Path(".")):
@@ -46,10 +46,8 @@ def Glossify(doc_path):
             if "=" in line or "caption" in line:
                 continue
             for word in words:
-                text_lines[i]=re.sub(word,"#glos(\""+word+"\")",text_lines[i],flags=re.IGNORECASE)
-                # lines[i]=lines[i].replace(word,"#glos(\""+word+"\")") 
-        
-        # print("\n".join(lines))
+                text_lines[i]=re.sub(rf"\b{word}\b","#glos(\""+word+"\")",text_lines[i],flags=re.IGNORECASE)
+
         s_path.write_text("\n".join(text_lines),encoding="utf-8")
 
 if __name__ == "__main__":
