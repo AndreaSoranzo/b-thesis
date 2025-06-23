@@ -26,7 +26,7 @@
   - Utente che ha accesso all'applicazione
 - *Descrizione:*
   - Se un utente tenta di effettuare una richiesta HTTP che risulta sospetta o illegale (es. accesso a risorse proibite o inserimento di attacchi web),
-    verra visualizzata la pagina di blocco impostata dall'admin del firewall.
+    verrà visualizzata la pagina di blocco impostata dall'admin del firewall.
 - *Precondizioni:*
   - L'utente ha effettuato una richiesta HTTP al server
 - *Postcondizioni:*
@@ -40,11 +40,11 @@
 - *Attore primario:*
   - Utente che ha accesso all'applicazione
 - *Descrizione:*
-  - L' utente dopo aver eseguito una richiesta HTTP sospetta o illegale viene reinderizzato ad una pagina html di errore
+  - L' utente dopo aver eseguito una richiesta HTTP sospetta o illegale viene reindirizzato ad una pagina HTML di errore
 - *Precondizioni:*
   - L'utente ha effettuato una richiesta HTTP al server
 - *Postcondizioni:*
-  - L'utente reinderizzato ad una nuova pagina
+  - L'utente reindirizzato ad una nuova pagina
 
 
 ==== UC1.1.2 - Visualizza messaggio di errore
@@ -65,15 +65,15 @@
   - Se il sistema rileva un potenziale attacco di tipo DoS o un'attività sospetta riconducibile a una botnet, viene presentata la pagina di test
     captcha per bloccare le richieste malevole, poiché bot automatizzati difficilmente riusciranno a completarlo.
 - *Precondizioni:*
-  - Vengono rilevate molte richieste in periodi ti tempo previ dallo stesso sorgente o da user agent sospetti
+  - Vengono rilevate molte richieste in periodi di tempo brevi dallo stesso sorgente o da user agent sospetti
 - *Postcondizioni:*
-  - Viene presentata la paginda di test captcha
+  - Viene presentata la pagina di test captcha
 
 
-== UC2 - Gestione e creazione visual server
+== UC2 - Gestione e creazione virtual server
 #figure(
   image("../uc/uc2.svg", width: 90%),
-  caption: [UC2 - Gestione e creazione visual server],
+  caption: [UC2 - Gestione e creazione virtual server],
 )
 - *Attore primario:*
   - Admin del WAF F5
@@ -203,13 +203,13 @@
   - La lunghezza massima è impostata al valore deciso dall'admin
 
 
-===== UC2.4.2.3 - Decisione di meta-caratteri permessi
+===== UC2.4.2.3 - Decisione di metacaratteri permessi
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
-  - L'admin può decidere quali meta-caratteri sono permessi e quali no all'interno del valore di un input in una richiesta HTTP
+  - L'admin può decidere quali metacaratteri sono permessi e quali no all'interno del valore di un input in una richiesta HTTP
 - *Precondizioni:*
-  - Tutti i meta-caratteri non sono permessi
+  - Tutti i metacaratteri non sono permessi
 - *Postcondizioni:*
   - La configurazione decisa dall'admin viene applicata
 
@@ -265,14 +265,14 @@
 - *Precondizioni:*
   - La policy alla quale si vuole assegnare queste regole deve essere presente
 - *Postcondizioni:*
-  - La policy possiede le regole e condizioni per identificare se un'utente risulta non autenticato
+  - La policy possiede le regole e condizioni per identificare se un utente risulta non autenticato
 
 
 ===== UC2.4.4.1 - Definizione della condizione di successo
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
-  - L'admin deve definire la condizione di successo del login affinché il WAF possa riconoscere che l'accesso è avvenuto correttamente.
+  - L'admin deve definire la condizione di successo del login affinché il WAF possa riconoscere che l'accesso sia avvenuto correttamente.
 - *Precondizioni:*
   - Nessuna condizione definita, quindi tutti i tentativi di accesso falliscono
 - *Postcondizioni:*
@@ -297,7 +297,7 @@
 - *Precondizioni:*
   - Nessuna pagina è definita
 - *Postcondizioni:*
-  - Vengono definite gli URL di login e logout
+  - Vengono definiti gli URL di login e logout
 
 ====== UC2.4.4.3.1 - Definizione dei parametri di login
 - *Attore primario:*
@@ -332,7 +332,7 @@
 - *Descrizione:*
   - L'admin può definire gli header HTTP permessi in una richiesta
 - *Precondizioni:*
-  - La lista degli header permessi contiene solo "PUT","GET","POST"
+  - La lista degli header permessi contiene solo "PUT", "GET", "POST"
 - *Postcondizioni:*
   - Viene applicata la lista definita dall'admin
 
@@ -394,11 +394,11 @@
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
-  - L'admin può gestire e creare regole per individuare e mitigare attacchi di tipo SSFR
+  - L'admin può gestire e creare regole per individuare e mitigare attacchi di tipo SSRF
 - *Precondizioni:*
   - La policy alla quale si vuole assegnare queste regole deve essere presente
 - *Postcondizioni:*
-  - La policy possiede regole per individuare e mitigare attacchi di tipo SSFR
+  - La policy possiede regole per individuare e mitigare attacchi di tipo SSRF
 
 
 
@@ -429,7 +429,7 @@
 - *Precondizioni:*
   - La policy alla quale si vuole assegnare queste regole deve essere presente
 - *Postcondizioni:*
-  - Il modulo ti IP Intelligence viene attivato sulla policy selezionata
+  - Il modulo di IP Intelligence viene attivato sulla policy selezionata
 
 
 ==== UC2.4.11 - Configurazione learning modes
@@ -490,7 +490,7 @@
 - *Precondizioni:*
   - La policy alla quale si vuole assegnare queste regole deve essere presente
 - *Postcondizioni:*
-  - Vengono aggiornato lo stile delle pagine di blocco
+  - Viene aggiornato lo stile delle pagine di blocco
 
 
 == UC3 - Definizione profili di logging
