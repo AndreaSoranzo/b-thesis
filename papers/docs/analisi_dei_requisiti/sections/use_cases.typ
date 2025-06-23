@@ -1,9 +1,6 @@
 = Casi d'uso
 == UC1 - Visualizza applicazione
-#figure(
-  image("../uc/uc1.svg", width: 90%),
-  caption: [UC1 - Visualizza applicazione],
-)
+#figure(image("../uc/uc1.svg", width: 90%), caption: [UC1 - Visualizza applicazione])
 - *Attore primario:*
   - Utente che ha accesso all'applicazione
 - *Descrizione:*
@@ -18,10 +15,7 @@
   - UC1.2 - Visualizza captcha
 
 === UC1.1 - Visualizza blocking page
-#figure(
-  image("../uc/uc1.1.svg", width: 90%),
-  caption: [UC1.1 - Visualizza blocking page],
-)
+#figure(image("../uc/uc1.1.svg", width: 90%), caption: [UC1.1 - Visualizza blocking page])
 - *Attore primario:*
   - Utente che ha accesso all'applicazione
 - *Descrizione:*
@@ -71,10 +65,7 @@
 
 
 == UC2 - Gestione e creazione virtual server
-#figure(
-  image("../uc/uc2.svg", width: 90%),
-  caption: [UC2 - Gestione e creazione virtual server],
-)
+#figure(image("../uc/uc2.svg", width: 90%), caption: [UC2 - Gestione e creazione virtual server])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -130,10 +121,7 @@
 
 
 ==== UC2.4.1 - Definizione di regole per data guard
-#figure(
-  image("../uc/uc2.4.1.svg", width: 90%),
-  caption: [UC2.4.1 - Definizione di regole per data guard],
-)
+#figure(image("../uc/uc2.4.1.svg", width: 90%), caption: [UC2.4.1 - Definizione di regole per data guard])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -167,10 +155,7 @@
 
 
 ==== UC2.4.2 - Gestione dei parametri URL
-#figure(
-  image("../uc/uc2.4.2.svg", width: 90%),
-  caption: [UC2.4.2 - Gestione dei parametri URL],
-)
+#figure(image("../uc/uc2.4.2.svg", width: 90%), caption: [UC2.4.2 - Gestione dei parametri URL])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -216,10 +201,7 @@
 
 
 ==== UC2.4.3 - Gestione URL
-#figure(
-  image("../uc/uc2.4.3.svg", width: 90%),
-  caption: [UC2.4.3 - Gestione URL],
-)
+#figure(image("../uc/uc2.4.3.svg", width: 90%), caption: [UC2.4.3 - Gestione URL])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -254,10 +236,7 @@
 
 
 ==== UC2.4.4 - Gestione delle sessioni utente
-#figure(
-  image("../uc/uc2.4.4.svg", width: 90%),
-  caption: [UC2.4.4 - Gestione delle sessioni utente],
-)
+#figure(image("../uc/uc2.4.4.svg", width: 90%), caption: [UC2.4.4 - Gestione delle sessioni utente])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -312,10 +291,7 @@
 
 
 ==== UC2.4.5 - Gestione richieste HTTP
-#figure(
-  image("../uc/uc2.4.5.svg", width: 90%),
-  caption: [UC2.4.5 - Gestione richieste HTTP],
-)
+#figure(image("../uc/uc2.4.5.svg", width: 90%), caption: [UC2.4.5 - Gestione richieste HTTP])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -359,12 +335,10 @@
   - Vengono applicate le regole definite dall'admin
 
 ==== UC2.4.6 - Gestione attacchi brute force
-#figure(
-  image("../uc/uc2.4.6.svg", width: 90%),
-  caption: [UC2.4.6 - Gestione regole per protezioni avanzate],
-)
+#figure(image("../uc/uc2.4.6.svg", width: 90%), caption: [UC2.4.6 - Gestione regole per protezioni avanzate])
 - *Attore primario:*
   - Admin del WAF F5
+#pagebreak()
 - *Descrizione:*
   - L'admin può gestire e creare regole per individuare e mitigare attacchi di tipo brute force
 - *Precondizioni:*
@@ -373,10 +347,7 @@
   - La policy possiede regole per individuare e mitigare attacchi di tipo brute force
 
 ==== UC2.4.7 - Gestione attacchi CSRF
-#figure(
-  image("../uc/uc2.4.7.svg", width: 90%),
-  caption: [UC2.4.7 - Gestione attacchi CSRF],
-)
+#figure(image("../uc/uc2.4.7.svg", width: 90%), caption: [UC2.4.7 - Gestione attacchi CSRF])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -387,10 +358,7 @@
   - La policy possiede regole per individuare e mitigare attacchi di tipo CSRF
 
 ==== UC2.4.8 - Gestione attacchi SSRF
-#figure(
-  image("../uc/uc2.4.8.svg", width: 90%),
-  caption: [UC2.4.8 - Gestione attacchi SSRF],
-)
+#figure(image("../uc/uc2.4.8.svg", width: 90%), caption: [UC2.4.8 - Gestione attacchi SSRF])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -403,14 +371,12 @@
 
 
 ==== UC2.4.9 - Definizione di attack signatures
-#figure(
-  image("../uc/uc2.4.9.svg", width: 90%),
-  caption: [UC2.4.9 - Definizione di attack signatures],
-)
+#figure(image("../uc/uc2.4.9.svg", width: 90%), caption: [UC2.4.9 - Definizione di attack signatures])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
   - L'admin può definire ulteriori attack signatures oltre a quelle già proposte dal modulo BIG-IP ASM
+#pagebreak()
 - *Precondizioni:*
   - La policy alla quale si vuole assegnare queste regole deve essere presente
 - *Postcondizioni:*
@@ -418,10 +384,7 @@
 
 
 ==== UC2.4.10 - Configurazione IP Intelligence
-#figure(
-  image("../uc/uc2.4.10.svg", width: 90%),
-  caption: [UC2.4.10 - Configurazione IP Intelligence],
-)
+#figure(image("../uc/uc2.4.10.svg", width: 90%), caption: [UC2.4.10 - Configurazione IP Intelligence])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -431,12 +394,9 @@
 - *Postcondizioni:*
   - Il modulo di IP Intelligence viene attivato sulla policy selezionata
 
-
+#pagebreak()
 ==== UC2.4.11 - Configurazione learning modes
-#figure(
-  image("../uc/uc2.4.11.svg", width: 90%),
-  caption: [UC2.4.11 - Configurazione learning modes],
-)
+#figure(image("../uc/uc2.4.11.svg", width: 90%), caption: [UC2.4.11 - Configurazione learning modes])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -448,12 +408,10 @@
 
 
 ==== UC2.4.12 - Definizione tecnologie applicazione
-#figure(
-  image("../uc/uc2.4.12.svg", width: 90%),
-  caption: [UC2.4.12 - Definizione tecnologie applicazione],
-)
+#figure(image("../uc/uc2.4.12.svg", width: 90%), caption: [UC2.4.12 - Definizione tecnologie applicazione])
 - *Attore primario:*
   - Admin del WAF F5
+#pagebreak()
 - *Descrizione:*
   - L'admin può definire le tecnologie utilizzate dall'applicazione web. In questo modo, il WAF può comprendere gli attacchi più comuni specifici per quella tecnologia e proporre un set iniziale di regole sufficienti per mitigarli.
 - *Precondizioni:*
@@ -464,10 +422,7 @@
 
 
 ==== UC2.4.13 - Importazione threat campaign
-#figure(
-  image("../uc/uc2.4.13.svg", width: 90%),
-  caption: [UC2.4.13 - Importazione threat campaign],
-)
+#figure(image("../uc/uc2.4.13.svg", width: 90%), caption: [UC2.4.13 - Importazione threat campaign])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -479,10 +434,7 @@
 
 
 ==== UC2.4.14 - Configurazione pagine di blocco
-#figure(
-  image("../uc/uc2.4.14.svg", width: 90%),
-  caption: [UC2.4.14 - Configurazione pagine di blocco],
-)
+#figure(image("../uc/uc2.4.14.svg", width: 90%), caption: [UC2.4.14 - Configurazione pagine di blocco])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
@@ -494,10 +446,7 @@
 
 
 == UC3 - Definizione profili di logging
-#figure(
-  image("../uc/uc3.svg", width: 90%),
-  caption: [UC3 - Definizione profili di logging],
-)
+#figure(image("../uc/uc3.svg", width: 90%), caption: [UC3 - Definizione profili di logging])
 - *Attore primario:*
   - Admin del WAF F5
 - *Descrizione:*
