@@ -211,7 +211,7 @@ La pianificazione, in termini di quantità di ore di lavoro, sarà così distrib
     columns: (27%, 64%),
     table.header[*Durata in ore*][*Descrizione attività*],
     align(center + horizon)[40],
-    [Analisi delle Esigenze
+    [
       - Revisione finale e presentazione dei risultati
       - Consegna della documentazione e chiusura del progetto
     ],
