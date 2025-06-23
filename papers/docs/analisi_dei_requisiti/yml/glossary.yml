@@ -45,7 +45,7 @@ Policy :
 Buffer overflow : 
  "vulnerabilità software che si verifica quando un programma tenta di scrivere più dati in un'area di memoria temporanea (buffer) di quanti essa possa contenerne. Di conseguenza, i dati in eccesso e sovrascrivono la memoria adiacente, che potrebbe contenere altre istruzioni del programma o dati critici."
 
-Meta-caratteri:
+Metacaratteri:
  "Caratteri speciali che hanno un significato particolare e predefinito all'interno di un linguaggio o di un sistema, piuttosto che rappresentare se stessi. Non vengono interpretati letteralmente, ma agiscono come istruzioni o indicatori che influenzano il modo in cui altri caratteri o stringhe vengono elaborati o abbinati."
 
 Brute force:
