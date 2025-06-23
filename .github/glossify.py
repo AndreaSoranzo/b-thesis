@@ -10,7 +10,7 @@ IGNORE_SECTION = ["abbreviation.typ","bsgraphy.typ","glossary.typ"]
 def main():
     logging.basicConfig(level=os.getenv('LOGLEVEL', 'INFO'))
     init_path = os.getcwd()
-    glos_docs_list = ["/papers/thesis","/papers/docs"]
+    glos_docs_list = ["/papers/thesis"]
     for docs in glos_docs_list:
         os.chdir(path.Path(init_path+docs))
         for doc in os.listdir(path.Path(".")):
