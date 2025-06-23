@@ -12,7 +12,7 @@ I requisiti del progetto sono stati definiti dopo il periodo di formazione, dura
 #let RF = counter("RF")
 
 #table(
-  columns: (1fr, 4fr, 1.5fr, 1fr),
+  columns: (1.2fr, 4fr, 1.6fr, 1.2fr),
   fill: (_, j) => {
     if calc.odd(j + 1) {
       return luma(255)
@@ -73,7 +73,7 @@ I requisiti del progetto sono stati definiti dopo il periodo di formazione, dura
 #let RQ = counter("RQ")
 
 #table(
-  columns: (1fr, 4fr, 1.5fr, 1fr),
+  columns: (1.2fr, 4fr, 1.6fr, 1.2fr),
   fill: (_, j) => {
     if calc.odd(j + 1) {
       return luma(255)
@@ -104,7 +104,7 @@ I requisiti del progetto sono stati definiti dopo il periodo di formazione, dura
 #let RV = counter("RV")
 
 #table(
-  columns: (1fr, 4fr, 1.5fr, 1fr),
+  columns: (1.2fr, 4fr, 1.6fr, 1.2fr),
   fill: (_, j) => {
     if calc.odd(j + 1) {
       return luma(255)
