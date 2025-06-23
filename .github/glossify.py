@@ -1,7 +1,5 @@
 import sys as sys
-import shutil as cmd
 import pathlib as path
-import subprocess
 import os
 import logging
 import yaml
