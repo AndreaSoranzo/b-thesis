@@ -1,6 +1,3 @@
-#import "./glossary.typ": glos
-// #import "./bsgraphy.typ"
-
 = Lavoro in KIREY SRL <ch1>
 == L' azienda
 #align(center)[

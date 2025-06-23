@@ -1,5 +1,3 @@
-#import "./glossary.typ": glos
-
 = Sommario
 
 Il presente documento descrive il lavoro svolto durante il periodo di stage aziendale, con l'obiettivo di fornire una soluzione efficace per la protezione delle

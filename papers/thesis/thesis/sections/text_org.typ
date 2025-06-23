@@ -1,5 +1,3 @@
-#import "./glossary.typ": glos
-
 = Struttura e organizzazione del documento
 
 - Il #link(<ch1>)[terzo capitolo] è dedicato alla presentazione dell'azienda presso cui ho avuto l'opportunità di svolgere il periodo di stage, contestualizzando l'ambiente lavorativo e illustrando le motivazioni che mi hanno spinto a scegliere questa specifica esperienza formativa. \
