@@ -40,7 +40,7 @@ def Glossify(doc_path):
         s_path = sections_path/section
         original_text=s_path.read_text(encoding="utf-8")
         
-        modified_text = original_text
+        modified_text = "#import \"./glossary.typ\": glos\n"+original_text
         for word in words:
             modified_text=modified_text.replace(word,"#glos(\""+word+"\")") 
         

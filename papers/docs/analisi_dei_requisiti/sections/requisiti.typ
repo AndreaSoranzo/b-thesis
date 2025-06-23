@@ -1,4 +1,3 @@
-#import "./glossary.typ": glos
 #import "../utility.typ": Rid
 
 = Requisiti
