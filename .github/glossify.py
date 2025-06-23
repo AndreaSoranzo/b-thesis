@@ -5,6 +5,7 @@ import subprocess
 import os
 import logging
 import yaml
+import re
 
 IGNORE_SECTION = ["abbreviation.typ","bsgraphy.typ","glossary.typ"]
 
@@ -41,10 +42,17 @@ def Glossify(doc_path):
         original_text=s_path.read_text(encoding="utf-8")
         
         modified_text = "#import \"./glossary.typ\": glos\n"+original_text
-        for word in words:
-            modified_text=modified_text.replace(word,"#glos(\""+word+"\")") 
+        text_lines = modified_text.split("\n")
+
+        for i,line in enumerate(text_lines):
+            if "=" in line or "caption" in line:
+                continue
+            for word in words:
+                text_lines[i]=re.sub(word,"#glos(\""+word+"\")",text_lines[i],flags=re.IGNORECASE)
+                # lines[i]=lines[i].replace(word,"#glos(\""+word+"\")") 
         
-        s_path.write_text(modified_text,encoding="utf-8")
+        # print("\n".join(lines))
+        s_path.write_text("\n".join(text_lines),encoding="utf-8")
 
 if __name__ == "__main__":
     main()
