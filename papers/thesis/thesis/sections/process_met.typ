@@ -1,5 +1,4 @@
-= Processi e metodologie
-
+= Processi e metodologie <ch2>
 == Piano di lavoro
 Per impostare un metodo di lavoro ottimale fin dall'inizio del mio stage, ho sviluppato un approccio, o way of working, che mira all'efficienza e all'efficacia.
 Nelle prossime sezioni, illustrerò in dettaglio la mia pianificazione del tempo, la suddivisione delle attività, l'analisi dei rischi previsti e la loro mitigazione e le
@@ -78,9 +77,14 @@ A questi si sono aggiunti alcuni problemi hardware iniziali con i computer porta
 dovuto essere spostate e riorganizzate nel corso delle settimane. Nonostante ciò, sono lieto di confermare che tutte le attività sono state completate con successo.
 
 == Analisi dei requisiti
-=== Casi d'uso
-=== Requisiti
+#include "use_cases.typ"
+
+#include "requisiti.typ"
+#pagebreak()
+
 
 == Difficoltà incontrate
+
+
 === Difficoltà tecniche
 === Difficoltà personali

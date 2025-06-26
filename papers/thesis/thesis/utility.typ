@@ -24,21 +24,24 @@
 
   v(20pt)
 
-  text(22pt, weight: "extrabold")[Applicazioni web vulnerabili:\ Implementazione di un Web Application Firewall con F5 per la mitigazione di attacchi informatici \ \ ]
-  text(16pt,style: "italic",weight: "extralight")[Tesi di laurea triennale ]
+  text(
+    22pt,
+    weight: "extrabold",
+  )[Applicazioni web vulnerabili:\ Implementazione di un Web Application Firewall con F5 per la mitigazione di attacchi informatici \ \ ]
+  text(16pt, style: "italic", weight: "extralight")[Tesi di laurea triennale ]
 
   v(80pt)
 
   text(14pt)[Laureando:\ ]
   v(1pt)
-  text(16pt,style: "italic")[Soranzo Mendez Andrea Jesus\ ]
+  text(16pt, style: "italic")[Soranzo Mendez Andrea Jesus\ ]
   text(14pt)[2075539]
 
   v(80pt)
 
   text(11pt)[Anno Accademco 2024-2025]
   set page(
-    margin: (top: 15%, bottom: 10%, left: 13%,right: 13%),
+    margin: (top: 15%, bottom: 10%, left: 13%, right: 13%),
     numbering: "1",
     header: [
       #v(1em)
@@ -47,13 +50,16 @@
         stroke: none,
         columns: (50%, 35%, 15%),
         rows: (20%, 20%, 20%),
-        table.cell(align: left, inset: (x: 0%))[Soranzo Mendez Andrea Jesus], table.cell(
+        table.cell(align: left, inset: (x: 0%))[Soranzo Mendez Andrea Jesus],
+        table.cell(
           align: right,
-        )[Università], table.cell(rowspan: 3, align: right + horizon)[#image(logo, height: 120%)],
+        )[Università],
+        table.cell(rowspan: 3, align: right + horizon)[#image(logo, height: 120%)],
         table.cell(align: left, inset: (x: 0%))[2075539], table.cell(align: right)[degli Studi],
-        table.cell(align: left, inset: (x: 0%))[Tesi di laurea triennale], table.cell(
+        table.cell(align: left, inset: (x: 0%))[Tesi di laurea triennale],
+        table.cell(
           align: right,
-        )[di Padova]
+        )[di Padova],
       )
       #line(length: 100%)
     ],
@@ -86,3 +92,10 @@
   set par(leading: 1.3em)
   doc
 }
+
+#let Rid(counter) = {
+  counter.step()
+  counter.display()
+}
+
+
