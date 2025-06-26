@@ -1,6 +1,6 @@
 = Processi e metodologie <ch2>
 == Piano di lavoro
-Per impostare un metodo di lavoro ottimale fin dall'inizio del mio stage, ho sviluppato un approccio, o way of working, che mira all'efficienza e all'efficacia.
+Per impostare un metodo di lavoro ottimale fin dall'inizio del mio stage, ho sviluppato un approccio, o _way of working_, che mira all'efficienza e all'efficacia.
 Nelle prossime sezioni, illustrerò in dettaglio la mia pianificazione del tempo, la suddivisione delle attività, l'analisi dei rischi previsti e la loro mitigazione e le
 difficoltà incontrate. Successivamente, presenterò un breve resoconto delle attività svolte finora, per confrontarle con la pianificazione iniziale e osservarne le
 differenze.
@@ -54,7 +54,6 @@ infrastruttura di rete. Questo ci ha permesso di replicare ambienti complessi e 
 Kortext, invece, ha funzionato come hub centrale per la documentazione ufficiale di F5. Essendo i testi e le guide a pagamento e non disponibili su altre piattaforme,
 è stato indispensabile per accedere a tutte le risorse formative e tecniche necessarie.
 
-
 === Rischi e mitigazioni
 Durante le prime settimane di stage, ho avuto l'opportunità di confrontarmi con il tutor aziendale principale, Stefano Marchetti, per analizzare i principali rischi che
 avrebbero potuto influenzare l'andamento del progetto e definire le relative strategie di mitigazione.
@@ -80,11 +79,21 @@ dovuto essere spostate e riorganizzate nel corso delle settimane. Nonostante ci�
 #include "use_cases.typ"
 
 #include "requisiti.typ"
-#pagebreak()
-
 
 == Difficoltà incontrate
-
+Durante il mio stage, ho riscontrato diverse difficoltà di varia natura e intensità. Queste sfide hanno richiesto un impegno costante da parte mia, specialmente nella
+fase iniziale di formazione.
+Per maggiore chiarezza, ho classificato queste difficoltà in due categorie principali:
 
 === Difficoltà tecniche
-=== Difficoltà personali
+- *Studio di nuovi argomenti:* Per configurare correttamente il WAF, è stato indispensabile approfondire autonomamente le mie conoscenze in ambito networking, concentrandomi in particolare su IP, subnetting e VLAN. Questa specifica necessità è sorta dal fatto che l'intera configurazione doveva essere simulata tramite macchine virtuali. Inoltre, ho dovuto studiare a le modalità di comunicazione tra i vari dispositivi connessi, il che mi ha permesso di implementare un server syslog. Purtroppo, questi argomenti non erano stati trattati in modo esaustivo durante il mio percorso di studi.
+
+- *Studio di nuove tecnologie:* Anche se generalmente intuitivo, l'utilizzo di VMware ha richiesto qualche tentativo iniziale per superare alcune difficoltà di installazione e familiarizzare con l'interfaccia, risolte dopo un paio di tentativi.
+  Per quanto riguarda F5, sebbene la sua GUI intuitiva renda la maggior parte delle operazioni piuttosto semplici, lo studio iniziale è stato complesso. La vasta gamma di
+  opzioni e pagine disponibili può facilmente disorientare e portare a confondersi.
+
+- *Utilizzo macchine virtuali:*
+
+=== Difficoltà organizzative
+- *Lavoro da remoto:* Purtroppo, verso l'inizio di giugno, l'azienda ha dovuto chiudere per ristrutturazione, il che ha comportato un mese di lavoro completamente da remoto. Questo periodo ha contribuito ad accrescere la sensazione di isolamento e, di conseguenza, non mi ha permesso di acquisire un'idea concreta di come si svolga il lavoro in presenza.
+

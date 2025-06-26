@@ -31,7 +31,7 @@ approfondire il loro way of working, grazie anche al prezioso supporto del tutor
 Marchetti Stefano, che mi ha garantito un'introduzione completa all'ambiente e alle dinamiche interne.
 
 Le sede di Padova adotta un modello di lavoro ibrido, prediligendo il lavoro da remoto e dedicando un
-giorno a settimana all'incontro in presenza per un allineamento generale del team, a cui ho regolarmente partecipato,
+giorno a settimana all'incontro in presenza per un allineamento generale del team, a cui ho regolarmente partecipato fino a quando mi è stato possibile,
 inoltre conta circa 15 dipendenti, a cui si aggiunge un numero variabile di stagisti, contribuendo a un
 ambiente dinamico e collaborativo.
 
