@@ -17,7 +17,7 @@ Infine, ho revisionato e chiarito alcuni Use Case (UC) che presentavano ambiguit
 risolto dei bug nell'action di GitHub relativa al glossario automatico.
 \ \
 
-= Giorno 1
+= Giorno 2
 
 *Ordine del giorno:*
 - Feedback AdR
@@ -30,5 +30,19 @@ sicurezza contro attacchi cross-site e garantire la trasmissione tramite protoco
 Inoltre, ho aggiunto la protezione dal clickjacking agli URL.
 Mi rimane da rivedere le regole anti-brute force, avendo riscontrato un problema che
 discuterò con il mio tutor domani.
+\ \
+
+= Giorno 3
+
+*Ordine del giorno:*
+- Regola per impedire al client di comunicare direttamente con il server
+- Studio CORS
+- Inizio capitolo 4 tesi
+- Risolto problema rilevamento brute force
+\ \
+*Note:*\
+Il problema nel rilevamento degli attacchi brute force era causato dalla persistenza della sessione di Firefox all'interno della macchina virtuale. Questo accadeva
+perché, all'avvio, la VM caricava un'immagine dello stato precedente prima dello spegnimento. La soluzione è stata eliminare i dati del browser e disattivare l'opzione di
+ripristino dello stato precedente della macchina virtuale.
 \ \
 
