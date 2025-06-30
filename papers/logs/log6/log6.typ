@@ -46,3 +46,24 @@ perché, all'avvio, la VM caricava un'immagine dello stato precedente prima dell
 ripristino dello stato precedente della macchina virtuale.
 \ \
 
+= Giorno 4
+
+*Ordine del giorno:*
+- Fine capitolo 4 tesi
+\ \
+*Note:*\
+Nessuna.
+\ \
+
+= Giorno 5
+
+*Ordine del giorno:*
+- Aggiornamento licenza F5
+- Fix/reinstallazione di VMWare
+- Script DoS e Bot test
+\ \
+*Note:*\
+Oggi ho aggiornato la licenza F5 per proseguire con il progetto. Purtroppo, VMWare presentava problemi di avvio di alcune macchine virtuali e rallentamenti significativi,
+pertanto in mattinata ho reinstallato e riconfigurato l'ambiente. Nel pomeriggio, ho iniziato a scrivere gli script per i test di attacchi DoS e Bot.
+\ \
+
