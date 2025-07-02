@@ -1,6 +1,6 @@
 = Processi e metodologie <ch2>
 == Piano di lavoro
-Per impostare un metodo di lavoro efficacie fin dall'inizio del mio stage, ho cercato di sviluppare un approccio, o _way of working_, ottimale.
+Per impostare un metodo di lavoro efficace fin dall'inizio del mio stage, ho cercato di sviluppare un approccio, o _way of working_, ottimale.
 
 Nelle prossime sezioni, illustrerò in dettaglio la mia pianificazione del tempo, la suddivisione delle attività, l'analisi dei rischi previsti, la loro mitigazione e le
 difficoltà incontrate. Successivamente, presenterò un breve resoconto delle attività svolte, per confrontarle con la pianificazione iniziale e osservarne le
@@ -13,7 +13,7 @@ mira a potenziare significativamente il livello di sicurezza delle applicazioni 
 L'obiettivo principale è duplice: istituire una difesa resiliente contro il
 panorama delle minacce informatiche e, contestualmente, assicurare la continuità operativa.
 Attraverso questa implementazione, non solo si prevede una drastica riduzione del rischio di interruzioni di servizio, ma si abiliterà anche
-un'analisi e un monitoraggio del traffico web in tempo reale, indispensabili per l'identificazione tempestiva di attività anomali.
+un'analisi e un monitoraggio del traffico web in tempo reale, indispensabili per l'identificazione tempestiva di attività anomale.
 
 Parallelamente, un obiettivo
 irrinunciabile è il conseguimento e il mantenimento della conformità agli standard di sicurezza vigenti, in particolare le OWASP, con la conseguente protezione dei dati degli utenti e il
@@ -39,7 +39,7 @@ Il WAF che ne deriverà offrirà una protezione completa contro un'ampia gamma d
 === Pianificazione
 Il piano di lavoro è articolato in otto settimane, con una ripartizione delle attività come segue:
 - *Prima settimana (20 ore):* Incontro con il tutor aziendale e analisi dei requisiti del progetto, configurazione degli strumenti di lavoro e inizio formazione.
-- *Seconda settimana (40 ore):* Analisi del' applicazione web e identificazione delle vulnerabilità principali e studio delle funzionalità del WAF.
+- *Seconda settimana (40 ore):* Analisi dell' applicazione web e identificazione delle vulnerabilità principali e studio delle funzionalità del WAF.
 - *Terza settimana (40 ore):* Progettazione e configurazione iniziale del WAF e personalizzazione delle regole di sicurezza.
 - *Quarta settimana (40 ore):* Implementazione del WAF e test di compatibilità con l'applicazione e ottimizzazione delle regole.
 - *Quinta settimana (40 ore):* Simulazione di attacchi per testare l'efficacia del WAF e analisi dei risultati e ottimizzazione delle configurazioni.
@@ -97,11 +97,10 @@ fase iniziale di formazione.
 Per maggiore chiarezza, ho classificato queste difficoltà in due categorie principali:
 
 === Difficoltà tecniche
-- *Studio di nuovi argomenti:* Per configurare correttamente il WAF, è stato indispensabile approfondire autonomamente le mie conoscenze in ambito networking, concentrandomi in particolare su IP, subnetting e VLAN. Questa specifica necessità è sorta dal fatto che l'intera configurazione doveva essere simulata tramite macchine virtuali. Inoltre, ho dovuto studiare a le modalità di comunicazione tra i vari dispositivi connessi, il che mi ha permesso di implementare un server syslog.
+- *Studio di nuovi argomenti:* Per configurare correttamente il WAF, è stato indispensabile approfondire autonomamente le mie conoscenze in ambito networking, concentrandomi in particolare su IP, subnetting e VLAN. Questa specifica necessità è sorta dal fatto che l'intera configurazione doveva essere simulata tramite macchine virtuali. Inoltre, ho dovuto studiare le modalità di comunicazione tra i vari dispositivi connessi, il che mi ha permesso di implementare un server syslog.
 
 - *Studio di nuove tecnologie:* Anche se generalmente intuitivo, l'utilizzo di VMware ha richiesto qualche tentativo iniziale per superare alcune difficoltà di installazione e familiarizzare con l'interfaccia, risolte dopo un paio di tentativi.
-  Per quanto riguarda F5, sebbene la sua GUI intuitiva renda la maggior parte delle operazioni piuttosto semplici, lo studio iniziale è stato complesso. La vasta gamma di
-  opzioni e pagine disponibili può facilmente disorientare e portare a confondersi.
+  Per quanto riguarda F5, sebbene la sua GUI intuitiva renda la maggior parte delle operazioni piuttosto semplici, lo studio iniziale è stato complesso. La vasta gamma di opzioni e pagine disponibili può facilmente disorientare e creare confusione.
 
 === Difficoltà organizzative
 - *Lavoro da remoto:* Purtroppo, verso l'inizio di giugno, l'azienda ha dovuto chiudere per ristrutturazione, il che ha comportato un mese di lavoro completamente da remoto. Questo periodo ha contribuito ad accrescere la sensazione di isolamento e, di conseguenza, non mi ha permesso di acquisire un'idea concreta di come si svolga il lavoro in presenza.
