@@ -123,7 +123,6 @@ I requisiti del progetto sono stati definiti dopo il periodo di formazione, dura
   [UC3.1],
 )
 
-#pagebreak()
 
 === Requisiti qualitativi
 

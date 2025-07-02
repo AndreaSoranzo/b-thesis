@@ -23,7 +23,7 @@ esigenze settoriali.
 
 KIREY SRL si posiziona come un partner strategico per le aziende che desiderano sfruttare al meglio il potenziale dei
 propri dati e dell'intelligenza artificiale per innovare e competere nel panorama digitale odierno.
-\ \
+#pagebreak()
 == La sede di Padova
 Durante il mio periodo di tirocinio, ho avuto l'opportunità di immergermi nell'ambiente lavorativo di KIREY SRL
 presso la sede di Padova, frequentandola in presenza una volta a settimana. Questa esperienza mi ha permesso di
@@ -36,17 +36,20 @@ inoltre conta circa 15 dipendenti, a cui si aggiunge un numero variabile di stag
 ambiente dinamico e collaborativo.
 
 Un aspetto particolarmente arricchente del tirocinio è stata la possibilità di collaborare con un altro stagista allo
-stesso progetto. Questa scelta aziendale mirava a valutare le nostre capacità di lavoro di gruppo e a favorire la
+stesso progetto.
+
+Questa scelta aziendale mirava a valutare le nostre capacità di lavoro di gruppo e a favorire la
 collaborazione nell'approccio a un settore per noi nuovo. L'esperienza è stata fondamentale sia sul piano personale
 che professionale, permettendomi di ampliare la mia visione del mondo del lavoro e di approfondire conoscenze in
 ambiti dell'informatica precedentemente poco esplorati.
 
 Ho avuto modo di osservare da vicino l'organizzazione interna di una realtà di grandi dimensioni come KIREY SRL e di
-comprenderne le modalità operative. La sede di Padova è strutturata in tre settori principali – Sicurezza, Dev-Ops e
+comprenderne le modalità operative.
+
+La sede di Padova è strutturata in tre settori principali – Sicurezza, Dev-Ops e
 Data & AI – ciascuno con i propri sotto-team. Per gestire la complessità derivante dalla creazione e manutenzione di
 numerosi progetti e contratti, l'azienda fa leva su strumenti digitali avanzati che assicurano una comunicazione
 rapida e una gestione efficiente delle attività.
-
 In particolare, Microsoft Teams si è rivelato la piattaforma di comunicazione interna centrale. Consente una
 condivisione istantanea di informazioni, documenti e aggiornamenti sui progetti, fungendo anche da calendario del
 team. Questa integrazione tecnologica non solo ottimizza la comunicazione e la pianificazione, ma offre anche una
@@ -61,6 +64,7 @@ l'implementazione e la configurazione di un WAF F5 che risolvesse le OWASP top 1
 L'obiettivo principale delle WASP Top 10 è aumentare la consapevolezza sui rischi di sicurezza delle applicazioni web
 e fornire una base comune per la protezione contro gli attacchi più diffusi.
 Non è un elenco esaustivo di tutte le vulnerabilità, ma si concentra su quelle che hanno il maggiore impatto potenziale e sono più frequentemente sfruttate.
+
 Questa scelta mira a fornire ai clienti un'opzione di sicurezza avanzata a livello applicativo e per la protezione delle API utilizzate.
 Di conseguenza, il progetto di tirocinio è stato specificamente concepito
 per formare risorse interne capaci di operare con questa tecnologia all'avanguardia, rispondendo all'esigenza
@@ -71,6 +75,7 @@ aziendale di diversificare e rafforzare le proprie competenze in cybersecurity.
 Il tirocinio ha avuto una durata complessiva di 300 ore, svolte prevalentemente in modalità da remoto, in linea con
 l'organizzazione aziendale. L'orario di lavoro, dal lunedì al venerdì, prevedeva otto ore giornaliere con un'ora
 di pausa pranzo.
+
 Per facilitare lo svolgimento del progetto e lo studio, l'azienda ha fornito un computer portatile aziendale,
 indispensabile data la necessità di licenze a pagamento per i software utilizzati. Fin dal primo giorno, ho avuto
 accesso a un'ampia risorsa bibliografica e al corso ufficiale completo di F5 @FDOC, elementi che hanno
@@ -79,6 +84,7 @@ Oltre a queste risorse, sono stato affiancato da due tutor: uno con un'orientame
 di firewall e quello aziendale. Entrambi mi hanno seguito quotidianamente tramite stand-up meeting e si sono
 dimostrati costantemente disponibili per chiarire ogni dubbio. Questi confronti regolari sono stati cruciali per
 riadattare e scalare il progetto in base al tempo a disposizione e al nostro ritmo di apprendimento.
+
 Inoltre, durante il periodo di formazione, ho avuto l'opportunità di confrontarmi, tramite Microsoft Teams,
 con uno specialista di F5 per affrontare e risolvere le problematiche e le incertezze più complesse.
 
@@ -91,6 +97,7 @@ raramente esaminata nel percorso accademico tradizionale. È stato solo a partir
 grazie alla partecipazione a un corso facoltativo, che ho potuto acquisire una comprensione basilare e
 un'esperienza pratica delle sue dinamiche. Questa esposizione ha acceso in me un profondo interesse e la volontà di
 proseguire lo studio in questo ambito.
+
 Tuttavia, la sicurezza informatica si rivela essere una disciplina intrinsecamente complessa, e la ricerca di
 risorse di apprendimento efficaci, specialmente quelle gratuite o che offrano un affiancamento costante da parte di
 esperti, è ardua. Nonostante fossi a conoscenza dell'esistenza di percorsi di laurea magistrale interamente

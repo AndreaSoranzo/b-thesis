@@ -17,6 +17,9 @@ F5:
 OWASP:
   "Organizzazione no-profit che si dedica a migliorare la sicurezza del software."
 
+Kortext:
+  "Piattaforma di condivisione digitale per libri di testo e materiali didattici."
+
 HTTP: 
   "Protocollo fondamentale su cui si basa la comunicazione dati sul World Wide Web. 
   Definisce le regole e il formato con cui browser web e server scambiano messaggi."
