@@ -1,6 +1,7 @@
 #import "./utility.typ": *
 #show: doc => cover(doc)
 #show heading: set block(below: 2em)
+#show figure: set block(below: 2em)
 
 #include "sections/summary.typ"
 #pagebreak()

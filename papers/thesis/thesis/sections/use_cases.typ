@@ -2,7 +2,7 @@
 === UC1 - Visualizza applicazione
 #figure(image("../img/uc/uc1.svg", width: 90%), caption: [UC1 - Visualizza applicazione])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   rows: 40pt,
@@ -16,7 +16,7 @@
 ==== UC1.1 - Visualizza blocking page
 #figure(image("../img/uc/uc1.1.svg", width: 90%), caption: [UC1.1 - Visualizza blocking page])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -30,7 +30,7 @@
 )
 ==== UC1.1.1 - Visualizza pagina html di errore
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -45,7 +45,7 @@
 
 ==== UC1.1.2 - Visualizza messaggio di errore
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -59,7 +59,7 @@
 
 ==== UC1.2 - Visualizza captcha
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -77,7 +77,7 @@
 === UC2 - Gestione e creazione virtual server
 #figure(image("../img/uc/uc2.svg", width: 90%), caption: [UC2 - Gestione e creazione virtual server])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -92,7 +92,7 @@
 
 ==== UC2.1 - Gestione e creazione pools
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -107,7 +107,7 @@
 
 ==== UC2.2 - Definizione regole di protezione DoS
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -122,7 +122,7 @@
 
 ==== UC2.3 - Definizione regole di protezione a Bot
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -134,10 +134,9 @@
   [*Postcondizioni*], [Viene creata una nuova regola di protezione per Bot e Botnet],
 )
 
-
 ==== UC2.4 - Gestione e creazione policy
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -152,7 +151,7 @@
 ==== UC2.4.1 - Definizione di regole per data guard
 #figure(image("../img/uc/uc2.4.1.svg", width: 90%), caption: [UC2.4.1 - Definizione di regole per data guard])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -163,10 +162,10 @@
   [*Precondizioni*], [La policy alla quale si vuole assegnare queste regole deve essere presente],
   [*Postcondizioni*], [La policy possiede una regola per data guard],
 )
-#pagebreak()
+
 ==== UC2.4.1.1 - Rilevamento di carte di credito
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -180,7 +179,7 @@
 
 ==== UC2.4.1.2 - Rilevamento codice fiscale
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -190,11 +189,10 @@
   [*Postcondizioni*], [La funzione di rilevamento di codici fiscali è attiva],
 )
 
-#pagebreak()
 ==== UC2.4.2 - Gestione dei parametri URL
 #figure(image("../img/uc/uc2.4.2.svg", width: 90%), caption: [UC2.4.2 - Gestione dei parametri URL])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -210,7 +208,7 @@
 
 ==== UC2.4.2.1 - Decisione tipo di valore
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -222,7 +220,7 @@
 
 ==== UC2.4.2.2 - Decisione lunghezza massima
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -236,7 +234,7 @@
 
 ==== UC2.4.2.3 - Decisione di metacaratteri permessi
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -248,11 +246,10 @@
   [*Postcondizioni*], [La configurazione decisa dall'admin viene applicata],
 )
 
-#pagebreak()
 ==== UC2.4.3 - Gestione URL
 #figure(image("../img/uc/uc2.4.3.svg", width: 90%), caption: [UC2.4.3 - Gestione URL])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -268,7 +265,7 @@
 
 ==== UC2.4.3.1 - Gestione URL permessi
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -280,7 +277,7 @@
 
 ==== UC2.4.3.2 - Gestione URL non permessi
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -294,7 +291,7 @@
 ==== UC2.4.4 - Gestione delle sessioni utente
 #figure(image("../img/uc/uc2.4.4.svg", width: 90%), caption: [UC2.4.4 - Gestione delle sessioni utente])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -308,7 +305,7 @@
 
 ==== UC2.4.4.1 - Definizione della condizione di successo
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -322,7 +319,7 @@
 
 ==== UC2.4.4.2 - Definizione URL protetti da autenticazione
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -334,7 +331,7 @@
 
 ==== UC2.4.4.3 - Definizione URL di login e logout
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -346,7 +343,7 @@
 
 ==== UC2.4.4.3.1 - Definizione dei parametri di login
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -359,7 +356,7 @@
 ==== UC2.4.5 - Gestione richieste HTTP
 #figure(image("../img/uc/uc2.4.5.svg", width: 90%), caption: [UC2.4.5 - Gestione richieste HTTP])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -373,7 +370,7 @@
 
 ==== UC2.4.5.1 - Definizione Header permessi
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -385,7 +382,7 @@
 
 ==== UC2.4.5.2 - Definizione di file permessi
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -397,7 +394,7 @@
 
 ==== UC2.4.5.3 - Definizione regole per cookie
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -412,7 +409,7 @@
 ==== UC2.4.6 - Gestione attacchi brute force
 #figure(image("../img/uc/uc2.4.6.svg", width: 90%), caption: [UC2.4.6 - Gestione regole per protezioni avanzate])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -421,10 +418,11 @@
   [*Precondizioni*], [La policy alla quale si vuole assegnare queste regole deve essere presente],
   [*Postcondizioni*], [La policy possiede regole per individuare e mitigare attacchi di tipo brute force],
 )
+
 ==== UC2.4.7 - Gestione attacchi CSRF
 #figure(image("../img/uc/uc2.4.7.svg", width: 90%), caption: [UC2.4.7 - Gestione attacchi CSRF])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -437,7 +435,7 @@
 ==== UC2.4.8 - Gestione attacchi SSRF
 #figure(image("../img/uc/uc2.4.8.svg", width: 90%), caption: [UC2.4.8 - Gestione attacchi SSRF])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -450,7 +448,7 @@
 ==== UC2.4.9 - Definizione di attack signatures
 #figure(image("../img/uc/uc2.4.9.svg", width: 90%), caption: [UC2.4.9 - Definizione di attack signatures])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -465,7 +463,7 @@
 ==== UC2.4.10 - Configurazione IP Intelligence
 #figure(image("../img/uc/uc2.4.10.svg", width: 90%), caption: [UC2.4.10 - Configurazione IP Intelligence])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -480,7 +478,7 @@
 ==== UC2.4.11 - Configurazione learning modes
 #figure(image("../img/uc/uc2.4.11.svg", width: 90%), caption: [UC2.4.11 - Configurazione learning modes])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -495,7 +493,7 @@
 ==== UC2.4.12 - Definizione tecnologie applicazione
 #figure(image("../img/uc/uc2.4.12.svg", width: 90%), caption: [UC2.4.12 - Definizione tecnologie applicazione])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -512,7 +510,7 @@
 ==== UC2.4.13 - Importazione threat campaign
 #figure(image("../img/uc/uc2.4.13.svg", width: 90%), caption: [UC2.4.13 - Importazione threat campaign])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -528,7 +526,7 @@
 ==== UC2.4.14 - Configurazione pagine di blocco
 #figure(image("../img/uc/uc2.4.14.svg", width: 90%), caption: [UC2.4.14 - Configurazione pagine di blocco])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -543,7 +541,7 @@
 === UC3 - Definizione profili di logging
 #figure(image("../img/uc/uc3.svg", width: 90%), caption: [UC3 - Definizione profili di logging])
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,
@@ -558,7 +556,7 @@
 #pagebreak()
 ==== UC3.1 - Collegamento al server syslog
 #table(
-  columns: (1fr, 3fr),
+  columns: (1.1fr, 3fr),
   align: (left + horizon),
   row-gutter: 4pt,
   inset: 10pt,

@@ -23,7 +23,6 @@ consolidamento della loro fiducia.
 Il progetto ha preso forma attraverso un processo iterativo, dove il piano iniziale è stato progressivamente adattato in base alle nuove competenze acquisite.
 La definizione ufficiale dei requisiti è avvenuta dopo un colloquio con i tutor aziendali, tenutosi al termine della formazione preliminare. Questo incontro è stato
 fondamentale per allineare le aspettative sui tempi a disposizione con il nostro livello di preparazione.
-#pagebreak()
 Il lavoro è stato poi strutturato in diverse fasi chiave:
 - *Analisi vulnerabilità:* Questa fase prevede un'analisi dettagliata delle vulnerabilità esistenti e dei requisiti di sicurezza specifici per le applicazioni web in esame.
 - *Implementazione:* Il WAF sarà implementato con la massima cura, ponendo attenzione a minimizzare qualsiasi impatto sulle normali operazioni e prestazioni dell'applicativo.
@@ -65,7 +64,7 @@ Infine Microsoft Teams è stato essenziale per tenerci sempre in comunicazione c
 === Rischi e mitigazioni
 Durante le prime settimane di stage, ho avuto l'opportunità di confrontarmi con il tutor aziendale principale, Stefano Marchetti, per analizzare i principali rischi che
 avrebbero potuto influenzare l'andamento del progetto e definire le relative strategie di mitigazione.
-#pagebreak()
+
 Ho identificato due aree di rischio primarie:
 + *Difficoltà nell'acquisizione di nuove competenze tecniche:*
   - _Descrizione:_ L'apprendimento di strumenti complessi e tecnologie a noi completamente sconosciute rappresentava una sfida significativa.
@@ -81,7 +80,6 @@ Queste criticità erano principalmente legate ai rischi precedentemente menziona
 definizione degli Use Case che inizialmente hanno generato delle incertezze. Inizialmente, non ero sicuro se includerli, dato che questo non è un progetto di sviluppo applicativo, ma si
 concentra maggiormente sullo studio, la formazione e la configurazione di un WAF per testare le competenze acquisite.
 A quest'ultimi si devono poi aggiungere alcuni problemi hardware iniziali con i computer portatili forniti.
-
 Proprio a causa di queste difficoltà, alcune attività pianificate hanno
 dovuto essere spostate e riorganizzate nel corso delle settimane. Nonostante ciò, sono lieto di confermare che tutte le attività sono state completate con successo.
 

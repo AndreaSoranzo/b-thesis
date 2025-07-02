@@ -23,7 +23,7 @@ esigenze settoriali.
 
 KIREY SRL si posiziona come un partner strategico per le aziende che desiderano sfruttare al meglio il potenziale dei
 propri dati e dell'intelligenza artificiale per innovare e competere nel panorama digitale odierno.
-#pagebreak()
+
 == La sede di Padova
 Durante il mio periodo di tirocinio, ho avuto l'opportunità di immergermi nell'ambiente lavorativo di KIREY SRL
 presso la sede di Padova, frequentandola in presenza una volta a settimana. Questa esperienza mi ha permesso di

@@ -20,6 +20,9 @@ OWASP:
 Kortext:
   "Piattaforma di condivisione digitale per libri di testo e materiali didattici."
 
+VMWare:
+  "Applicazione che fornisce un hypervisor che permette agli utenti di creare ed eseguire contemporaneamente più macchine virtuali (VM) su un singolo PC fisico."
+
 HTTP: 
   "Protocollo fondamentale su cui si basa la comunicazione dati sul World Wide Web. 
   Definisce le regole e il formato con cui browser web e server scambiano messaggi."
