@@ -25,3 +25,34 @@ emulavano un vero browser, venivano comunque flaggate come sospette. Dopo una ri
 effettuate con curl non contenevano tutti gli header necessari o non erano nel giusto ordine. Una volta sistemata questa parte dello script, tutto ha funzionato
 perfettamente.
 \ \
+
+= Giorno 3
+
+*Ordine del giorno:*
+- Finalizzato script principali
+- Creato script alternativo per eseguire richieste su più endpoint URL
+\ \
+*Note:*\
+Ho completato gli script per simulare attacchi DoS e Bot. Per "saltare" il processo di login ed eseguire richieste sulle pagine protette, è stato modificato il comando
+curl in modo da includere il cookie di sessione. È importante notare che per l'esecuzione di questi comandi, le protezioni sui cookie del WAF devono essere disattivate.
+\ \
+
+= Giorno 4
+
+*Ordine del giorno:*
+- Simulazione attacchi DoS e Bot
+- Proposta di lavoro
+\ \
+*Note:*\
+Ho continuato con le simulazioni di attacchi DoS e Bot per affinare le regole del WAF e renderlo più robusto. Nel pomeriggio, io e il mio collega abbiamo partecipato a
+una riunione con il tutor, durante la quale ci ha illustrato una potenziale proposta di lavoro.
+\ \
+
+= Giorno 5
+
+*Ordine del giorno:*
+- Manutenzione e ottimizzazione del WAF
+\ \
+*Note:*\
+Nessuna.
+\ \
