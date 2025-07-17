@@ -172,12 +172,12 @@ main #box {
 }
 
 
-main #box #grade {
+/* main #box #grade {
     text-align: center;
     align-content: center;
     font-size: 8rem;
     font-weight: 700;
-}
+} */
 
 
 main #box #grade:after {
@@ -211,8 +211,12 @@ main #box #grade {
     right: -4rem;
     z-index: -1;
     opacity: 0;
+    text-align: center;
+    align-content: center;
+    font-size: 8rem;
+    font-weight: 700;
     transform: rotateZ(-13deg);
-    animation: stamp 500ms cubic-bezier(.27, .88, .53, 1.18) 2s;
+    animation: stamp 500ms cubic-bezier(.31, .57, .16, .98) 2s;
     animation-fill-mode: forwards;
 }
 
@@ -224,6 +228,23 @@ main #box #grade {
 
     100% {
         opacity: .6;
+    }
+}
+
+main #box #grade #lode {
+    font-size: 4rem;
+    opacity: 0;
+    top: -80px;
+    position: relative;
+    animation: lode-down 500ms cubic-bezier(.31, .57, .16, .98) 600ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes lode-down {
+
+    100% {
+        top: 0;
+        opacity: 1;
     }
 }
 

@@ -1,4 +1,4 @@
-function animateCounter(obj, start, end, duration, delayMs) {
+function animateCounter(obj, start, end, duration, delayMs, isL) {
     let startTime = null;
 
     // Easing function (ease-in-out)
@@ -8,7 +8,6 @@ function animateCounter(obj, start, end, duration, delayMs) {
         t--;
         return (-end / 2) * (t * (t - 2) - 1);
     }
-
     // Animation step
     function animation(currentTime) {
         if (!startTime) startTime = currentTime;
@@ -20,6 +19,12 @@ function animateCounter(obj, start, end, duration, delayMs) {
             requestAnimationFrame(animation);
         } else {
             obj.innerHTML = end;
+            if (parseInt(isL)) {
+                const span = document.createElement("span");
+                span.innerHTML = " L";
+                span.setAttribute("id", "lode");
+                obj.appendChild(span);
+            }
         }
     }
     setTimeout(() => {
@@ -29,6 +34,7 @@ function animateCounter(obj, start, end, duration, delayMs) {
 
 window.onload = function () {
     const counterElement = document.getElementById("grade");
-    const end = counterElement.getAttribute("data-grade")
-    animateCounter(counterElement, 0, end, 4000, 1000);
+    const end = counterElement.getAttribute("data-grade");
+    const isL = counterElement.getAttribute("data-lode");
+    animateCounter(counterElement, 0, end, 4000, 1000, isL);
 };
