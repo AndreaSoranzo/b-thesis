@@ -7,19 +7,19 @@ Si tratta di una piattaforma F5 che propone un sistema avanzato e altamente modu
 sé stante, bensì un'architettura unificata che integra hardware dedicato o, come nel mio caso, software
 virtuale, entrambi basati sul sistema operativo proprietario di F5.
 
-La rilevanza di F5 BIG-IP in questo contesto risiede nella sua capacità soddisfare i requisiti del progetto, oltre che a fornire oltre funzionalità:
+La rilevanza di F5 BIG-IP in questo contesto risiede nella sua capacità soddisfare i requisiti del progetto, oltre che a fornire altre funzionalità come:
 
 - *Bilanciamento del Carico:* distribuisce in modo intelligente il traffico di rete in entrata tra un pool di server (fisici o virtuali) che ospitano la stessa applicazione. Utilizzando algoritmi sofisticati e monitorando costantemente lo stato di salute dei server.
 
-- *Ottimizzazione delle Prestazioni:* per accelerare lo scambio di pacchetti tra client e server attraverso varie tecniche come compressione e cacheing e l'Ottimizzazione del protocollo TCP
+- *Ottimizzazione delle Prestazioni:* accelera lo scambio di pacchetti tra client e server attraverso varie tecniche come compressione e cacheing e ottimizzando il protocollo TCP.
 
-- *Sicurezza Applicativa:* trasforma il software in un WAF, il quale analizza il traffico HTTP/HTTPS e proteggendo le applicazioni web da attacchi mirati come SQL Injection, XSS, attacchi DoS a livello applicativo, e altre vulnerabilità elencate nelle OWASP Top 10. Questa capacità è stata fondamentale per soddisfare tutti i requisiti del progetto.
-Questa scelta è dettata esclusivamente dallo scopo del tirocinio, che è quello di formare nuove risorse aziendali su tecnologie poco utilizzate.
+- *Sicurezza Applicativa:* trasforma il software in un WAF, il quale analizza il traffico HTTP/HTTPS proteggendo le applicazioni web da attacchi mirati come SQL Injection, XSS, attacchi DoS a livello applicativo, e altre vulnerabilità elencate nelle OWASP Top 10. Questa capacità è stata fondamentale per soddisfare tutti i requisiti del progetto.
+
+Questa scelta è dettata esclusivamente dallo scopo del tirocinio, che è quello di formare nuove risorse aziendali su tecnologie poco utilizzate, come F5.
 
 == VMWare Workstation 17
-Come è già descritto anche nella pagina dedicata al glossario, VMWare Workstation è un software di virtualizzazione desktop, noto come hypervisor di tipo 2, sviluppato da
-VMware Inc. A differenza degli hypervisor di tipo 1, che si installano direttamente sull'hardware fisico e gestiscono le risorse hardware in modo nativo, VMware
-Workstation opera come un'applicazione su un sistema operativo host già esistente (ad esempio, Windows o Linux).
+Come è già descritto anche nella pagina dedicata al glossario, è un software di virtualizzazione desktop, noto come hypervisor di tipo 2, sviluppato da
+VMware Inc. A differenza degli hypervisor di tipo 1, che si installano direttamente sull'hardware fisico e gestiscono le risorse hardware in modo nativo, VMware-Workstation opera come un'applicazione su un sistema operativo host già esistente (ad esempio, Windows o Linux).
 Nel mio caso l'ho utilizzato per creare 4 macchine virtuali differenti:
 
 - Server con la web application
@@ -28,8 +28,8 @@ Nel mio caso l'ho utilizzato per creare 4 macchine virtuali differenti:
 - Server Syslog
 
 L'adozione di questa soluzione si è rivelata fondamentale sia per l'avanzamento del progetto sia per l'avvio della fase di formazione. Ha consentito l'esecuzione rapida di test e simulazioni,
-salvaguardando l'integrità delle apparecchiature e la sicurezza dei dati aziendali. In questo contesto, sebbene VMware sia riconosciuto tra i software di virtualizzazione più performanti per
-l'ottimale gestione delle risorse, la sua scelta è stata determinata dall'infrastruttura esistente e dalle licenze già in possesso dell'azienda.
+senza compromettere l'integrità delle apparecchiature e la sicurezza dei dati aziendali. In questo contesto, sebbene VMware sia riconosciuto tra i software di virtualizzazione più performanti per
+l'ottimale gestione delle risorse, la sua scelta è stata determinata dall'infrastruttura esistente e dalle licenze già in possesso dell'azienda, che utilizza quasi esclusivamente questa soluzione.
 
 
 == Bash
@@ -39,18 +39,18 @@ Ho deciso di adottare questa tecnologia semplicemente per i seguenti motivi:
 
 - *Linguaggio conoscuto:* personalmente conosco già le basi del linguaggio e la sua sintassi.
 
-- *Possibilità di eseguire altri programmi:* essendo anche un interprete è possibile eseguire dei programmi, in quanto era l'unico obbiettivo dello script, richiamando il comando nello script, senza la necessità di wrapper o funzioni specifiche che con l'utilizzo di altre tecnologie e linguaggi di programmazione dovevano essere usati.
+- *Possibilità di eseguire altri programmi:* essendo un interprete, lo script può eseguire direttamente i programmi richiamando i comandi al suo interno, eliminando la necessità di wrapper o funzioni specifiche, solitamente richieste con altre tecnologie e linguaggi di programmazione.
 
 - *No installazioni:* essendo la shell di default delle distribuzioni Linux non ho dovuto installare altri applicativi o compilatori per eseguire il codice
 
 
 == Python
-Linguaggio di programmazione ad alto livello che ho usato per effettuare degli attacchi di login-spoofing.
+Linguaggio di programmazione ad alto livello che ho usato per effettuare degli attacchi di login-stuffing.
 Per questo tipo di attacchi ho deciso di utilizzare Python per i seguenti motivi:
 
 - *Linguaggio conoscuto:* personalmente conosco già le basi del linguaggio e la sua sintassi.
 
-- *Librerie di terze parti:* Python permette di importare librerie di terze parti che includono delle funzioni utili ad eseguire determinate attività in modo veloce e molto semplice
+- *Librerie di terze parti:* Python consente di importare librerie di terze parti che offrono funzioni utili per eseguire attività specifiche in modo rapido e semplice.
 
 === Requests
 Libreria di terze parti che semplifica l'invio di richieste HTTP/1.1 e la gestione delle risposte.

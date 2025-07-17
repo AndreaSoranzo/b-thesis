@@ -2,3 +2,23 @@
 WAF: "Web Application Firewall"
 
 OWASP: "Open Worldwide Application Security Project"
+
+HTTP: "Hypertext Transfer Protocol"
+
+DoS: "Denial of Service"
+
+LTM: "Local Traffic Manager"
+
+ASM: "Application Security Manager"
+
+CSRF: "Cross-Site Request Forgery"
+
+SSRF: "Server-Side Request Forgery"
+
+IDOR: "Insecure Direct Object Reference"
+
+JS: "Javascript"
+
+XSS: "Cross-Site Scripting"
+
+NAT: "Network Address Translation"

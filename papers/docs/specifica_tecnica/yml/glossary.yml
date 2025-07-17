@@ -3,3 +3,101 @@ WAF:
   "Firewall specializzato che protegge le applicazioni web da attacchi e traffico internet 
   indesiderato (es. botnet, attacchi DoS), analizzando il traffico HTTP e HTTPS."
 
+Microsoft Teams:
+  "Piattaforma di collaborazione sviluppata da Microsoft basata su cloud che integra chat,
+   riunioni video, chiamate, condivisione di file e applicazioni, progettata per
+    facilitare la comunicazione e il lavoro di squadra all'interno delle organizzazioni."
+
+F5:
+  "Azienda leader nella fornitura di soluzioni per la sicurezza delle applicazioni,
+  l'ottimizzazione della rete e la gestione del traffico.
+  I suoi prodotti principali, come i Big-IP, sono spesso utilizzati per il bilanciamento del carico, creazione
+  di Web Application Firewall (WAF) e la gestione delle API."
+
+OWASP:
+  "Organizzazione no-profit che si dedica a migliorare la sicurezza del software."
+
+Kortext:
+  "Piattaforma di condivisione digitale per libri di testo e materiali didattici."
+
+VMWare:
+  "Applicazione che fornisce un hypervisor che permette agli utenti di creare ed eseguire contemporaneamente più macchine virtuali (VM) su un singolo PC fisico."
+
+HTTP: 
+  "Protocollo fondamentale su cui si basa la comunicazione dati sul World Wide Web. 
+  Definisce le regole e il formato con cui browser web e server scambiano messaggi."
+
+DoS: 
+  "Categoria di attacchi informatici il cui obiettivo principale è rendere
+  inaccessibile un servizio, una risorsa di rete o un server ai suoi utenti legittimi.
+  Questo tipo di attacco non mira solitamente a rubare informazioni, ma a impedirne il corretto funzionamento o l'accessibilità."
+
+Virtual server: 
+  "Componente logica fondamentale sui sistemi F5 BIG-IP. Funziona come un punto di ascolto virtuale (un indirizzo IP virtuale e una porta)
+  sul dispositivo F5, attraverso il quale il traffico di rete viene intercettato, ispezionato e bilanciato prima di essere inoltrato ai server reali." 
+
+Pool :
+  "Una Pool F5 è una componente logica essenziale all'interno di un dispositivo F5 BIG-IP che rappresenta una collezione di server reali
+  che ospitano la stessa applicazione o servizio."
+
+Bot:
+ "Programma software automatizzato progettato per eseguire compiti specifici su Internet o altre reti, spesso con una frequenza molto più elevata di quanto sarebbe possibile per un essere umano."
+
+Botnet:
+  "Rete di computer (o altri dispositivi connessi a internet, come smartphone, dispositivi IoT, ecc.) infettati da software dannoso e controllati da un singolo attaccante, noto come bot-herder. 
+  Ogni dispositivo compromesso nella botnet esegue comandi inviati dal bot-herder senza che il proprietario ne sia consapevole per eseguire attività illecite."
+
+Data guard :
+ "Funzionalità specifica del WAF di F5 BIG-IP, progettata per la protezione delle informazioni sensibili che transitano nelle richieste e risposte HTTP/HTTPS. Il suo scopo principale è prevenire la fuoriuscita accidentale o intenzionale di dati confidenziali, mascherandoli o bloccandoli prima che raggiungano destinatari non autorizzati."
+
+Policy :
+ "Potente strumento configurabile sui dispositivi F5 BIG-IP che consente agli admin di controllare e manipolare il traffico di rete in ingresso e in uscita. Offrono un modo più strutturato e intuitivo per definire regole e condizioni che il traffico deve soddisfare, e le azioni da intraprendere quando tali condizioni sono soddisfatte."
+
+Buffer overflow : 
+ "vulnerabilità software che si verifica quando un programma tenta di scrivere più dati in un'area di memoria temporanea (buffer) di quanti essa possa contenerne. Di conseguenza, i dati in eccesso e sovrascrivono la memoria adiacente, che potrebbe contenere altre istruzioni del programma o dati critici."
+
+Metacaratteri:
+ "Caratteri speciali che hanno un significato particolare e predefinito all'interno di un linguaggio o di un sistema, piuttosto che rappresentare se stessi. Non vengono interpretati letteralmente, ma agiscono come istruzioni o indicatori che influenzano il modo in cui altri caratteri o stringhe vengono elaborati o abbinati."
+
+Brute force:
+  "Attacco informatico che consiste nel tentare sistematicamente ogni possibile combinazione di caratteri, numeri e simboli per indovinare una password, una chiave crittografica o una chiave di accesso."
+
+CSRF :
+  "Vulnerabilità di sicurezza che inganna un utente autenticato a eseguire azioni indesiderate su un'applicazione web."
+
+SSRF: 
+  "Vulnerabilità di sicurezza che permette a un attaccante di indurre il server di un'applicazione web a effettuare richieste HTTP arbitrarie a un dominio a scelta dell'attaccante."
+
+Attack signatures: 
+  "Regole o pattern predefinite utilizzate dal WAF di F5 per identificare e bloccare attacchi noti o classi di attacchi contro un'applicazione web e i suoi componenti."
+
+Syslog : 
+  "Protocollo standard per l'invio e la raccolta di messaggi di log da diversi dispositivi di rete e sistemi operativi in un sistema di gestione centralizzato."
+
+CAPTCHA: 
+  "Misura di sicurezza utilizzata per determinare se l'utente che interagisce con un sistema informatico è un essere umano o un programma automatico."
+
+Threat campaign: 
+  "Insieme di attacchi informatici che condividono uno scopo comune, strumenti simili, infrastrutture o tecniche."
+
+IDOR: 
+  "Vulnerabilità di controllo degli accessi che si verifica quando un'applicazione web espone un riferimento diretto a un oggetto interno (come un file, un database entry, una chiave, una directory) e non verifica adeguatamente se l'utente è autorizzato ad accedervi."
+
+SQL injection: 
+  "Vulnerabilità di iniezione nelle applicazioni web. Permette a un attaccante di manipolare le query SQL che un'applicazione esegue sul suo database, iniettando codice malevolo tramite l'input dell'utente."
+
+XSS: 
+  "Vulnerabilità che permette a un attaccante di iniettare codice malevolo (solitamente JavaScript, ma anche HTML o CSS) nelle pagine web visualizzate da altri utenti."
+
+Rsyslog: 
+  "Software open-source leader per la raccolta, l'elaborazione e l'inoltro di messaggi di log in sistemi Unix/Linux. È un'implementazione avanzata del protocollo Syslog standard, progettata per essere veloce, sicura e altamente configurabile."
+
+wrapper: 
+  "Costrutto software che incapsula un altro componente, classe, funzione o struttura dati, fornendo un'interfaccia aggiuntiva o modificata semplificando l'uso del componente sottostante."
+
+login-stuffing:
+ "Attacco automatizzato basato sull'impiego di credenziali (tipicamente username e password) acquisite tramite precedenti violazioni di dati. Tale tecnica consiste nel tentare l'accesso non autorizzato a molteplici siti o servizi, sfruttando il riutilizzo delle medesime credenziali da parte degli utenti."
+
+NAT:
+ "Tecnologia di rete che permette di mappare più indirizzi IP privati a un unico indirizzo IP pubblico, o viceversa. Consente a più dispositivi di una rete privata di condividere un'unica connessione Internet e di comunicare con reti esterne, garantendo al contempo un livello di sicurezza base nascondendo la topologia interna della rete."
+
