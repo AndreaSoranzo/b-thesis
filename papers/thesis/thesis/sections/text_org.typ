@@ -4,7 +4,7 @@
 - Il #link(<ch2>)[quarto capitolo] descrive nel dettaglio i processi e le metodologie adottate per lo sviluppo del progetto. Include l'analisi dei requisiti e la pianificazione del lavoro. \
 - Il #link(<ch3>)[quinto capitolo] presenta gli studi e delle ricerche condotte nella fase antecedente l'avvio del progetto. Include l'analisi delle tecnologie scelte e l'infrastruttura di rete adottata. \
 - Il #link("<ch4>")[sesto capitolo] illustra gli attacchi studiati, fornendo una spiegazione sul loro meccanismo operativo e sulle potenziali implicazioni in termini di compromissione dell'applicazione.\
-- Il #link("<ch5>")[settimo capitolo] approfondisce la fase di creazione delle regole e implementazione del WAF e delle strategie adottate per la loro ottimizzazione in termini di prestazioni e tempo di elaborazione. \
+- Il #link("<ch5>")[settimo capitolo] approfondisce la fase di creazione delle regole e implementazione del WAF. \
 - Il #link("<ch6>")[ottavo capitolo] contiene le conclusioni personali e generali sull'esperienza svolta. \
 
 
