@@ -38,7 +38,7 @@ La sua funzionalità principale risiede nella capacità di intercettare i pacche
 tempo reale. Questa caratteristica è stata cruciale per simulare attacchi e valutare la robustezza di un'applicazione web.
 Sebbene la Community Edition sia la versione gratuita con funzionalità più limitate rispetto alla Professional Edition, essa si è dimostrata ampiamente sufficiente per
 scopi di ricerca e didattici. In particolare, la sua funzione di intercettazione è completa e risponde pienamente alle esigenze del progetto.
-#figure(image("../tech/burp.png", width: 90%), caption: [Intercettazione pacchetti con Burp Suite])
+#figure(image("../img/tech/burp.png", width: 90%), caption: [Intercettazione pacchetti con Burp Suite])
 L'adozione di Burp Suite per i test di sicurezza nel presente progetto è stata dettata principalmente dalla bibliografia di riferimento.
 Un paragrafo specifico illustrava l'utilizzo di questo software, rendendone l'utilizzo pratico e agevole per le finalità del lavoro.
 

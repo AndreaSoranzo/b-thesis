@@ -91,3 +91,22 @@ XSS:
 
 Rsyslog: 
   "Software open-source leader per la raccolta, l'elaborazione e l'inoltro di messaggi di log in sistemi Unix/Linux. È un'implementazione avanzata del protocollo Syslog standard, progettata per essere veloce, sicura e altamente configurabile."
+
+wrapper: 
+  "Costrutto software che incapsula un altro componente, classe, funzione o struttura dati, fornendo un'interfaccia aggiuntiva o modificata semplificando l'uso del componente sottostante."
+
+login-stuffing:
+ "Attacco automatizzato basato sull'impiego di credenziali (tipicamente username e password) acquisite tramite precedenti violazioni di dati. Tale tecnica consiste nel tentare l'accesso non autorizzato a molteplici siti o servizi, sfruttando il riutilizzo delle medesime credenziali da parte degli utenti."
+
+NAT:
+ "Tecnologia di rete che permette di mappare più indirizzi IP privati a un unico indirizzo IP pubblico, o viceversa. Consente a più dispositivi di una rete privata di condividere un'unica connessione Internet e di comunicare con reti esterne, garantendo al contempo un livello di sicurezza base nascondendo la topologia interna della rete."
+
+Payload: 
+ "Si riferisce alla parte essenziale di dati trasmessa in un'unità di comunicazione che contiene le informazioni effettive o il messaggio destinato al destinatario.
+  In un attacco informatico, racchiude è la parte del codice malevolo che esegue l'azione desiderata dall'attaccante."
+
+API:
+  "Set di regole, definizioni e protocolli che permettono a diversi software di scambiarsi dati e funzionalità in modo standardizzato e sicuro, facilitando lo sviluppo di applicazioni complesse e integrate."
+
+fine-tuning:
+  "Processo continuo e iterativo di ottimizzazione delle regole, delle policy e delle configurazioni di un WAF per bilanciare efficacemente la sicurezza con la funzionalità dell'applicazione web protetta."

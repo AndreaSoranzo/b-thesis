@@ -20,3 +20,9 @@ IDOR: "Insecure Direct Object Reference"
 JS: "Javascript"
 
 XSS: "Cross-Site Scripting"
+
+NAT: "Network Address Translation"
+
+API: "Application Programming Interface"
+
+TPS: "Transactions Per Second"

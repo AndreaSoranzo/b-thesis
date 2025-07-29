@@ -7,8 +7,16 @@ FDOC:
   page-total: 630
   date: 2022
 
-IPI:
-  type: Web
-  title: Ishkur's Guide to Electronic Music
-  author: Ishkur
-  url: http://www.techno.org/electronic-music-guide/
+FVSWAF:
+  type: web
+  title: "Firewall vs Web Application Firewall"
+  url:
+    value: https://www.a10networks.com/glossary/what-is-a-web-application-firewall-waf/
+    date: 2025-07-22
+
+TOP10:
+  type: web
+  title: "OWASP top 10 2021"
+  url:
+    value: https://owasp.org/Top10/
+    date: 2025-07-27

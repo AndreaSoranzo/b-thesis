@@ -90,6 +90,8 @@
   set text(11pt)
   show heading: set block(above: 20pt, below: 10pt)
   set par(leading: 1.3em)
+  outline(title: "Elenco delle figure", target: figure.where(kind: image))
+  pagebreak()
   doc
 }
 
