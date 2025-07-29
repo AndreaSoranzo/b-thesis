@@ -42,7 +42,7 @@ fornita direttamente dalle applicazioni di virtualizzazione, come nel caso di VM
 Questa funzionalità permette a tali ambienti di connettersi alla stessa rete della
 macchina fisica senza richiedere configurazioni o passaggi aggiuntivi, semplificando
 notevolmente il processo.
-#pagebreak()
+
 === Architettura nel dettaglio
 Di seguito è riportato lo schema dettagliato dell'architettura di rete, utile per analizzare le interconnessioni tra le varie componenti e gli indirizzi IP utilizzati.
 \ \
@@ -74,7 +74,7 @@ ambiente di produzione reale, la situazione sarebbe ben diversa: l'Admin F5 avre
 esclusivamente alla management network, mentre qualsiasi utente che volesse interagire con
 l'applicazione web si connetterebbe, come di norma, alla rete esterna.
 
-Per soddisfare il requisito RV3 #link(<RV3>), ho collegato un server syslog dedicato alla rete
+Per soddisfare il requisito #link(<RV3>)[RV2], ho collegato un server syslog dedicato alla rete
 interna, garantendone l'inaccessibilità dall'esterno. Questo server è configurato per ricevere
 tutti i log generati dal WAF F5 relativi alle richieste dei client.
 

@@ -46,7 +46,7 @@ modulo stesso.
 Di seguito, ho deciso di presentare le funzionalità più importanti, nonché quelle che ho utilizzato con maggiore frequenza durante la realizzazione del progetto.
 
 ==== Policy
-// image
+#figure(image("../img/study/policy.png", width: 90%), caption: [Policy])
 Il modulo ASM consente la creazione di una o più policy da assegnare a uno o più virtual server. In questo contesto, le policy sono semplicemente l'insieme di regole
 definite dall'amministratore per filtrare le richieste che transitano attraverso il WAF.
 
@@ -160,7 +160,7 @@ l'anomalia e blocca la richiesta. Per tracciare la sessione e verificare lo stat
 cookie contenente un token.
 
 ===== Profili di logging
-#figure(image("../img/study/log-prof.png", width: 90%), caption: [Configurazione profili di logging])
+#figure(image("../img/study/logs.png", width: 90%), caption: [Configurazione profili di logging])
 Il WAF fornisce all'amministratore log dettagliati di tutte le richieste client, rendendole ispezionabili e tracciabili per rilevare eventuali anomalie. Questi log
 includono sia le richieste accettate, sia quelle considerate sospette o illegali, sia quelle bloccate dal WAF.
 Per impostazione predefinita, tutte le richieste vengono loggate. Tuttavia, l'amministratore ha la flessibilità di creare nuovi profili di logging personalizzati. Ad
@@ -208,7 +208,7 @@ Questo report, noto come OWASP Top 10, rappresenta un riferimento fondamentale p
 aziende un aggiornamento costante sulle principali minacce. La sua finalità è quella di sensibilizzare gli sviluppatori, incoraggiandoli a integrare pratiche di sicurezza
 che limitino l'esposizione a tali rischi.
 Per la realizzazione di questo progetto, è stata adottata come riferimento la versione del 2021 della OWASP Top 10.
-#figure(image("../img/study/owasp.png", width: 90%), caption: [OWASP top 10 2021])
+#figure(image("../img/study/owasp.png", width: 70%), caption: [OWASP top 10 2021])
 Tale scelta è stata motivata dalla solidità della
 documentazione disponibile e dalla sua rilevanza, in quanto le vulnerabilità principali non hanno subito variazioni sostanziali rispetto alle versioni più recenti. L
 decisione è stata presa in accordo con il tutor aziendale, al fine di mantenere la coerenza con la bibliografia e le linee guida del progetto.
