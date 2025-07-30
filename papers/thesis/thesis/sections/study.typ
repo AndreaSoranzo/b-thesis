@@ -1,4 +1,4 @@
-= Analisi tecnica e applicativa di F5 BIG-IP <ch3>
+= Analisi tecnica e studio di F5 BIG-IP <ch3>
 Durante le prime due settimane, ho consolidato e ampliato le mie competenze pregresse in materia di reti informatiche, dedicandomi in particolare al funzionamento dei
 firewall e dei WAF, sottolineando anche le loro distinzioni. Ho iniziato con una panoramica generale sui firewall, per poi analizzare in dettaglio il modulo F5 BIG-IP ASM
 e la sua funzione nel trasformare il software in un WAF. Questo percorso di studio è stato cruciale per acquisire le conoscenze teoriche e pratiche necessarie alla
@@ -27,7 +27,7 @@ Un WAF, come brevemente menzionato nel glossario, è un tipo di firewall specifi
 A differenza di un firewall tradizionale, il WAF opera ispezionando il traffico di rete, ma si concentra esclusivamente sull'identificazione e sul blocco
 di attacchi che sfruttano vulnerabilità intrinseche dell'applicazione o delle tecnologie impiegate per la sua realizzazione.
 Il WAF opera a livello 7 del modello OSI (application layer), analizzando principalmente le richieste HTTP/HTTPS dirette alle applicazioni web.
-L'obiettivo è rilevare tentativi di attacco comuni come XSS e SQL Injection. Inoltre, i WAF sono in grado di intercettare tentativi di esfiltrazione di dati sensibili o
+L'obiettivo è rilevare tentativi di attacco comuni come XSS e SQL Injection. Inoltre, i WAF sono in grado di intercettare tentativi di furto di dati sensibili o
 personali, bloccando tali richieste o notificando l'amministratore.
 ==== Differenze
 #figure(image("../img/study/fvswaf.png", width: 90%), caption: [Firewall vs WAF @FVSWAF])
@@ -74,7 +74,6 @@ Questo pannello mostra tutti i tipi di richieste categorizzate come illegali dal
 configurare le opzioni di "block" e "alarm".
 L'opzione "block" impedisce che la richiesta illegale venga inoltrata al server reale, bloccandola. L'opzione "alarm", invece, fa sì che la richiesta venga registrata nei
 log a disposizione dell'amministratore, permettendo di visualizzare tutte le informazioni ad essa associate.
-
 
 ===== Attack signatures
 #figure(image("../img/study/att-sig.png", width: 90%), caption: [Attack signatures])

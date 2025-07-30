@@ -42,7 +42,7 @@ fornita direttamente dalle applicazioni di virtualizzazione, come nel caso di VM
 Questa funzionalità permette a tali ambienti di connettersi alla stessa rete della
 macchina fisica senza richiedere configurazioni o passaggi aggiuntivi, semplificando
 notevolmente il processo.
-
+#pagebreak()
 === Architettura nel dettaglio
 Di seguito è riportato lo schema dettagliato dell'architettura di rete, utile per analizzare le interconnessioni tra le varie componenti e gli indirizzi IP utilizzati.
 \ \

@@ -241,7 +241,6 @@ main #box #grade #lode {
 }
 
 @keyframes lode-down {
-
     100% {
         top: 0;
         opacity: 1;
@@ -332,10 +331,6 @@ footer {
     color: var(--color-1);
     font-weight: 900;
     text-align: left;
-    background-image: url("../assets/png/unipd.png");
-    background-repeat: no-repeat;
-    background-size: 430px 430px;
-    background-position: right -6rem bottom -8rem;
 }
 
 footer #desc {
