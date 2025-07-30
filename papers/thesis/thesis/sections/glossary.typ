@@ -36,7 +36,7 @@
               ) {
                 pagesLink += link(label(word + "link" + str(i)))[#text(fill: rgb("#2C5E77"))[ #str(newPage.at(0))].]
               } else {
-                pagesLink += link(label(word + "link" + str(i)))[#text(fill: rgb("#2C5E77"))[#str(newPage.at(0))],]
+                pagesLink += link(label(word + "link" + str(i)))[#text(fill: rgb("#2C5E77"))[#str(newPage.at(0))], ]
               }
             } else {
               pagesLink += link(label(word + "link" + str(i)))[#text(fill: rgb("#2C5E77"))[ #str(newPage.at(0))].]
