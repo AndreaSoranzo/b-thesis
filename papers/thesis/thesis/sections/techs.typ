@@ -39,7 +39,7 @@ tempo reale. Questa caratteristica è stata cruciale per simulare attacchi e val
 Sebbene la Community Edition sia la versione gratuita con funzionalità più limitate rispetto alla Professional Edition, essa si è dimostrata ampiamente sufficiente per
 scopi di ricerca e didattici. In particolare, la sua funzione di intercettazione è completa e risponde pienamente alle esigenze del progetto.
 #figure(image("../img/tech/burp.png", width: 90%), caption: [Intercettazione pacchetti con Burp Suite])
-L'adozione di Burp Suite per i test di sicurezza nel presente progetto è stata dettata principalmente dalla bibliografia di riferimento.
+L'adozione di Burp Suite per i test di sicurezza nel presente progetto è stata dettata principalmente dalla bibliografia di riferimento @FDOC.
 Un paragrafo specifico illustrava l'utilizzo di questo software, rendendone l'utilizzo pratico e agevole per le finalità del lavoro.
 
 === Bash

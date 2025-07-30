@@ -40,7 +40,7 @@ Le differenze tra i 2 tipi di firewall si possono esprimere in 2 punti:
   - *Firewall tradizionale:* Lavora a livello 3 e 4, proteggendo il trasferimento di pacchetti guardando IP e Porte
 
 === Modulo ASM
-Considerando che l'obiettivo del progetto era principalmente la creazione e configurazione di un WAF, il libro si concentrava sulla spiegazione di tutte le funzionalità
+Considerando che l'obiettivo del progetto era principalmente la creazione e configurazione di un WAF, il libro @FDOC si concentrava sulla spiegazione di tutte le funzionalità
 offerte dal modulo ASM di F5. Questo modulo, infatti, trasforma il software BIG-IP in un vero e proprio WAF, aggiungendo anche alcune funzionalità extra specifiche del
 modulo stesso.
 Di seguito, ho deciso di presentare le funzionalità più importanti, nonché quelle che ho utilizzato con maggiore frequenza durante la realizzazione del progetto.
@@ -210,7 +210,7 @@ Per la realizzazione di questo progetto, è stata adottata come riferimento la v
 #figure(image("../img/study/owasp.png", width: 70%), caption: [OWASP top 10 2021])
 Tale scelta è stata motivata dalla solidità della
 documentazione disponibile e dalla sua rilevanza, in quanto le vulnerabilità principali non hanno subito variazioni sostanziali rispetto alle versioni più recenti. L
-decisione è stata presa in accordo con il tutor aziendale, al fine di mantenere la coerenza con la bibliografia e le linee guida del progetto.
+decisione è stata presa in accordo con il tutor aziendale, al fine di mantenere la coerenza con la bibliografia @FDOC e le linee guida del progetto.
 Il WAF sviluppato è quindi specificatamente progettato per riconoscere e bloccare le tipologie di attacco associate a tali vulnerabilità, contribuendo in modo
 significativo a rafforzare la postura di sicurezza delle applicazioni web.
 Di seguito è presentata una panoramica delle vulnerabilità identificate nella OWASP Top 10 2021, con riferimento alla documentazione pubblicata sul sito ufficiale @TOP10.

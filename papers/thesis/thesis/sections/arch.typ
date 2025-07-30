@@ -1,6 +1,6 @@
 == Architettura di rete
 Per realizzare il progetto mi sono affidato all'architettura di rete proposta dalla
-documentazione in quanto era semplice ed era sufficiente per portare a termine il
+documentazione @FDOC in quanto era semplice ed era sufficiente per portare a termine il
 progetto.
 \ \
 #figure(image("../img/arch/net.svg", width: 100%), caption: [Architettura di rete])
