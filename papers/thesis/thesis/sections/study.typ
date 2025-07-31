@@ -23,7 +23,7 @@ tuttavia versioni evolute che estendono tale funzionalità, includendo l'ispezio
 Questo tipo di firewall operando a livello 3 e 4 del modello OSI (network layer e transport layer rispettivamente) dimostra l'efficacia nel rilevare attacchi che sfruttano
 vulnerabilità di protocolli come DNS, FTP e SSH.
 ==== WAF
-Un WAF, come brevemente menzionato nel glossario, è un tipo di firewall specificamente progettato per proteggere singole applicazioni web e API.
+Un WAF, è un tipo di firewall specificamente progettato per proteggere singole applicazioni web e API.
 A differenza di un firewall tradizionale, il WAF opera ispezionando il traffico di rete, ma si concentra esclusivamente sull'identificazione e sul blocco
 di attacchi che sfruttano vulnerabilità intrinseche dell'applicazione o delle tecnologie impiegate per la sua realizzazione.
 Il WAF opera a livello 7 del modello OSI (application layer), analizzando principalmente le richieste HTTP/HTTPS dirette alle applicazioni web.

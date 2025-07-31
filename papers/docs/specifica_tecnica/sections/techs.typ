@@ -19,7 +19,7 @@ LTM, quali:
 Questa scelta è dettata esclusivamente dallo scopo del tirocinio, che è quello di formare nuove risorse aziendali su tecnologie poco utilizzate, come F5.
 
 === VMWare Workstation 17
-Come è già descritto anche nella pagina dedicata al glossario, è un software di virtualizzazione desktop, noto come hypervisor di tipo 2, sviluppato da
+È un software di virtualizzazione desktop, noto come hypervisor di tipo 2, sviluppato da
 VMware Inc. A differenza degli hypervisor di tipo 1, che si installano direttamente sull'hardware fisico e gestiscono le risorse hardware in modo nativo, VMware-Workstation opera come un'applicazione su un sistema operativo host già esistente (ad esempio, Windows o Linux).
 Nel mio caso l'ho utilizzato per creare 4 macchine virtuali differenti:
 
