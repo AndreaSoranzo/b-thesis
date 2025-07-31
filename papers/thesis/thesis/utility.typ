@@ -84,7 +84,7 @@
     strong(it)
   }
 
-  outline(title: [#v(1pt) Indice #v(15pt)])
+  outline(depth: 3, title: [#v(1pt) Indice #v(15pt)])
   pagebreak()
 
   set text(11pt)
