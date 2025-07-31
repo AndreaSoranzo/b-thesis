@@ -1,4 +1,4 @@
-== Architettura di rete
+= Architettura di rete <ch5>
 Per realizzare il progetto mi sono affidato all'architettura di rete proposta dalla
 documentazione @FDOC in quanto era semplice ed era sufficiente per portare a termine il
 progetto.
@@ -43,7 +43,7 @@ Questa funzionalità permette a tali ambienti di connettersi alla stessa rete de
 macchina fisica senza richiedere configurazioni o passaggi aggiuntivi, semplificando
 notevolmente il processo.
 #pagebreak()
-=== Architettura nel dettaglio
+== Architettura nel dettaglio
 Di seguito è riportato lo schema dettagliato dell'architettura di rete, utile per analizzare le interconnessioni tra le varie componenti e gli indirizzi IP utilizzati.
 \ \
 #figure(image("../img/arch/net-det.svg", width: 95%), caption: [Architettura di rete nel dettaglio])<netdet>

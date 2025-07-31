@@ -1,35 +1,33 @@
-= Analisi tecnica e studio di F5 BIG-IP <ch3>
+#include "techs.typ"
+
+= Formazione F5 <ch4>
 Durante le prime due settimane, ho consolidato e ampliato le mie competenze pregresse in materia di reti informatiche, dedicandomi in particolare al funzionamento dei
 firewall e dei WAF, sottolineando anche le loro distinzioni. Ho iniziato con una panoramica generale sui firewall, per poi analizzare in dettaglio il modulo F5 BIG-IP ASM
 e la sua funzione nel trasformare il software in un WAF. Questo percorso di studio è stato cruciale per acquisire le conoscenze teoriche e pratiche necessarie alla
 realizzazione del progetto finale e alla loro futura applicazione in contesti produttivi.
-
-#include "techs.typ"
-
-== Formazione F5
 La formazione relativa alla tecnologia F5 è stata condotta avvalendosi del libro digitale ufficiale @FDOC, fornito dall'azienda. Tale risorsa è stata concepita con una
 progressione didattica che facilita l'apprendimento anche per utenti privi di precedenti esperienze con tecnologie analoghe come nel mio caso. Un elemento distintivo del
 percorso è stata l'inclusione di esercitazioni pratiche al termine di ogni capitolo, volte a consentire l'immediata applicazione delle nozioni apprese.
 Ulteriormente, sono stati integrati due mini-progetti, uno a metà e uno a conclusione del corso, i quali hanno svolto un ruolo cruciale nel riepilogo e nel
 consolidamento delle nozioni acquisite.
 
-=== Firewall VS WAF
+== Firewall VS WAF
 Una distinzione fondamentale, delineata nei capitoli iniziali del volume, concerne la differenza tra un firewall di rete tradizionale e un WAF.
-==== Firewall tradizionale
+=== Firewall tradizionale
 Un firewall di rete tradizionale è un dispositivo di sicurezza posizionato al perimetro di una rete, il cui ruolo primario è la protezione del confine di rete. Esso opera
 ispezionando e filtrando il traffico in transito tra una rete esterna e una interna, separando così una zona protetta da una meno sicura. Tipicamente, un firewall di
 questa categoria esamina principalmente gli header dei pacchetti, determinando l'autorizzazione al transito in base all'indirizzo IP sorgente e alla porta. Esistono
 tuttavia versioni evolute che estendono tale funzionalità, includendo l'ispezione del payload dei pacchetti per identificare con maggiore accuratezza potenziali minacce.
 Questo tipo di firewall operando a livello 3 e 4 del modello OSI (network layer e transport layer rispettivamente) dimostra l'efficacia nel rilevare attacchi che sfruttano
 vulnerabilità di protocolli come DNS, FTP e SSH.
-==== WAF
+=== WAF
 Un WAF, è un tipo di firewall specificamente progettato per proteggere singole applicazioni web e API.
 A differenza di un firewall tradizionale, il WAF opera ispezionando il traffico di rete, ma si concentra esclusivamente sull'identificazione e sul blocco
 di attacchi che sfruttano vulnerabilità intrinseche dell'applicazione o delle tecnologie impiegate per la sua realizzazione.
 Il WAF opera a livello 7 del modello OSI (application layer), analizzando principalmente le richieste HTTP/HTTPS dirette alle applicazioni web.
 L'obiettivo è rilevare tentativi di attacco comuni come XSS e SQL Injection. Inoltre, i WAF sono in grado di intercettare tentativi di furto di dati sensibili o
 personali, bloccando tali richieste o notificando l'amministratore.
-==== Differenze
+=== Differenze
 #figure(image("../img/study/fvswaf.png", width: 90%), caption: [Firewall vs WAF @FVSWAF]) <wafdiff>
 Le differenze tra i 2 tipi di firewall, come si può osservare in [@wafdiff], si possono esprimere in 2 punti:
 - *Tipo di protezione:*
@@ -39,13 +37,13 @@ Le differenze tra i 2 tipi di firewall, come si può osservare in [@wafdiff], si
   - *WAF:* Lavora a layer 7, riuscendo a ispezionare potenziali attacchi basati su SQL e Javascript
   - *Firewall tradizionale:* Lavora a livello 3 e 4, proteggendo il trasferimento di pacchetti guardando IP e Porte
 
-=== Modulo ASM
+== Modulo ASM
 Considerando che l'obiettivo del progetto era principalmente la creazione e configurazione di un WAF, il libro @FDOC si concentrava sulla spiegazione di tutte le funzionalità
 offerte dal modulo ASM di F5. Questo modulo, infatti, trasforma il software BIG-IP in un vero e proprio WAF, aggiungendo anche alcune funzionalità extra specifiche del
 modulo stesso.
 Di seguito, ho deciso di presentare le funzionalità più importanti, nonché quelle che ho utilizzato con maggiore frequenza durante la realizzazione del progetto.
 
-==== Policy
+=== Policy
 #figure(image("../img/study/policy.png", width: 90%), caption: [Policy]) <policy>
 Il modulo ASM consente la creazione di una o più policy da assegnare a uno o più virtual server come mostrato in [@policy]. In questo contesto, le policy sono semplicemente l'insieme di regole
 definite dall'amministratore per filtrare le richieste che transitano attraverso il WAF.
@@ -62,7 +60,7 @@ Tra tutte le opzioni configurabili, le principali e più rilevanti sono:
   le regole, preferibilmente analizzando il traffico di più utenti, per poi modificarle se necessario. Il periodo di staging definisce la durata di questo stato; al termine
   di tale periodo, la regola uscirà dallo staging e verrà applicato il suo stato operativo originale.
 
-===== Learning mode
+==== Learning mode
 #figure(image("../img/study/learning.png", width: 90%), caption: [Learning page]) <lm>
 Quando una policy viene applicata a un virtual server, il WAF analizza il traffico e, basandosi sulle regole definite, tenta di apprendere la struttura delle richieste.
 Come mostrato in [@lm] per le richieste categorizzate come illegali, il WAF suggerisce miglioramenti applicabili alle regole, con l'obiettivo di evitare blocchi inappropriati e
@@ -76,7 +74,7 @@ configurare le opzioni di "block" e "alarm".
 L'opzione "block" impedisce che la richiesta illegale venga inoltrata al server reale, bloccandola. L'opzione "alarm", invece, fa sì che la richiesta venga registrata nei
 log a disposizione dell'amministratore, permettendo di visualizzare tutte le informazioni ad essa associate.
 
-===== Attack signatures
+==== Attack signatures
 #figure(image("../img/study/att-sig.png", width: 90%), caption: [Attack signatures]) <ats>
 Le attack signatures costituiscono la sezione più cruciale e frequentemente impiegata del modulo ASM. Come suggerisce il nome, si tratta di firme di attacco, ovvero
 specifici pattern rilevati nel payload di una richiesta, che vengono riconosciuti come potenziale attacco e, di conseguenza, bloccati in via precauzionale dal WAF.
@@ -94,7 +92,7 @@ Entrambi i parametri presentano tre livelli ("high", "medium", "low"). In base a
 una richiesta viene segnalata.
 Infine, l'amministratore può raggruppare le firme in set, a seconda della loro natura, per mantenerle organizzate.
 
-===== Data Guard
+==== Data Guard
 #figure(image("../img/study/data-guard.png", width: 90%), caption: [Data Guard]) <dg>
 In molte applicazioni, è comune che sia nelle richieste sia, soprattutto, nelle risposte del server, siano presenti dati sensibili come codici fiscali o numeri di carte
 di credito.
@@ -104,7 +102,7 @@ cerca corrispondenze con i pattern o le espressioni regolari specificate dall'am
 Come si può intravedere in [@dg] è anche possibile configurare Data Guard per analizzare il tipo di file fornito in risposta, consentendo di limitare o gestire specifici formati di file che potrebbero
 contenere dati sensibili al loro interno.
 
-===== Parametri
+==== Parametri
 #figure(image("../img/study/parameters.png", width: 90%), caption: [Configurazione Parametri]) <params>
 I parametri, essendo componenti chiave delle richieste web, necessitano di protezione per prevenire attacchi che potrebbero compromettere la privacy degli utenti e, in
 alcuni casi, l'intera applicazione.
@@ -117,7 +115,7 @@ Per facilitare la configurazione dei parametri, esistono tre modalità di appren
 - *Compact:* Il WAF suggerisce di applicare regole e di aggiungere solo i parametri che sono più frequentemente utilizzati dall'applicazione.
 - *Always:* Il WAF propone di applicare regole e di aggiungere tutti i parametri che vengono rilevati durante l'analisi del traffico, come in [@params].
 
-===== Header
+==== Header
 #figure(image("../img/study/headers.png", width: 90%), caption: [Configurazione Headers]) <head>
 Un'altra funzione importante riguarda la configurazione degli header HTTP/HTTPS e la definizione dei metodi di richiesta consentiti. È fondamentale prestare particolare
 attenzione ai metodi utilizzati, poiché alcuni di essi, seppur non intrinsecamente vulnerabili, potrebbero essere sfruttati per compromettere lo stato interno dei dati,
@@ -137,7 +135,7 @@ A differenza di quelli sicuri, questi metodi possono modificare lo stato del ser
 È importante sottolineare che, se un'applicazione richiede l'uso di un metodo rischioso, spetta al team di sviluppatori garantirne la validità tramite validazioni,
 sanificazioni e controlli specifici.
 
-===== Cookie
+==== Cookie
 #figure(image("../img/study/cookie.png", width: 90%), caption: [Configurazione Cookie]) <cookie>
 Le applicazioni web fanno ampio uso dei cookie per memorizzare informazioni e riutilizzarle in future operazioni. Un esempio classico è l'autenticazione utente: per
 evitare di richiedere le credenziali ad ogni accesso, si utilizza un cookie di sessione che autentica automaticamente l'utente se effettua un altro accesso al sito entro
@@ -150,7 +148,7 @@ proteggere.
 Se il cookie protetto viene modificato e l'hash non corrisponde, viene rilevata un'illegalità e la richiesta viene bloccata. Lo stesso accade se viene modificato l'hash
 stesso.
 
-===== Sessioni
+==== Sessioni
 #figure(image("../img/study/session.png", width: 90%), caption: [Configurazione sessioni]) <ses>
 Oltre alla protezione dei cookie, è possibile migliorare la sicurezza delle sessioni configurando le pagine di autorizzazione. Questo implica specificare il metodo di
 autenticazione richiesto agli utenti, che può avvenire tramite un classico form HTML con email e password, un form AJAX o altre modalità. Successivamente, si definiscono
@@ -159,7 +157,7 @@ In questo modo, se un utente tenta di accedere a una pagina protetta senza esser
 l'anomalia e blocca la richiesta. Per tracciare la sessione e verificare lo stato di autenticazione dell'utente, anche in questo caso il WAF genera e utilizza un
 cookie contenente un token.
 
-===== Profili di logging
+==== Profili di logging
 #figure(image("../img/study/logs.png", width: 90%), caption: [Configurazione profili di logging]) <log>
 Il WAF fornisce all'amministratore log dettagliati di tutte le richieste client come illustrato della [@log], rendendole ispezionabili e tracciabili per rilevare eventuali anomalie. Questi log
 includono sia le richieste accettate, sia quelle considerate sospette o illegali, sia quelle bloccate dal WAF.
@@ -171,7 +169,7 @@ permette all'amministratore di selezionare specifici elementi da loggare, come U
 All'interno dello stesso profilo, oltre alla configurazione dei log standard, è possibile personalizzare anche i log relativi agli attacchi DoS e Bot, per un monitoraggio
 ancora più mirato.
 
-==== DoS Detection
+=== DoS Detection
 #figure(image("../img/study/dos.png", width: 90%), caption: [Configurazione rilevamento DoS]) <dos>
 La protezione dei server da attacchi DoS è cruciale per garantirne la disponibilità e la continuità operativa. Tali attacchi mirano a sovraccaricare le risorse del server,
 impedendone l'accesso e l'utilizzo agli utenti legittimi per un determinato periodo. I WAF F5 rappresentano una soluzione fondamentale per mitigare questa minaccia,
@@ -185,7 +183,7 @@ normale operatività del server:
 - *CAPTCHA:* Per distinguere tra traffico legittimo e malevolo (spesso generato da bot), il WAF può richiedere la risoluzione di un test CAPTCHA agli utenti sospetti. Solo dopo aver superato questa verifica, le richieste vengono autorizzate a procedere.
 - *Browser Testing:* Questo metodo prevede che il server invii al client una richiesta per eseguire del codice JavaScript. L'esecuzione riuscita di tale codice attesta che la richiesta proviene da un browser web legittimo e non da un bot automatizzato, consentendo al WAF di filtrare il traffico indesiderato.
 
-==== BoT Protection
+=== BoT Protection
 #figure(image("../img/study/bot.png", width: 90%), caption: [Configurazione rilevamento bot]) <bot>
 Negli ultimi anni, l'incremento nell'utilizzo dei bot, in particolare quelli dedicati al web scraping, ha evidenziato nuove sfide per la sicurezza informatica. Mentre
 alcuni bot possono svolgere funzioni legittime, un numero crescente viene impiegato per attività dannose, come il furto di dati sensibili o informazioni di mercato.
@@ -200,7 +198,7 @@ Infine, il WAF consente di definire un periodo di "detenzione" basato sull'indir
 richiesta). Questo significa che, se una determinata fonte viene identificata come malevola, l'amministratore può configurare il WAF per rallentare o bloccare
 definitivamente le richieste provenienti da quella specifica origine per un lasso di tempo predefinito.
 
-=== OWASP Top 10 2021
+== OWASP Top 10 2021
 L'organizzazione OWASP svolge annualmente un ruolo cruciale nella sicurezza informatica, analizzando le applicazioni web pubbliche per identificare e classificare le
 dieci vulnerabilità più comuni e critiche.
 #figure(image("../img/study/owasp-map.png", width: 90%), caption: [OWASP changelog]) <owaspmap>
@@ -218,7 +216,7 @@ Il WAF sviluppato è quindi specificatamente progettato per riconoscere e blocca
 significativo a rafforzare la postura di sicurezza delle applicazioni web.
 Di seguito è presentata una panoramica delle vulnerabilità identificate nella OWASP Top 10 2021, elencate anche in [@top], con riferimento alla documentazione pubblicata sul sito ufficiale @TOP10.
 
-==== A01:2021 - Broken Access Control
+=== A01:2021 - Broken Access Control
 La vulnerabilità in esame concerne il controllo degli accessi, ovvero la capacità degli utenti di eseguire azioni che eccedono le loro autorizzazioni definite.
 La carenza o la non corretta implementazione di questi meccanismi di controllo può condurre a serie ripercussioni, tra cui la divulgazione, l'alterazione o la cancellazione
 non autorizzata di informazioni, e l'esecuzione di operazioni che superano i limiti di competenza dell'utente.
@@ -227,13 +225,13 @@ Le vulnerabilità di questo tipo più comuni sono:
 - Accesso a pagine senza autenticazione
 - Manipolazione di account altrui
 
-==== A02:2021 - Cryptographic Failures
+=== A02:2021 - Cryptographic Failures
 Questa vulnerabilità concerne la protezione dei dati sensibili sia durante il loro transito,tra il client e il server, che nella loro conservazione.
 Dati particolarmente sensibili, quali password, dettagli di carte di credito, registrazioni sanitarie, informazioni personali e segreti aziendali, impongono l'adozione di
 protezioni supplementari. Ciò assume maggiore rilevanza quando tali dati sono disciplinati da normative sulla privacy, come il Regolamento GDPR dell'Unione Europea, o da
 standard regolamentari specifici, quali il PCI DSS per la sicurezza dei dati finanziari.
 
-==== A03:2021 - Injection
+=== A03:2021 - Injection
 Le vulnerabilità di tipo Injection sono strettamente connesse ai linguaggi di programmazione impiegati nello sviluppo delle applicazioni moderne. Questa tipologia di
 attacco spesso consente l'esecuzione di codice non autorizzato sul server, potendo potenzialmente comprometterne lo stato e la sicurezza.
 Tra le forme più diffuse di iniezione si annoverano le SQL Injection, NoSQL Injection e l'OS Command Injection.
@@ -243,7 +241,7 @@ Un'applicazione è considerata vulnerabile agli attacchi di Injection quando:
 - I dati forniti dall'utente non sono adeguatamente validati o filtrati.
 - I comandi di query vengono accettati anche in presenza di strutture sospette.
 
-==== A04:2021 - Insecure Design
+=== A04:2021 - Insecure Design
 La progettazione insicura (Insecure Design) è una categoria ampia che racchiude diverse vulnerabilità, definite come "mancanza o inefficacia nella progettazione dei
 controlli di sicurezza".
 È fondamentale distinguere tra progettazione insicura e implementazione insicura, poiché queste presentano radici e soluzioni diverse. Un design sicuro può comunque
@@ -252,7 +250,7 @@ un'implementazione perfetta, in quanto i controlli di sicurezza necessari per di
 contribuiscono a una progettazione insicura è la carenza nella profilazione del rischio aziendale inerente al software o al sistema in fase di sviluppo, che si traduce
 nell'incapacità di determinare il livello di sicurezza richiesto.
 
-==== A05:2021 - Security Misconfiguration
+=== A05:2021 - Security Misconfiguration
 La vulnerabilità in questione è una categoria ampia che include debolezze derivanti da impostazioni di sicurezza assenti, incomplete o inappropriate a livello di
 applicazione o del suo ambiente di deployment. Nonostante non sia un difetto nel codice sorgente, essa riflette un'implementazione non ottimale o trascurata delle
 configurazioni di sicurezza attraverso i vari livelli dello stack tecnologico.
@@ -262,7 +260,7 @@ L'applicazione viene considerata vulnerabile se:
 - L'applicazione rivela informazioni sensibili (es. stack trace, versioni del software, percorsi di file) tramite messaggi di errore verbosi.
 - Il server non invia o configura correttamente gli header HTTP di sicurezza.
 
-==== A06:2021 - Vulnerable and Outdated Components
+=== A06:2021 - Vulnerable and Outdated Components
 Questo tipo di vulnerabilità si concentra sui rischi derivanti dall'impiego di componenti software che presentano vulnerabilità note o che non ricevono più un supporto attivo dagli sviluppatori.
 Nell'attuale panorama delle applicazioni moderne, che sono quasi interamente assemblate mediante librerie, framework e moduli di terze parti (sia open source che commerciali),
 questa problematica costituisce una minaccia in crescente aumento.
@@ -272,7 +270,7 @@ Infatti l'applicazione viene considerata vulnerabile se:
 - Non vengono eseguiti test di compatibilità tra i componenti e l'applicazione.
 - Si utilizzano librerie o moduli provenienti da fonti non affidabili.
 
-==== A07:2021 - Identification and Authentication Failures
+=== A07:2021 - Identification and Authentication Failures
 Ci si concentra su tutte quelle vulnerabilità legate alla gestione dell'identità, all'autenticazione degli utenti e alla gestione delle sessioni.
 Queste falle permettono agli attaccanti di compromettere password, chiavi, token di sessione o di sfruttare debolezze nei meccanismi di identificazione per assumere l'identità di altri utenti.
 Tali vulnerabilità possono manifestarsi se:
@@ -282,7 +280,7 @@ Tali vulnerabilità possono manifestarsi se:
 - L'applicazione consente l'utilizzo di password deboli.
 - Vengono impiegati metodi di recupero delle credenziali insicuri o deboli.
 
-==== A08:2021 - Software and Data Integrity Failures
+=== A08:2021 - Software and Data Integrity Failures
 Ci si riferisce a difetti nel codice e nell'infrastruttura che non riescono a proteggere l'integrità dei dati e del software.
 Un esempio lampante si verifica quando un'applicazione dipende da plugin, librerie o moduli provenienti da fonti e repository non affidabili.
 Un altro scenario critico è dato da una pipeline CI/CD (Continuous Integration/Continuous Delivery) insicura, la quale può introdurre il rischio di accessi non autorizzati, codice malevolo o
@@ -291,13 +289,13 @@ Inoltre, molte applicazioni odierne dispongono di funzionalità di aggiornamento
 verifica dell'integrità. Questo apre la strada a potenziali attacchi in cui malintenzionati potrebbero
 caricare i propri aggiornamenti dannosi per distribuirli ed eseguirli su tutte le installazioni.
 
-==== A09:2021 - Security Logging and Monitoring Failures
+=== A09:2021 - Security Logging and Monitoring Failures
 E' una vulnerabilità che riguarda l'assenza o l'inefficacia dei sistemi di logging e monitoraggio a livello infrastrutturale e di rete,
 inclusi server, firewall e altri dispositivi di sicurezza, e non primariamente l'applicazione stessa.
 Questa si manifesta quando tali sistemi sono assenti, inadeguati o inefficaci, compromettendo la capacità di rilevare, gestire e rispondere prontamente a incidenti di sicurezza.
 Di conseguenza, l'assenza di un'efficace registrazione e monitoraggio può permettere alle violazioni di perdurare inosservate per tempi estesi, amplificando il potenziale impatto negativo.
 
-==== A10:2021 - Server-Side Request Forgery
+=== A10:2021 - Server-Side Request Forgery
 È un tipo di attacco che sfrutta una vulnerabilità specifica: si verifica ogni volta che un'applicazione web recupera una risorsa remota senza convalidare
 adeguatamente l'URL fornito dall'utente. Questo consente a un attaccante di forzare l'applicazione a inviare una richiesta manipolata verso una destinazione inattesa,
 anche se protetta da firewall, VPN o altre liste di accesso di rete.
