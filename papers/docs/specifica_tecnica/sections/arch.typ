@@ -1,11 +1,11 @@
 == Architettura di rete
 Per realizzare il progetto mi sono affidato all'architettura di rete proposta dalla
-documentazione in quanto era semplice ed era sufficiente per portare a termine il
+documentazione @FDOC in quanto era semplice ed era sufficiente per portare a termine il
 progetto.
 \ \
-#figure(image("../arch/net.svg", width: 100%), caption: [Architettura di rete])
+#figure(image("../img/arch/net.svg", width: 100%), caption: [Architettura di rete]) <net>
 \
-L'architettura può essere divisa in 3 sottoreti differenti:
+Come si osserva da [@net] l'architettura può essere divisa in 3 sottoreti differenti:
 
 - *External Network (verde):* parte della rete che vede come protagonisti gli utenti che vogliono accedere all'applicazione web tramite un dispositivo.
 
@@ -46,10 +46,10 @@ notevolmente il processo.
 === Architettura nel dettaglio
 Di seguito è riportato lo schema dettagliato dell'architettura di rete, utile per analizzare le interconnessioni tra le varie componenti e gli indirizzi IP utilizzati.
 \ \
-#figure(image("../arch/net-det.svg", width: 95%), caption: [Architettura di rete nel dettaglio])
+#figure(image("../img/arch/net-det.svg", width: 95%), caption: [Architettura di rete nel dettaglio])<netdet>
 \
 
-Anche in questa immagine, per maggiore chiarezza, le parti mantengono gli stessi colori, ma
+Anche nella [@netdet], per maggiore chiarezza, le parti mantengono gli stessi colori, ma
 in questo caso ho assegnato a ogni sezione della rete un indirizzo IP specifico:
 
 - *10.1.1.0:* rappresenta la management network.
@@ -74,7 +74,7 @@ ambiente di produzione reale, la situazione sarebbe ben diversa: l'Admin F5 avre
 esclusivamente alla management network, mentre qualsiasi utente che volesse interagire con
 l'applicazione web si connetterebbe, come di norma, alla rete esterna.
 
-Per soddisfare il requisito RV2, ho collegato un server syslog dedicato alla rete
+Per soddisfare il requisito #link(<RV3>)[RV2], ho collegato un server syslog dedicato alla rete
 interna, garantendone l'inaccessibilità dall'esterno. Questo server è configurato per ricevere
 tutti i log generati dal WAF F5 relativi alle richieste dei client.
 
@@ -82,4 +82,3 @@ Infine, dato che tutte le macchine utilizzate sono virtuali, è stata configurat
 NAT per ciascuna di esse, per praticità. Questa soluzione ha facilitato notevolmente
 attività come il download di software e le ricerche tramite browser, sia per i client generici
 sia, nel mio caso specifico, per l'admin F5.
-

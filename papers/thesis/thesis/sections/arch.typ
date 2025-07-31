@@ -3,9 +3,9 @@ Per realizzare il progetto mi sono affidato all'architettura di rete proposta da
 documentazione @FDOC in quanto era semplice ed era sufficiente per portare a termine il
 progetto.
 \ \
-#figure(image("../img/arch/net.svg", width: 100%), caption: [Architettura di rete])
+#figure(image("../img/arch/net.svg", width: 100%), caption: [Architettura di rete]) <net>
 \
-L'architettura può essere divisa in 3 sottoreti differenti:
+Come si osserva da [@net] l'architettura può essere divisa in 3 sottoreti differenti:
 
 - *External Network (verde):* parte della rete che vede come protagonisti gli utenti che vogliono accedere all'applicazione web tramite un dispositivo.
 
@@ -46,10 +46,10 @@ notevolmente il processo.
 === Architettura nel dettaglio
 Di seguito è riportato lo schema dettagliato dell'architettura di rete, utile per analizzare le interconnessioni tra le varie componenti e gli indirizzi IP utilizzati.
 \ \
-#figure(image("../img/arch/net-det.svg", width: 95%), caption: [Architettura di rete nel dettaglio])
+#figure(image("../img/arch/net-det.svg", width: 95%), caption: [Architettura di rete nel dettaglio])<netdet>
 \
 
-Anche in questa immagine, per maggiore chiarezza, le parti mantengono gli stessi colori, ma
+Anche nella [@netdet], per maggiore chiarezza, le parti mantengono gli stessi colori, ma
 in questo caso ho assegnato a ogni sezione della rete un indirizzo IP specifico:
 
 - *10.1.1.0:* rappresenta la management network.
