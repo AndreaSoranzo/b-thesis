@@ -44,8 +44,8 @@ modulo stesso.
 Di seguito, ho deciso di presentare le funzionalità più importanti, nonché quelle che ho utilizzato con maggiore frequenza durante la realizzazione del progetto.
 
 === Policy
-#figure(image("../img/study/policy.png", width: 90%), caption: [Policy]) <policy>
-Il modulo ASM consente la creazione di una o più policy da assegnare a uno o più virtual server come mostrato in [@policy]. In questo contesto, le policy sono semplicemente l'insieme di regole
+#figure(image("../img/study/policy.png", width: 90%), caption: [Policy]) <pol>
+Il modulo ASM consente la creazione di una o più policy da assegnare a uno o più virtual server come mostrato in [@pol]. In questo contesto, le policy sono semplicemente l'insieme di regole
 definite dall'amministratore per filtrare le richieste che transitano attraverso il WAF.
 
 
@@ -170,10 +170,10 @@ All'interno dello stesso profilo, oltre alla configurazione dei log standard, è
 ancora più mirato.
 
 === DoS Detection
-#figure(image("../img/study/dos.png", width: 90%), caption: [Configurazione rilevamento DoS]) <dos>
+#figure(image("../img/study/dos.png", width: 90%), caption: [Configurazione rilevamento DoS]) <doss>
 La protezione dei server da attacchi DoS è cruciale per garantirne la disponibilità e la continuità operativa. Tali attacchi mirano a sovraccaricare le risorse del server,
 impedendone l'accesso e l'utilizzo agli utenti legittimi per un determinato periodo. I WAF F5 rappresentano una soluzione fondamentale per mitigare questa minaccia,
-attraverso una configurazione illustrata in [@dos] che prevede il rilevamento degli attacchi e l'applicazione di misure di mitigazione specifiche.
+attraverso una configurazione illustrata in [@doss] che prevede il rilevamento degli attacchi e l'applicazione di misure di mitigazione specifiche.
 Esistono principalmente due tipologie di rilevamento configurabili:
 - *Attacchi basati su TPS:* Questa metodologia si concentra sull'identificazione di un elevato volume di richieste in un intervallo di tempo predefinito. Se il numero di richieste supera una soglia configurata entro un determinato lasso di tempo, il traffico viene classificato come potenziale attacco.
 - *Attacchi basati sull'attività:* Questa tipologia di attacco si basa sull'invio di richieste che, sebbene non necessariamente elevate in numero, richiedono un consumo significativo di risorse del server e tempi di risposta prolungati. Il WAF monitora l'impatto delle richieste sulle risorse del server per identificare attività anomale indicative di un tentativo di esaurimento delle risorse.
@@ -184,14 +184,14 @@ normale operatività del server:
 - *Browser Testing:* Questo metodo prevede che il server invii al client una richiesta per eseguire del codice JavaScript. L'esecuzione riuscita di tale codice attesta che la richiesta proviene da un browser web legittimo e non da un bot automatizzato, consentendo al WAF di filtrare il traffico indesiderato.
 
 === BoT Protection
-#figure(image("../img/study/bot.png", width: 90%), caption: [Configurazione rilevamento bot]) <bot>
+#figure(image("../img/study/bot.png", width: 90%), caption: [Configurazione rilevamento bot]) <botd>
 Negli ultimi anni, l'incremento nell'utilizzo dei bot, in particolare quelli dedicati al web scraping, ha evidenziato nuove sfide per la sicurezza informatica. Mentre
 alcuni bot possono svolgere funzioni legittime, un numero crescente viene impiegato per attività dannose, come il furto di dati sensibili o informazioni di mercato.
 Queste informazioni vengono spesso riportate su siti esterni, consentendo ai concorrenti di mantenere un vantaggio sleale. Altri bot, invece, possono essere orchestrati
 per sferrare attacchi più complessi, fungendo da "agenti" per attacchi DoS distribuiti, il furto di credenziali o l'esecuzione di richieste mirate
 volte a prendere il controllo della vittima.
 Per contrastare queste minacce, il WAF F5 offre funzionalità avanzate per la protezione dai bot.
-Permette di configurare regole specifiche che definiscono le azioni da intraprendere quando viene rilevato un bot sospetto o malevolo come si può osservare in [@bot].
+Permette di configurare regole specifiche che definiscono le azioni da intraprendere quando viene rilevato un bot sospetto o malevolo come si può osservare in [@botd].
 Per garantire un'efficace protezione, il WAF si connette a servizi esterni (ad esempio, quelli forniti da F5) e aggiorna il proprio database di bot noti e sospetti ogni
 10 minuti. Questo costante aggiornamento permette al WAF di identificare rapidamente le nuove minacce e di adattare le proprie difese.
 Infine, il WAF consente di definire un periodo di "detenzione" basato sull'indirizzo IP o sul Device ID (l'identificativo unico del dispositivo che ha generato la
