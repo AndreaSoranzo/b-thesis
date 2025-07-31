@@ -1,8 +1,8 @@
-== Scelta delle tecnologie
+= Scelta delle tecnologie
 In questa sezione, vengono esaminate le tecnologie adottate durante lo stage, con un'analisi dei
 rispettivi benefici e delle possibili criticità.
 
-=== F5 BIG-IP 17.5
+== F5 BIG-IP 17.5
 Si tratta di una piattaforma F5 che propone un sistema avanzato e altamente modulare. Non è un prodotto a
 sé stante, bensì un'architettura unificata che integra hardware dedicato o, come nel mio caso, software
 virtuale, entrambi basati sul sistema operativo proprietario di F5.
@@ -18,7 +18,7 @@ LTM, quali:
 
 Questa scelta è dettata esclusivamente dallo scopo del tirocinio, che è quello di formare nuove risorse aziendali su tecnologie poco utilizzate, come F5.
 
-=== VMWare Workstation 17
+== VMWare Workstation 17
 È un software di virtualizzazione desktop, noto come hypervisor di tipo 2, sviluppato da
 VMware Inc. A differenza degli hypervisor di tipo 1, che si installano direttamente sull'hardware fisico e gestiscono le risorse hardware in modo nativo, VMware-Workstation opera come un'applicazione su un sistema operativo host già esistente (ad esempio, Windows o Linux).
 Nel mio caso l'ho utilizzato per creare 4 macchine virtuali differenti:
@@ -32,7 +32,7 @@ L'adozione di questa soluzione si è rivelata fondamentale sia per l'avanzamento
 senza compromettere l'integrità delle apparecchiature e la sicurezza dei dati aziendali. In questo contesto, sebbene VMware sia riconosciuto tra i software di virtualizzazione più performanti per
 l'ottimale gestione delle risorse, la sua scelta è stata determinata dall'infrastruttura esistente e dalle licenze già in possesso dell'azienda, che utilizza quasi esclusivamente questa soluzione.
 
-=== Burp Suite Community Edition
+== Burp Suite Community Edition
 È uno strumento indispensabile per l'analisi e la manipolazione delle comunicazioni tra client e server, ampiamente impiegato nei test di sicurezza web.
 La sua funzionalità principale risiede nella capacità di intercettare i pacchetti di dati prima che raggiungano la loro destinazione finale, consentendo la modifica in
 tempo reale. Questa caratteristica è stata cruciale per simulare attacchi e valutare la robustezza di un'applicazione web.
@@ -42,7 +42,7 @@ scopi di ricerca e didattici. In particolare, la sua funzione di intercettazione
 L'adozione di Burp Suite per i test di sicurezza nel presente progetto è stata dettata principalmente dalla bibliografia di riferimento.
 Un paragrafo specifico illustrava l'utilizzo di questo software, rendendone l'utilizzo pratico e agevole per le finalità del lavoro.
 
-=== Bash
+== Bash
 È un interprete di comandi e un linguaggio di scripting progettato per sistemi operativi Unix-like. Nel mio contesto, è stato utilizzato per sviluppare due script essenziali al fine di valutare la
 reattività del WAF di fronte a simulazioni di attacchi DoS e Bot.
 Ho deciso di adottare questa tecnologia semplicemente per i seguenti motivi:
@@ -54,7 +54,7 @@ Ho deciso di adottare questa tecnologia semplicemente per i seguenti motivi:
 - *Nessuna installazione:* essendo la shell di default delle distribuzioni Linux non ho dovuto installare altri applicativi o compilatori per eseguire il codice
 
 
-=== Python
+== Python
 Linguaggio di programmazione ad alto livello che ho usato per effettuare degli attacchi di login-stuffing.
 Per questo tipo di attacchi ho deciso di utilizzare Python per i seguenti motivi:
 
@@ -62,7 +62,7 @@ Per questo tipo di attacchi ho deciso di utilizzare Python per i seguenti motivi
 
 - *Librerie di terze parti:* Python consente di importare librerie di terze parti che offrono funzioni utili per eseguire attività specifiche in modo rapido e semplice.
 
-==== Requests
+=== Requests
 Libreria che semplifica l'invio di richieste HTTP/1.1 e la gestione delle risposte.
 Questa libreria mi ha offerto una serie di vantaggi chiave:
 
