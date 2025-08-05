@@ -110,3 +110,19 @@ API:
 
 fine-tuning:
   "Processo continuo e iterativo di ottimizzazione delle regole, delle policy e delle configurazioni di un WAF per bilanciare efficacemente la sicurezza con la funzionalità dell'applicazione web protetta"
+
+DBMS:
+  "Software progettato per definire, manipolare, recuperare e gestire i dati in un database. Funge da interfaccia tra l'utente finale o un'applicazione e il database stesso, fornendo un ambiente strutturato e organizzato per l'archiviazione e l'accesso alle informazioni garantendo l'integrità e la sicurezza e la coerenza dei dati"
+
+phishing:
+  "Forma di frode informatica che ha lo scopo di rubare dati sensibili e informazioni personali, come credenziali di accesso, numeri di carte di credito o dettagli bancari.
+  L'attaccante si finge un'entità affidabile (come una banca o un servizio online) per ingannare la vittima e indurla a rivelare dati sensibili, come credenziali di accesso o informazioni finanziarie."
+
+REST:
+  "Stile architetturale per la progettazione di sistemi distribuiti, in particolare per le API web per l'interazione tra client e server.
+  In un'architettura RESTful, i dati e le funzionalità sono visti come risorse identificabili tramite un URL e
+  le operazioni su queste risorse (creazione, lettura, aggiornamento, cancellazione) vengono gestite attraverso i metodi standard di HTTP, come GET, POST, PUT e DELETE. "
+
+proxy:
+ "Server intermediario che si interpone tra un client e un server. Invece di connettersi direttamente al server, il client invia la richiesta al proxy, che a sua volta la inoltra al server di destinazione.
+ Questo meccanismo è utilizzato per diversi scopi, tra cui aumentare la sicurezza, filtrare contenuti, migliorare le performance tramite la memorizzazione nella cache o nascondere l'identità del client."

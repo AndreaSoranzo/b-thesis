@@ -18,6 +18,8 @@
 #include "sections/study.typ"
 #pagebreak()
 
+#include "sections/attack.typ"
+#pagebreak()
 
 
 #include "./sections/bsgraphy.typ"

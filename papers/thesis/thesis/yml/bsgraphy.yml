@@ -20,3 +20,52 @@ TOP10:
   url:
     value: https://owasp.org/Top10/
     date: 2025-07-27
+
+XSS-IMG:
+  type: web
+  title: "XSS"
+  url:
+    value: https://portswigger.net/web-security/cross-site-scripting
+    date: 2025-07-31
+
+SQL-IMG:
+  type: web
+  title: "SQL Injection"
+  url:
+    value: https://portswigger.net/web-security/sql-injection
+    date: 2025-07-31
+
+PATHT-IMG:
+  type: web
+  title: "Path traversal"
+  url:
+    value: https://medium.com/@a0xtrojan/directory-path-traversal-vs-file-inclusion-0e3acfb50e23
+    date: 2025-07-31
+
+SESH-IMG:
+  type: web
+  title: "Session hijacking"
+  url:
+    value: https://developer.mozilla.org/en-US/docs/Glossary/Session_Hijacking
+    date: 2025-07-31
+
+CSFR-IMG:
+  type: web
+  title: "Cross-site request forgery"
+  url:
+    value: https://portswigger.net/web-security/csrf
+    date: 2025-07-31
+
+SSRF-IMG:
+  type: web
+  title: "Server-Side Request Forgery"
+  url:
+    value: https://www.imperva.com/learn/application-security/server-side-request-forgery-ssrf/
+    date: 2025-07-31
+
+DOS-IMG:
+  type: web
+  title: "DoS e Botnet"
+  url:
+    value: https://www.eccouncil.org/cybersecurity-exchange/ethical-hacking/what-is-a-dos-attack-denial-of-service/
+    date: 2025-07-31
