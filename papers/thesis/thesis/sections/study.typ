@@ -142,13 +142,13 @@ evitare di richiedere le credenziali ad ogni accesso, si utilizza un cookie di s
 un certo intervallo di tempo.
 Tuttavia, i cookie sono vulnerabili a modifiche malevole durante le richieste. Ad esempio, un utente malintenzionato potrebbe sostituire il proprio cookie di
 autenticazione con quello di un altro utente per ottenere accesso non autorizzato, oppure tentare attacchi di tipo CSRF.
-Per contrastare queste minacce, F5 offre una soluzione che rende la modifica dei cookie estremamente difficile, se non impossibile, durante una richiesta. Internamente,
-il WAF lega ad ogni cookie un cookie aggiuntivo, proprietario, contenente un token/hash (generato tramite un algoritmo proprietario F5) del cookie originale da
+Per contrastare queste minacce, F5 offre una soluzione che rende la modifica dei cookie estremamente difficile, se non impossibile, durante una richiesta. la funzione di cookie tampering protection, fornito dal modulo ASM,
+lega ad ogni cookie un cookie aggiuntivo, proprietario, contenente un token/hash (generato tramite un algoritmo proprietario F5) del cookie originale da
 proteggere.
 Se il cookie protetto viene modificato e l'hash non corrisponde, viene rilevata un'illegalità e la richiesta viene bloccata. Lo stesso accade se viene modificato l'hash
 stesso.
 
-==== Sessioni
+==== Sessioni <stud_ses>
 #figure(image("../img/study/session.png", width: 90%), caption: [Configurazione sessioni]) <ses>
 Oltre alla protezione dei cookie, è possibile migliorare la sicurezza delle sessioni configurando le pagine di autorizzazione. Questo implica specificare il metodo di
 autenticazione richiesto agli utenti, che può avvenire tramite un classico form HTML con email e password, un form AJAX o altre modalità. Successivamente, si definiscono

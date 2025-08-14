@@ -75,7 +75,7 @@ esclusivamente alla management network, mentre qualsiasi utente che volesse inte
 l'applicazione web si connetterebbe, come di norma, alla rete esterna.
 
 Per soddisfare il requisito #link(<RV3>)[RV2], ho collegato un server syslog dedicato alla rete
-interna, garantendone l'inaccessibilità dall'esterno. Questo server è configurato per ricevere
+di management, garantendone l'inaccessibilità dall'esterno e l'ispezione solo da parte degli admin. Questo server è configurato per ricevere
 tutti i log generati dal WAF F5 relativi alle richieste dei client.
 
 Infine, dato che tutte le macchine utilizzate sono virtuali, è stata configurata un'interfaccia

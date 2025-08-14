@@ -4,7 +4,7 @@
   set text(lang: "it")
   set align(center)
   set list(indent: 10pt)
-  set text(18pt, font: "Merriweather 24pt")
+  set text(1pt, font: "Merriweather 24pt")
   set par(justify: true)
   set rect(stroke: rgb("#5e5e5e"))
   show link: set text(fill: rgb(0, 0, 255), weight: "bold")

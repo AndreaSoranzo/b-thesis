@@ -1,4 +1,4 @@
-= Tipi di attacchi studiati e vulnerabilità da proteggere <ch6>
+= Tipi di attacchi studiati <ch6>
 Il periodo di studio, supportato dal testo @FDOC, ha incluso un'analisi approfondita delle tipologie di attacchi più diffuse, frequentemente impiegate per sfruttare le
 vulnerabilità presenti nelle moderne applicazioni web.
 Questa fase di ricerca è stata cruciale per assimilare in maniera dettagliata il comportamento e le implicazioni funzionali di questi attacchi nella prospettiva
@@ -71,7 +71,7 @@ sezioni dell'header), o persino nel corpo della richiesta HTTP.
 L'attacco di Session Hijacking compromette il token di sessione, rubando o prevedendo un token di sessione valido, al fine di ottenere accesso non autorizzato al server
 web.
 Esistono vari modi per effettuare questo tipo di attacco, quello più rischioso e semplice da effettuare per un attaccante è il session sniffing.
-#figure(image("../img/attacks/session.jpg", width: 90%), caption: [Session hijacking @SESH-IMG]) <sesi>
+#figure(image("../img/attacks/session.jpg", width: 60%), caption: [Session hijacking @SESH-IMG]) <sesi>
 Nell'esempio in [@sesi], è possibile osservare come l'attaccante utilizza innanzitutto un dispositivo di intercettazione (sniffer) per catturare un token di sessione
 valido, denominato "Session ID".
 Successivamente, impiega tale token di sessione valido per ottenere accesso non autorizzato al server web.

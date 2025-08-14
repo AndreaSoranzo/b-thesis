@@ -126,3 +126,27 @@ REST:
 proxy:
  "Server intermediario che si interpone tra un client e un server. Invece di connettersi direttamente al server, il client invia la richiesta al proxy, che a sua volta la inoltra al server di destinazione.
  Questo meccanismo è utilizzato per diversi scopi, tra cui aumentare la sicurezza, filtrare contenuti, migliorare le performance tramite la memorizzazione nella cache o nascondere l'identità del client."
+
+docker:
+ ""
+
+CSV:
+ ""
+
+LDAP Injection:
+ ""
+
+XPath Injection:
+ ""
+
+command injection:
+ ""
+
+XXE:
+ ""
+
+CORS:
+ ""
+
+user-agent:
+ ""

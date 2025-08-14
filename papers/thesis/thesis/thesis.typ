@@ -21,6 +21,9 @@
 #include "sections/attack.typ"
 #pagebreak()
 
+#include "sections/project.typ"
+#pagebreak()
+
 
 #include "./sections/bsgraphy.typ"
 
