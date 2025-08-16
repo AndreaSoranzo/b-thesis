@@ -10,7 +10,7 @@ Gli attacchi Cross-Site Scripting rientrano nella categoria degli attacchi di in
 innocui e ritenuti affidabili.
 Questi attacchi si verificano quando un attaccante sfrutta un'applicazione web per eseguire codice dannoso, generalmente sotto forma di script javascript, sul browser
 dell'utente finale. Le vulnerabilità che permettono il successo di tali attacchi sono piuttosto diffuse e si manifestano ovunque un'applicazione web utilizzi l'input
-fornito da un'utente senza validarlo o codificarlo adeguatamente.
+fornito da un utente senza validarlo o codificarlo adeguatamente.
 Il browser dell'utente finale non ha modo di riconoscere che lo script non è attendibile e, di conseguenza, lo eseguirà. Poiché il browser percepisce lo script come proveniente da una fonte fidata,
 il codice malevolo può accedere a cookie, token di sessione o altre informazioni sensibili conservate dal browser e associate a quel sito.
 #figure(image("../img/attacks/xss.svg", width: 90%), caption: [Attacco XSS @XSS-IMG]) <xssi>
@@ -29,7 +29,7 @@ sul database e, in alcuni casi, sull'intero sistema che lo ospita. Nello specifi
 - Eseguire operazioni di amministrazione sul DBMS come ad esempio l'arresto dell'intero servizio.
 - Recuperare il contenuto di file arbitrari presenti sul file system del server.
 #figure(image("../img/attacks/sql.svg", width: 90%), caption: [Attacco SQL Injection @SQL-IMG]) <sqli>
-Anche in questo caso, le vulnerabilità si manifestano ovunque un'applicazione web utilizzi l'input fornito da un'utente senza una valida sanitizzazione o validazione.
+Anche in questo caso, le vulnerabilità si manifestano ovunque un'applicazione web utilizzi l'input fornito da un utente senza una valida sanitizzazione o validazione.
 Come si può analizzare dalla [@sqli], il processo di attacco è composto in due fasi principali, analoghe ad un attacco XSS.
 
 == Brute force
@@ -78,11 +78,11 @@ Successivamente, impiega tale token di sessione valido per ottenere accesso non 
 
 == CSRF
 #figure(image("../img/attacks/CSRF.svg", width: 90%), caption: [Attacco CSRF @CSFR-IMG]) <csrfi>
-È una tipologia di attacco che costringe un'utente finale a eseguire azioni indesiderate su un'applicazione web in cui è attualmente autenticato. Con un minimo aiuto di
+È una tipologia di attacco che costringe un utente finale a eseguire azioni indesiderate su un'applicazione web in cui è attualmente autenticato. Con un minimo aiuto di
 tecniche di social engineering (come l'invio di un link tramite email o chat), un attaccante può ingannare gli utenti di un'applicazione web, inducendoli a eseguire
 azioni scelte dall'aggressore stesso come è illustrato in [@csrfi].
-Se la vittima è un'utente comune, un attacco CSRF riuscito può forzarla a effettuare richieste che modificano lo stato del proprio account, come trasferire fondi,
-cambiare il proprio indirizzo email, e così via. Se invece la vittima è un account con privilegi amministrativi, un attacco CSRF può arrivare a compromettere l'intera
+Se la vittima è un utente comune, un attacco CSRF riuscito può forzarla a effettuare richieste che modificano lo stato del proprio account, come trasferire fondi,
+cambiare il proprio indirizzo email e così via. Se invece la vittima è un account con privilegi amministrativi, un attacco CSRF può arrivare a compromettere l'intera
 applicazione web.
 
 == SSRF
