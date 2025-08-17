@@ -5,12 +5,11 @@ Questa scelta è stata motivata dalla necessità di evitare conflitti con le con
 compromettere la stabilità e la coerenza del nuovo setup.
 Per garantire un'esecuzione ottimale e una gestione efficiente delle risorse, sono state create quattro macchine virtuali, ciascuna con un ruolo specifico:
 - *Client:* Per questa macchina, è stata selezionata la distribuzione Linux Lubuntu. La scelta è caduta su questa versione leggera di Ubuntu per la sua ridotta richiesta di risorse, che si è rivelata ideale per l'hardware con prestazioni limitate fornito dall'azienda.
-- *Linux server:* Questo server ospita l'applicazione web NodeGoat, eseguita come immagine Docker. L'utilizzo di Docker ha permesso di semplificare notevolmente l'installazione e la gestione delle dipendenze, garantendo un ambiente standardizzato e facilmente replicabile.
+- *Linux server:* Questo server ospita l'applicazione web NodeGoat, eseguita come immagine Docker. L'utilizzo di quest'ultimo ha permesso di semplificare notevolmente l'installazione e la gestione delle dipendenze, garantendo un ambiente standardizzato e facilmente replicabile.
 - *Server F5 (WAF):* Anche la macchina virtuale F5 è stata ricreata da zero per le stesse ragioni di pulizia e organizzazione, assicurando che le sue configurazioni non fossero influenzate da setup precedenti.
 - *Syslog server:* È stato dedicato un server specifico per la raccolta dei log. Utilizzando il servizio rsyslog, questa macchina ha il compito di centralizzare e archiviare tutti i log generati dal WAF, facilitando l'analisi e il monitoraggio delle attività.
-
-La configurazione dell'infrastruttura di rete è stata ricreata con diverse sotto-reti e relativi IP.
-Riassumendo, il Client è stato collegato alla rete esterna, a quella di gestione per le operazioni amministrative e alla NAT per l'accesso a Internet. Il Linux Server,
+Per completare la configurazione dell'infrastruttura di rete, sono state create diverse sottoreti con i relativi indirizzi IP.
+Quindi riassumendo, il Client è stato collegato alla rete esterna, a quella di gestione per le operazioni amministrative e alla NAT per l'accesso a Internet. Il Linux Server,
 invece, è stato connesso alla rete interna e alla NAT per lo stesso motivo. Il server F5 è stato collegato alla rete di gestione per permetterne la configurazione da
 parte degli amministratori, alla rete interna, a quella esterna e alla NAT per ricevere gli aggiornamenti. Infine, il Server syslog è stato posizionato sulla rete di
 gestione per garantirne l'accessibilità solo agli amministratori e non dall'esterno.
@@ -31,7 +30,7 @@ iniziali, come ad esempio la specifica delle tecnologie utilizzate dall'applicaz
 Questo ha permesso di applicare automaticamente alcune regole predefinite che si basano su tali tecnologie.
 Per la realizzazione della policy, ho optato per il template manuale. Questa scelta, che prevede una configurazione quasi interamente a carico dell'amministratore, è
 stata dettata dalla volontà di mettere in pratica e consolidare le nozioni acquisite durante il periodo di formazione.
-La policy è stata inizialmente impostata in modalità *trasparent*. Questa modalità è stata scelta perché, non avendo ancora tutte le regole definitive, la policy
+La policy è stata inizialmente impostata in modalità *trasparent* in quanto, non avendo ancora tutte le regole definitive, la policy
 necessita di ulteriori revisioni. Pertanto, invece di bloccare le richieste, è preferibile segnalarle per un'analisi successiva, che permetterà di decidere se
 implementare una regola di blocco o consentire la richiesta.
 Nel contesto delle impostazioni di Learning and Blocking, ho configurato il blocco automatico per tutte le richieste che non rispettano la conformità delle istruzioni
@@ -58,14 +57,14 @@ Per analizzare fin da subito i log generati dal WAF, ho creato un profilo di log
 WAF le richieste sospette. Questo approccio ha facilitato la comprensione e l'individuazione rapida di soluzioni.
 Oltre alla memorizzazione locale, ho configurato il sistema per inoltrare tutti i log, anche quelli non sospetti, a un server remoto. Questa scelta garantisce la
 ridondanza e la persistenza dei dati. Per la trasmissione, ho utilizzato il protocollo UDP che sebbene non sia affidabile, offre una comunicazione
-veloce e la potenziale perdita di un pacchetto relativo a un log non critico è considerata accettabile.
+veloce e la potenziale perdita di un pacchetto relativo a un log è considerata accettabile.
 I log generati dal WAF sono formattati in CSV, un formato che ne semplifica la lettura e l'analisi. La scelta di questo formato mi ha permesso
 di selezionare manualmente le informazioni rilevanti da conservare, scartando quelle meno utili. In particolare, ho deciso di includere i seguenti campi:
 - *policy_name:* Il nome della policy attiva al momento della generazione del log.
 - *violations:* Il tipo di violazione commessa per le richieste sospette.
 - *date_time:* La data e l'ora precise della richiesta che ha generato il log.
 - *client_ip:* L'indirizzo IP del client che effettua la richiesta.
-Il formato CSV facilita inoltre la trasmissione dei dati al server remoto, che utilizza Syslog ed è in grado di ricevere pacchetti UDP con questo tipo di contenuto
+Il formato CSV facilita inoltre la trasmissione dei dati al server remoto, che utilizzando rsyslog ed è in grado di ricevere pacchetti UDP con questo tipo di contenuto
 senza richiedere ulteriori configurazioni.
 
 == Conformità OWASP top 10 2021
@@ -204,7 +203,7 @@ costruita in collaborazione con l'intero team, al fine di identificare in modo c
 destinazioni ritenute sicure.
 Grazie a questa configurazione, solo gli URL specificati possono comparire all'interno di un
 parametro, mentre qualsiasi altro URL viene automaticamente bloccato.
-In fine, per un parametro specifico di tipo URI, ho implementato un controllo rigoroso sul
+Infine, per un parametro specifico di tipo URI, ho implementato un controllo rigoroso sul
 valore fornito, impedendo l'inserimento di URI arbitrari che potrebbero essere sfruttati per
 accedere in modo non autorizzato a risorse private.
 
@@ -225,9 +224,10 @@ uno sblocco automatico solo dopo 2 ore dalla fine dell'attacco, a condizione che
 Per verificare l'efficacia della configurazione, ho sviluppato uno script Bash che simula un attacco DoS.
 #figure(image("../img/project/dos.svg", width: 90%), caption: [Script per attacco DoS])
 Lo script consente di scegliere se generare traffico verso un singolo URL (nel mio caso, /login) oppure verso più URL elencati in un file di testo.
-Una volta selezionata la modalità, lo script invia ripetutamente 10.000 pacchetti HTTP per 300 cicli, generando così un carico di traffico elevato e prolungato. Questo
-permette di osservare il comportamento del WAF in condizioni di stress, valutare eventuali rallentamenti e raccogliere dati utili per la generazione di un grafico delle
-richieste durante l'attacco DoS.
+Una volta selezionata la modalità, lo script invia ripetutamente 10.000 pacchetti HTTP per 300 cicli, generando così un carico di traffico elevato e per un tempo
+prolungato.
+Questo permette di osservare il comportamento del WAF in condizioni di stress, valutare eventuali rallentamenti e raccogliere dati utili per la generazione di un grafico
+delle richieste durante l'attacco DoS.
 Da notare che, nel caso si selezioni la modalità che invia richieste a tutti gli URL elencati, è necessario specificare anche il valore del cookie di sessione. Questo
 perché l'applicazione protegge tutte le pagine tramite autenticazione, rendendo impossibile inviare richieste valide senza un cookie di sessione attivo.
 Di conseguenza, per poter testare questa modalità è necessario disabilitare le protezioni di cookie tampering e il login enforcement; ciò dimostra come, grazie alla
@@ -241,31 +241,30 @@ algoritmi proprietari per identificare se una richiesta proviene da un bot. Inol
 per confermare se si tratta effettivamente di un bot.
 Di conseguenza per questo progetto, mi sono soprattutto concentrato sulle tecniche di mitigazione.
 #figure(image("../img/project/bot.png", width: 90%), caption: [Configurazione BoT protection]) <botp>
-In figura [@botp] sono illustrate le strategie di mitigazione adottate: per i bot considerati “fidati” o “non fidati” il WAF genera un log di allarme accessibile solo
+In figura [@botp] sono illustrate le strategie di mitigazione adottate: per i bot considerati fidati o non fidati il WAF genera un log di allarme accessibile solo
 dagli amministratori. Questo permette di monitorare le richieste provenienti da bot non fidati e confrontarle con quelle dei bot fidati, al fine di identificare
 eventuali falsi positivi.
 Per i bot sospetti, invece, il WAF impone al client una verifica tramite CAPTCHA per accertare se la richiesta proviene da un vero utente (falso positivo) o da un bot,
 nel qual caso la richiesta viene bloccata. I bot maliziosi, invece, vengono direttamente bloccati senza alcun test, poiché è altamente probabile che rappresentino una
 minaccia; eventuali modifiche alle regole restano a discrezione dell'amministratore.
 Per quanto riguarda i bot non riconosciuti invece, ho applicato un limite di frequenza, lasciando all'amministratore il compito di analizzare ulteriormente il traffico
-per decidere se bloccare ulteriormente o meno.
+per decidere se bloccarli ulteriormente o meno.
 Analogamente a quanto fatto per gli attacchi DoS, ho creato uno script Bash per simulare un attacco da bot e verificare il corretto funzionamento delle protezioni.
 #figure(image("../img/project/botatt.svg", width: 90%), caption: [Script per attacco BoT])
-In sintesi, anche in questo caso l'utente dello script può scegliere se simulare un attacco con bot maliziosi o meno. Lo script genera richieste HTTP in cui lo
+In sintesi, l'utente dello script può scegliere se simulare un attacco con bot maliziosi o meno. Lo script genera richieste HTTP in cui lo
 user-agent gioca un ruolo fondamentale nella simulazione: si utilizzano due file di testo distinti, uno contenente user-agent comuni dei browser “user_agents.txt”, che
 non vengono bloccati poiché non riconosciuti come bot, e un altro contenente user-agent tipicamente associati a bot o sospetti "user_agents_bot,txt", le cui richieste
 vengono invece bloccate dal WAF.
 
 === Credential stuffing
-
 Per concludere, sempre in ambito di attacchi di tipo bot, ho eseguito una semplice e rapida simulazione di un
 attacco di credential stuffing per mettere in pratica quanto appreso durante il periodo di formazione sugli
 attacchi e per testare ulteriormente il profilo di protezione bot che avevo configurato.\
 Lo script utilizzato è molto semplice:
 #figure(image("../img/project/stuffer.svg", width: 90%), caption: [Script per attacco credential stuffing])
 richiede in input un file di testo contenente tutte le possibili coppie username e password, organizzate una per
-riga e separate dal carattere “-”.
-Successivamente, lo script scorre l'intera lista di tuple e, per ciascuna, costruisce un payload con username e
+riga e separate dal carattere *-*.
+Successivamente, lo script scorre l'intera lista di coppie e, per ciascuna, costruisce un payload con username e
 password estratti dal file. Utilizzando la libreria Python “requests”, invia una richiesta POST alla pagina di
 login con il payload appena creato.
 Nel caso specifico di questa applicazione, se il server risponde con codice di stato 200, che corrisponde al
