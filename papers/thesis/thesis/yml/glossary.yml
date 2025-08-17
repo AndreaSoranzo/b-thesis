@@ -95,7 +95,7 @@ Rsyslog:
 wrapper: 
   "Costrutto software che incapsula un altro componente, classe, funzione o struttura dati, fornendo un'interfaccia aggiuntiva o modificata semplificando l'uso del componente sottostante"
 
-login-stuffing:
+credential stuffing:
  "Attacco automatizzato basato sull'impiego di credenziali (tipicamente username e password) acquisite tramite precedenti violazioni di dati. Tale tecnica consiste nel tentare l'accesso non autorizzato a molteplici siti o servizi, sfruttando il riutilizzo delle medesime credenziali da parte degli utenti"
 
 NAT:
@@ -128,25 +128,22 @@ proxy:
  Questo meccanismo è utilizzato per diversi scopi, tra cui aumentare la sicurezza, filtrare contenuti, migliorare le performance tramite la memorizzazione nella cache o nascondere l'identità del client."
 
 docker:
- ""
+ "Piattaforma software che consente di creare, distribuire ed eseguire applicazioni tramite container permettendo di eseguire un'applicazione in modo consistente e affidabile su qualsiasi ambiente, senza differenze legate al sistema operativo o all'hardware."
 
 CSV:
- ""
-
-LDAP Injection:
- ""
+ "Formato di file testuale utilizzato per memorizzare dati tabellari. I valori di ogni riga sono separati da virgole (o altri delimitatori come il punto e virgola), permettendo di organizzare le informazioni in colonne e righe."
 
 XPath Injection:
- ""
+ "Tecnica di attacco informatico in cui dati maligni vengono inseriti in input utente non adeguatamente filtrati per manipolare query XPath usate per interrogare documenti XML. Questo permette all'attaccante di accedere, modificare o bypassare meccanismi di autenticazione e autorizzazione, esponendo dati sensibili o compromettendo la sicurezza dell’applicazione."
 
 command injection:
- ""
+ "Tecnica di attacco informatico in cui un aggressore sfrutta vulnerabilità di un'applicazione per eseguire comandi arbitrari sul sistema operativo sottostante."
 
 XXE:
- ""
+ "Vulnerabilità di sicurezza che colpisce le applicazioni che elaborano input XML contenenti riferimenti a entità esterne. Quando un parser XML è configurato in modo insicuro, un attaccante può sfruttare questa vulnerabilità per accedere a file riservati, eseguire richieste remote, causare denial of service o eseguire codice arbitrario, compromettendo la sicurezza dell’applicazione."
 
 CORS:
- ""
+ "Meccanismo di sicurezza dei browser web che controlla e limita come una pagina web proveniente da un dominio può accedere a risorse di un altro dominio diverso. CORS permette ai server di specificare, tramite apposite intestazioni HTTP, quali origini esterne sono autorizzate ad accedere alle risorse, prevenendo così accessi non autorizzati e attacchi cross-site."
 
 user-agent:
- ""
+ "Stringa di testo inviata da un browser o altro client web a un server durante una richiesta HTTP, che identifica il software client (tipo e versione del browser), il sistema operativo e altre caratteristiche del dispositivo. "

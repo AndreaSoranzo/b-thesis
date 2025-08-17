@@ -108,8 +108,7 @@ HTTPS.
 
 === A03
 Per mitigare le vulnerabilità riguardati gli attacchi di tipo injection ho attivato tutte le
-firme di rilevamento riguardanti i principali tipi di attacchi di injection, tra cui SQL Injection, LDAP
-Injection, XPath Injection, Command Injection, XSS e Remote File Injection.
+firme di rilevamento riguardanti i principali tipi di attacchi di injection, tra cui SQL Injection XPath Injection, Command Injection, XSS e Remote File Injection.
 In parallelo, ho configurato la validazione e il filtraggio di tutti i parametri immessi dagli utenti
 attraverso i numerosi form presenti nell'applicazione, utilizzati sia per la ricerca di informazioni sia per
 l'inserimento di dati personali. L'operazione più comune che ho eseguito su quasi tutti i parametri consiste
