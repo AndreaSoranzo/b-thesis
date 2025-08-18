@@ -221,7 +221,7 @@ richieste al secondo.
 La strategia di mitigazione prevede il blocco delle richieste provenienti dall'IP sospetto per un periodo di 120 secondi dal momento del rilevamento dell'attacco, con
 uno sblocco automatico solo dopo 2 ore dalla fine dell'attacco, a condizione che non si verifichino nuovi tentativi.
 Per verificare l'efficacia della configurazione, ho sviluppato uno script Bash che simula un attacco DoS.
-#figure(image("../img/project/dos.svg", width: 90%), caption: [Script per attacco DoS])
+#figure(image("../img/project/dosatt.png", width: 90%), caption: [Script per attacco DoS])
 Lo script consente di scegliere se generare traffico verso un singolo URL (nel mio caso, /login) oppure verso più URL elencati in un file di testo.
 Una volta selezionata la modalità, lo script invia ripetutamente 10.000 pacchetti HTTP per 300 cicli, generando così un carico di traffico elevato e per un tempo
 prolungato.
@@ -249,7 +249,7 @@ minaccia; eventuali modifiche alle regole restano a discrezione dell'amministrat
 Per quanto riguarda i bot non riconosciuti invece, ho applicato un limite di frequenza, lasciando all'amministratore il compito di analizzare ulteriormente il traffico
 per decidere se bloccarli ulteriormente o meno.
 Analogamente a quanto fatto per gli attacchi DoS, ho creato uno script Bash per simulare un attacco da bot e verificare il corretto funzionamento delle protezioni.
-#figure(image("../img/project/botatt.svg", width: 90%), caption: [Script per attacco BoT])
+#figure(image("../img/project/botatt.png", width: 90%), caption: [Script per attacco BoT])
 In sintesi, l'utente dello script può scegliere se simulare un attacco con bot maliziosi o meno. Lo script genera richieste HTTP in cui lo
 user-agent gioca un ruolo fondamentale nella simulazione: si utilizzano due file di testo distinti, uno contenente user-agent comuni dei browser “user_agents.txt”, che
 non vengono bloccati poiché non riconosciuti come bot, e un altro contenente user-agent tipicamente associati a bot o sospetti "user_agents_bot,txt", le cui richieste
@@ -260,7 +260,7 @@ Per concludere, sempre in ambito di attacchi di tipo bot, ho eseguito una sempli
 attacco di credential stuffing per mettere in pratica quanto appreso durante il periodo di formazione sugli
 attacchi e per testare ulteriormente il profilo di protezione bot che avevo configurato.\
 Lo script utilizzato è molto semplice:
-#figure(image("../img/project/stuffer.svg", width: 90%), caption: [Script per attacco credential stuffing])
+#figure(image("../img/project/stuffer.png", width: 90%), caption: [Script per attacco credential stuffing])
 richiede in input un file di testo contenente tutte le possibili coppie username e password, organizzate una per
 riga e separate dal carattere *-*.
 Successivamente, lo script scorre l'intera lista di coppie e, per ciascuna, costruisce un payload con username e
