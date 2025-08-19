@@ -1,9 +1,9 @@
-# Repository per lo stage e tesi
+# Stage and thesis repository
 
-La repo è divisa nel seguente modo:
-- **scripts/** : script per testare il WAF contro determinati tipi di attacchi
-- **papers/** : codice typst per la creazione della documentazione/tesi
-    - **docs/** : codice typst per la creazione dei documenti come ADR e Specifica Tecnica
-    - **logs/** : codice typst per la creazione dei log settimanali
-    - **thesis/** : codice typst per la creazione della tesi
-- **site/** : sito web statico per il display della documentazione
+The repository is divided as follows:
+- **scripts/** :  scripts to test the WAF against specific types of attacks
+- **papers/** : Typst code for creating documentation/thesis
+    - **docs/** : Typst code for creating documents such as ADR and Technical Specification
+    - **logs/** : Typst code for creating weekly logs
+    - **thesis/** : Typst code for creating the thesis
+- **site/** : static website for displaying the documentation
