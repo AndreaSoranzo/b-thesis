@@ -280,7 +280,7 @@ Tali vulnerabilità possono manifestarsi se:
 - L'applicazione consente l'utilizzo di password deboli.
 - Vengono impiegati metodi di recupero delle credenziali insicuri o deboli.
 
-=== A08:2021 - Software and Data Integrity Failures
+=== A08:2021 - Software and Data Integrity Failures <CICD>
 Ci si riferisce a difetti nel codice e nell'infrastruttura che non riescono a proteggere l'integrità dei dati e del software.
 Un esempio lampante si verifica quando un'applicazione dipende da plugin, librerie o moduli provenienti da fonti e repository non affidabili.
 Un altro scenario critico è dato da una pipeline CI/CD (Continuous Integration/Continuous Delivery) insicura, la quale può introdurre il rischio di accessi non autorizzati, codice malevolo o

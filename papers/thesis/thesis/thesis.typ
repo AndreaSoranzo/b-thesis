@@ -19,13 +19,23 @@
 #pagebreak()
 
 #include "sections/attack.typ"
-#pagebreak()
+
+\
 
 #include "sections/project.typ"
+
+\
+
+#include "sections/conclusions.typ"
 #pagebreak()
 
+#include "sections/thanks.typ"
+#pagebreak()
 
 #include "./sections/bsgraphy.typ"
+#pagebreak()
 
 #include "./sections/glossary.typ"
+#pagebreak()
+
 #include "./sections/abbreviation.typ"

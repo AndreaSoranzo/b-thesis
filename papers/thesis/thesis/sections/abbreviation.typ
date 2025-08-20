@@ -1,7 +1,6 @@
 #import "@preview/wrap-it:0.1.1": wrap-content
 #set heading(numbering: none)
 
-#pagebreak()
 = Acronimi e abbreviazioni
 
 #show figure: set align(start)

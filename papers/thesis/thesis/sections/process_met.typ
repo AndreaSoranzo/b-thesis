@@ -3,8 +3,7 @@
 Per impostare un metodo di lavoro efficace fin dall'inizio del mio stage, ho cercato di sviluppare un approccio, o _way of working_, ottimale.
 
 Nelle prossime sezioni, illustrerò in dettaglio la mia pianificazione del tempo, la suddivisione delle attività, l'analisi dei rischi previsti, la loro mitigazione e le
-difficoltà incontrate. Successivamente, presenterò un breve resoconto delle attività svolte, per confrontarle con la pianificazione iniziale e osservarne le
-differenze.
+difficoltà incontrate.
 
 === Scopo del progetto
 Il fulcro di questo progetto risiede nell'implementazione e successiva ottimizzazione di un WAF. Tale soluzione, se strategicamente posizionata,
@@ -61,7 +60,7 @@ Kortext, invece, ha funzionato come hub centrale per la documentazione ufficiale
 è stato indispensabile per accedere a tutte le risorse formative e tecniche necessarie.
 Infine Microsoft Teams è stato essenziale per tenerci sempre in comunicazione con i tutor in caso di problemi o dubbi.
 
-=== Rischi e mitigazioni
+=== Rischi e mitigazioni <risk>
 Durante le prime settimane di stage, ho avuto l'opportunità di confrontarmi con il tutor aziendale principale, Stefano Marchetti, per analizzare i principali rischi che
 avrebbero potuto influenzare l'andamento del progetto e definire le relative strategie di mitigazione.
 
@@ -72,16 +71,6 @@ Ho identificato due aree di rischio primarie:
 + *Rischio di non completare il progetto nei tempi previsti:*
   - _Descrizione:_ La combinazione di una tempistica definita e la nostra relativa inesperienza nell'ambito della sicurezza informatica e di alcuni aspetti delle reti avrebbe potuto rendere difficile il completamento del progetto entro la scadenza.
   - _Mitigazione:_ Ci è stata garantita una comunicazione costante con i tutor per monitorare i progressi e chiarire tempestivamente ogni dubbio. Questo ci avrebbe permesso, in caso di necessità, di ridefinire le priorità o gli obiettivi del progetto per assicurarne il completamento.
-
-=== Resoconto
-Durante il periodo di stage, la gestione delle tempistiche e il completamento delle attività pianificate hanno subito alcuni rallentamenti. Questo perché ci sono stati
-problemi sia all'inizio del percorso sia durante la fase di formazione.
-Queste criticità erano principalmente legate ai rischi precedentemente menzionati e in parte alla stesura della tesi. Nello specifico, l'analisi dei requisiti e la
-definizione degli Use Case che inizialmente hanno generato delle incertezze. Inizialmente, non ero sicuro se includerli, dato che questo non è un progetto di sviluppo applicativo, ma si
-concentra maggiormente sullo studio, la formazione e la configurazione di un WAF per testare le competenze acquisite.
-A quest'ultimi si devono poi aggiungere alcuni problemi hardware iniziali con i computer portatili forniti.
-Proprio a causa di queste difficoltà, alcune attività pianificate hanno
-dovuto essere spostate e riorganizzate nel corso delle settimane. Nonostante ciò, sono lieto di confermare che tutte le attività sono state completate con successo.
 
 == Analisi dei requisiti
 #include "use_cases.typ"

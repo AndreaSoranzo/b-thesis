@@ -22,6 +22,7 @@ Successivamente, dopo aver avviato la nuova immagine di F5, ho subito configurat
 consentendo agli amministratori di autenticarsi e apportare modifiche al WAF.
 Successivamente, utilizzando il client (che funge anche da amministratore), ho effettuato l'accesso al server F5 e ho attivato le licenze fornite dall'azienda. In
 particolare, ho abilitato il modulo ASM e quello di IP Intelligence, quest'ultimo utile per filtrare gli indirizzi IP sospetti o con una reputazione negativa.
+// TODO: threat campign
 
 === NodeGoat Policy
 Dopo aver attivato il modulo ASM, ho proceduto alla creazione della policy che verrà assegnata al WAF. La policy è stata configurata con le impostazioni e le regole
