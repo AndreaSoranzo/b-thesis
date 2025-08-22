@@ -15,6 +15,12 @@ _
 \
 
 _
+  Ringrazio Matteo e Andrea per avermi fornito un template iniziale per il codice Typst, utile alla creazione del glossario e delle abbreviazioni, nonché per l'automatizzazione dei link tra le parole del testo e quelle elencate. Questo mi ha permesso di velocizzare notevolmente il lavoro di redazione di questa tesi.
+_
+
+\
+
+_
   Ringrazio il professor Zanella Marco, mio relatore, per la sua disponibilità, chiarezza, gentilezza e soprattutto rapidità con cui ha sempre risposto alle mie domande durante la stesura di questa tesi.
 _
 

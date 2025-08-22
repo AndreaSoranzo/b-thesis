@@ -1,4 +1,4 @@
-= Conclusioni
+= Conclusioni <ch8>
 == Riepilogo e consultivo finale
 Il progetto descritto in questa tesi, proposto dall'azienda, consiste nell'implementazione di un WAF basato sulla tecnologia F5. L'obiettivo principale è proteggere
 un'applicazione web in conformità con le linee guida OWASP 2021, che individuano le dieci vulnerabilità più comuni e sfruttate dagli attaccanti per compromettere il
@@ -14,7 +14,7 @@ Le attività si sono svolte seguendo un approccio iterativo articolato in tre fa
 del WAF, infine la validazione delle contromisure adottate mediante test mirati, volti a verificare l'efficacia delle regole implementate.
 Per ciascuna delle dieci vulnerabilità individuate dall'OWASP 2021, ho eseguito test mirati e simulazioni di attacco per individuare i punti deboli dell'applicazione,
 definendo di conseguenza regole specifiche in grado di bloccare tali attacchi. Tra le funzionalità più utili implementate troviamo: le attack signature, la definizione
-di parametri, li cookie tampering protection, i meccanismi di login enforcement e prevenzione dei tentativi di brute force, Data Guard, il rilevamento di attacchi DoS e
+di parametri, il cookie tampering protection, i meccanismi di login enforcement e prevenzione dei tentativi di brute force, Data Guard, il rilevamento di attacchi DoS e
 la protezione contro bot.
 Purtroppo durante l'intero periodo di stage si sono verificati alcuni piccoli problemi che hanno rallentato la gestione delle tempistiche e il completamento delle
 attività pianificate. Queste difficoltà si sono manifestate sia all'inizio del percorso sia durante la fase di formazione.
@@ -52,12 +52,11 @@ che nelle comunicazioni degli utenti.
 Un punto di miglioramento, sebbene non applicabile nello specifico al mio progetto, che era indirizzato a un singolo utente, è la disponibilità del team di sviluppo
 dell'applicazione stessa. Molte configurazioni del WAF, per essere efficaci ed efficienti, richiedono una stretta collaborazione con il team di sviluppo o, in alcuni
 casi, con il cliente. Questo permette di comprendere meglio le esigenze, verificare le vulnerabilità e risolverle quanto più possibile direttamente sul server, poiché il
-WAF deve essere considerato come un sistema di sicurezza aggiuntivo e non come l'unica linea di difesa.
+WAF deve essere considerato un sistema di sicurezza aggiuntivo e non l'unica linea di difesa.
 In definitiva, i possibili sviluppi individuati dimostrano come la sicurezza delle applicazioni non sia un obiettivo statico, ma bensì un processo continuo che richiede
 costante aggiornamento e collaborazione tra tecnologie utilizzate, processi e persone.
 
 == Considerazioni finali
-
 L'esperienza di stage si è rivelata estremamente preziosa, permettendomi di avvicinarmi concretamente a quello che è il vasto mondo della cybersicurezza, un ambito che
 ho sempre desiderato approfondire. Durante questo periodo ho avuto l'opportunità di studiare e comprendere nel dettaglio i principali tipi di attacchi informatici,
 analizzandone il funzionamento tecnico e le modalità con cui si propagano. Questa conoscenza mi ha permesso di affrontare con maggiore consapevolezza le strategie di

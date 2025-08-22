@@ -15,14 +15,14 @@ parte degli amministratori, alla rete interna, a quella esterna e alla NAT per r
 gestione per garantirne l'accessibilità solo agli amministratori e non dall'esterno.
 
 == Configurazione iniziale F5
-Ho deciso di eseguire un'analisi delle vulnerabilità dell'applicazione web prima di procedere con la configurazione del WAF. A tale scopo, ho ripreso gli attacchi
-studiati in precedenza e ho cercato di replicarli ovunque fosse possibile. In alcuni casi, ho anche analizzato il codice sorgente, che ho recuperato dalla pagina
-ufficiale di GitHub.
-Successivamente, dopo aver avviato la nuova immagine di F5, ho subito configurato le impostazioni di base. Ho creato un account con login e una nuova password,
-consentendo agli amministratori di autenticarsi e apportare modifiche al WAF.
-Successivamente, utilizzando il client (che funge anche da amministratore), ho effettuato l'accesso al server F5 e ho attivato le licenze fornite dall'azienda. In
-particolare, ho abilitato il modulo ASM e quello di IP Intelligence, quest'ultimo utile per filtrare gli indirizzi IP sospetti o con una reputazione negativa.
-// TODO: threat campign
+Ho deciso di eseguire un'analisi delle vulnerabilità dell'applicazione web prima di procedere con la configurazione del WAF. A tal fine, ho ripreso gli attacchi studiati
+in precedenza, cercando di replicarli ovunque fosse possibile. In alcuni casi, ho anche analizzato il codice sorgente, recuperato dalla pagina ufficiale su GitHub.
+Successivamente, dopo aver avviato la nuova immagine di F5, ho immediatamente configurato le impostazioni di base. Ho creato un account con login e password, consentendo
+agli amministratori di autenticarsi e apportare modifiche al WAF.
+Utilizzando il client, che funge anche da amministratore, ho effettuato l'accesso al server F5 e attivato le licenze fornite dall'azienda. In particolare, ho abilitato
+il modulo ASM e quello di IP Intelligence, quest'ultimo utile per filtrare gli indirizzi IP sospetti o con reputazione negativa.
+Infine, ho attivato il modulo di Threat Campaign e importato il file contenente tutte le attack signatures relative agli attacchi recenti, collezionate direttamente da
+F5, in modo da proteggere il server anche da queste minacce.
 
 === NodeGoat Policy
 Dopo aver attivato il modulo ASM, ho proceduto alla creazione della policy che verrà assegnata al WAF. La policy è stata configurata con le impostazioni e le regole
@@ -84,7 +84,7 @@ nella sezione @stud_ses.
 Come in [@loge], ho impostato come pagina dedicata all'autenticazione quella preposta
 all'accesso dell'utenza e ho elencato esplicitamente le altre pagine protette, in modo da impedire l'accesso
 senza autenticazione.
-Inoltre, per prevenire attacchi di tipo path traversal, ho attivato firme specifiche che includono una
+Inoltre, per prevenire attacchi di tipo path traversal, ho attivato attack signatures specifiche che includono una
 whitelist di URL consentiti a livello globale, vietando qualsiasi altro accesso non autorizzato. Ho inoltre
 configurato delle regole per bloccare il caricamento e l'accesso a file con estensioni non consentite,
 rafforzando così la sicurezza complessiva dell'applicazione.
@@ -109,7 +109,7 @@ HTTPS.
 
 === A03
 Per mitigare le vulnerabilità riguardati gli attacchi di tipo injection ho attivato tutte le
-firme di rilevamento riguardanti i principali tipi di attacchi di injection, tra cui SQL Injection XPath Injection, Command Injection, XSS e Remote File Injection.
+attack signatures di rilevamento riguardanti i principali tipi di attacchi di injection, tra cui SQL Injection XPath Injection, Command Injection, XSS e Remote File Injection.
 In parallelo, ho configurato la validazione e il filtraggio di tutti i parametri immessi dagli utenti
 attraverso i numerosi form presenti nell'applicazione, utilizzati sia per la ricerca di informazioni sia per
 l'inserimento di dati personali. L'operazione più comune che ho eseguito su quasi tutti i parametri consiste
@@ -131,7 +131,7 @@ messaggi di errore generati dai programmatori, che potrebbero facilitare lo sfru
 vulnerabilità.
 
 === A05
-Per mitigare le vulnerabilità derivanti da configurazioni insicure, ho innanzitutto abilitato le firme relative
+Per mitigare le vulnerabilità derivanti da configurazioni insicure, ho innanzitutto abilitato le attack signatures relative
 agli attacchi di tipo XXE, con l'obiettivo di bloccare e ridurre i rischi associati alla manipolazione di
 contenuti XML.
 Inoltre, ho definito una lista ristretta di metodi HTTP consentiti, limitandomi esclusivamente a GET, POST e
@@ -147,7 +147,7 @@ vulnerabilità legate a richieste cross-origin non autorizzate.
 
 === A06
 Per ridurre i rischi connessi all'utilizzo di componenti, framework o librerie vulnerabili o non aggiornate, ho
-abilitato specifiche firme per il rilevamento di attacchi noti relativi alle tecnologie impiegate
+abilitato specifiche attack signatures per il rilevamento di attacchi noti relativi alle tecnologie impiegate
 dall'applicazione.
 Parallelamente, ho integrato la policy del WAF con strumenti di scansione delle vulnerabilità, capaci di
 effettuare un monitoraggio continuo e automatizzato delle librerie e delle dipendenze applicative. Questo
@@ -182,8 +182,8 @@ danno.
 === A08
 Anche questo tipo di vulnerabilità non può essere efficacemente mitigato esclusivamente tramite un WAF. Pertanto,
 per cercare di ridurre al minimo i rischi legati a difetti nel codice o nella configurazione dell'infrastruttura,
-ho provveduto ad abilitare specifiche firme di rilevamento per attacchi quali buffer overflow e command execution.
-Queste firme consentono di bloccare preventivamente le richieste contenenti payload malevoli, fornendo così un
+ho provveduto ad abilitare specifiche attack signatures di rilevamento per attacchi quali buffer overflow e command execution.
+Queste attack signatures consentono di bloccare preventivamente le richieste contenenti payload malevoli, fornendo così un
 ulteriore livello di protezione contro vulnerabilità di basso livello nel sistema.
 
 === A09
@@ -194,7 +194,7 @@ fine di consentire all'amministratore un'analisi più approfondita e accurata di
 
 === A10
 Per mitigare il rischio di attacchi di tipo SSRF ho implementato diverse regole e contromisure.
-In primo luogo, ho abilitato le firme di attacco dedicate alla rilevazione di SSRF, progettate
+In primo luogo, ho abilitato le attack signatures dedicate alla rilevazione di SSRF, progettate
 per individuare pattern comuni e bloccare le richieste sospette.
 Successivamente, ho definito una lista di URL consentiti, da considerarsi esemplificativa e non
 esaustiva, che comprende principalmente le pagine dell'applicazione e alcune risorse esterne
@@ -236,9 +236,9 @@ struttura stessa dell'applicazione, queste due misure siano già in grado di blo
 == Simulazione attacco BoT
 Come ultima operazione, ho deciso di configurare e creare un profilo di protezione specifico contro attacchi provenienti da bot e botnet, che, analogamente al profilo di
 protezione DoS, ho successivamente assegnato al virtual server.
-La creazione di questo profilo è stata molto più semplice e veloce rispetto a quella dedicata agli attacchi DoS, poiché il WAF integra già automaticamente firme e
-algoritmi proprietari per identificare se una richiesta proviene da un bot. Inoltre, il sistema è in grado di eseguire test di verifica lato client, tramite JavaScript,
-per confermare se si tratta effettivamente di un bot.
+La creazione di questo profilo è stata molto più semplice e veloce rispetto a quella dedicata agli attacchi DoS, poiché il WAF integra già automaticamente attack
+signatures e algoritmi proprietari per identificare se una richiesta proviene da un bot. Inoltre, il sistema è in grado di eseguire test di verifica lato client, tramite
+JavaScript, per confermare se si tratta effettivamente di un bot.
 Di conseguenza per questo progetto, mi sono soprattutto concentrato sulle tecniche di mitigazione.
 #figure(image("../img/project/bot.png", width: 90%), caption: [Configurazione BoT protection]) <botp>
 In figura [@botp] sono illustrate le strategie di mitigazione adottate: per i bot considerati fidati o non fidati il WAF genera un log di allarme accessibile solo
