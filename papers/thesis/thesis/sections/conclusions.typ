@@ -1,9 +1,9 @@
 = Conclusioni <ch8>
 == Riepilogo e consultivo finale
-Il progetto descritto in questa tesi, proposto dall'azienda, consiste nell'implementazione di un WAF basato sulla tecnologia F5. L'obiettivo principale è proteggere
+Il progetto descritto in questa tesi e proposto dall'azienda, consiste nell'implementazione di un WAF basato sulla tecnologia F5. L'obiettivo principale è proteggere
 un'applicazione web in conformità con le linee guida OWASP 2021, che individuano le dieci vulnerabilità più comuni e sfruttate dagli attaccanti per compromettere il
-sistema, sottrarre dati sensibili o rendere il servizio indisponibile. Parallelamente, il progetto mira anche a formare nuove risorse capaci di utilizzare efficacemente
-il WAF.
+sistema, sottrarre dati sensibili o rendere il servizio indisponibile. Allo stesso tempo, il progetto mira anche a formare nuove risorse capaci di utilizzare
+efficacemente questi tipi di tecnologie.
 Il periodo di stage si è articolato in due fasi principali. La prima fase, della durata di circa due settimane, è stata interamente dedicata alla formazione,
 concentrandosi sullo studio della tecnologia, dei principali attacchi informatici e sul funzionamento delle reti a un livello generale. In questo periodo ho seguito la
 documentazione fornita dall'azienda, composta da un manuale con lezioni teoriche e pratiche che permettevano di mettere in pratica quanto appreso.
@@ -12,10 +12,8 @@ all'inizio del progetto. L'applicazione web scelta per questo scopo è stata OWA
 coerente con quanto appreso durante la fase formativa.
 Le attività si sono svolte seguendo un approccio iterativo articolato in tre fasi: prima la verifica delle vulnerabilità, poi la mitigazione tramite la configurazione
 del WAF, infine la validazione delle contromisure adottate mediante test mirati, volti a verificare l'efficacia delle regole implementate.
-Per ciascuna delle dieci vulnerabilità individuate dall'OWASP 2021, ho eseguito test mirati e simulazioni di attacco per individuare i punti deboli dell'applicazione,
-definendo di conseguenza regole specifiche in grado di bloccare tali attacchi. Tra le funzionalità più utili implementate troviamo: le attack signature, la definizione
-di parametri, il cookie tampering protection, i meccanismi di login enforcement e prevenzione dei tentativi di brute force, Data Guard, il rilevamento di attacchi DoS e
-la protezione contro bot.
+Tra le funzionalità più utili implementate troviamo: le attack signature, la definizione di parametri, il cookie tampering protection, i meccanismi di login enforcement
+e prevenzione dei tentativi di brute force, Data Guard, il rilevamento di attacchi DoS e la protezione contro bot.
 Purtroppo durante l'intero periodo di stage si sono verificati alcuni piccoli problemi che hanno rallentato la gestione delle tempistiche e il completamento delle
 attività pianificate. Queste difficoltà si sono manifestate sia all'inizio del percorso sia durante la fase di formazione.
 Le principali criticità erano correlate ai rischi precedentemente segnalati nella @risk e, in parte, alla stesura della tesi. In particolare, l'analisi dei requisiti e
@@ -25,12 +23,12 @@ A queste problematiche si sono aggiunti alcuni problemi hardware riscontrati nei
 Proprio a causa di tali difficoltà, alcune attività pianificate hanno dovuto essere rimandate e riorganizzate nel corso delle settimane. Nonostante questo, sono lieto di
 confermare che tutte le attività previste sono state comunque portate a termine con successo e il risultato finale è stato pienamente raggiunto, garantendo la protezione
 contro tutte e dieci le vulnerabilità elencate nell'OWASP 2021.
-#figure(image("../img/project/compliance10.png", width: 90%), caption: [Conformità OWASP 2021])
+#figure(image("../img/project/compliance10.png", width: 90%), caption: [Conformità F5 OWASP 2021])
 Questo traguardo ha rappresentato non solo la validazione tecnica delle attività svolte, ma anche il completamento con successo dell'obiettivo formativo previsto per lo
 stage.
 
 == Sviluppi e miglioramenti futuri
-Sebbene il progetto abbia raggiunto l'obiettivo prefissato di ottenere una conformità pari a 10/10 nella protezione di NodeGoat, è comunque possibile potenziare
+Sebbene il progetto abbia raggiunto l'obiettivo prefissato di ottenere una conformità pari a 10/10 nella protezione di NodeGoat, è comunque possibile migliorare
 ulteriormente la sicurezza aggiungendo nuove regole e servizi al WAF.
 Un primo importante miglioramento potrebbe essere l'integrazione del WAF con sistemi SIEM. L'adozione di un sistema SIEM consente di centralizzare la raccolta, la
 gestione e l'analisi degli eventi di sicurezza generati dal WAF e da altre componenti infrastrutturali. Questo non solo facilita il monitoraggio in tempo reale, ma offre
@@ -47,10 +45,10 @@ indicatori di compromissione e tattiche, tecniche e procedure impiegate dagli at
 di sicurezza o da sistemi di threat intelligence interni all'organizzazione. Grazie a questa ricchezza informativa, il WAF potrà applicare filtri più sofisticati e
 tempestivi, bloccando richieste che provengano da fonti sospette o malevole non riconducibili semplicemente a indirizzi IP già noti, ma anche identificando richieste
 anomale sulla base di indicatori quali payload malevoli, anomalie nei pattern di traffico, user agent sospetti o tentativi di exploit. Inoltre, l'adozione di threat
-intelligence estesa può supportare il riconoscimento di compromissioni più complesse, come attacchi multi-vettore o tentativi di persistenza, sia a livello del server
+intelligence estesa può supportare il riconoscimento di compromissioni più complesse, come attacchi multi-vettore, sia a livello del server
 che nelle comunicazioni degli utenti.
-Un punto di miglioramento, sebbene non applicabile nello specifico al mio progetto, che era indirizzato a un singolo utente, è la disponibilità del team di sviluppo
-dell'applicazione stessa. Molte configurazioni del WAF, per essere efficaci ed efficienti, richiedono una stretta collaborazione con il team di sviluppo o, in alcuni
+Un aspetto migliorabile, sebbene non rilevante per il mio progetto individuale, è la disponibilità del team di sviluppo dell'applicazione stessa.
+Molte configurazioni del WAF, per essere efficaci ed efficienti, richiedono una stretta collaborazione con il team di sviluppo o, in alcuni
 casi, con il cliente. Questo permette di comprendere meglio le esigenze, verificare le vulnerabilità e risolverle quanto più possibile direttamente sul server, poiché il
 WAF deve essere considerato un sistema di sicurezza aggiuntivo e non l'unica linea di difesa.
 In definitiva, i possibili sviluppi individuati dimostrano come la sicurezza delle applicazioni non sia un obiettivo statico, ma bensì un processo continuo che richiede
@@ -65,7 +63,7 @@ Un aspetto fondamentale che ho potuto ripassare e approfondire riguarda le basi 
 funzionamento delle trasmissioni dati e in particolare come vengono gestite e strutturate le richieste HTTP, così come la composizione dei singoli pacchetti di rete.
 Questo background si è rivelato essenziale per comprendere a fondo il ruolo del WAF e la sua posizione all'interno di un'infrastruttura di sicurezza.
 Essendo la creazione e la configurazione di un WAF l'obiettivo principale del mio progetto, ho potuto dedicarmi all'approfondimento di questo strumento, studiandone il
-funzionamento interno, le caratteristiche tecniche e le modalità operative. Ho imparato a configurare un WAF in modo efficace, valutandone concretamente l'efficacia
+funzionamento interno, le caratteristiche tecniche e le modalità operative. Ho imparato a configurare un WAF, valutandone l'efficacia
 nella protezione delle applicazioni web e nella prevenzione degli attacchi. Prima di questa esperienza, immaginavo che l'attività di configurazione fosse molto più
 complessa, partendo da zero e richiedendo un totale sviluppo manuale delle regole. Invece, ho scoperto che i principali servizi WAF sul mercato, come quelli offerti da
 F5 e altri vendor, dispongono di interfacce grafiche intuitive e di un set di regole predefinite che semplificano notevolmente il lavoro degli amministratori di
@@ -79,5 +77,5 @@ Oltre all'aspetto tecnico, questa esperienza di stage mi ha fornito un'important
 con professionisti del settore della sicurezza informatica. Questo confronto diretto mi ha aiutato a comprendere meglio le dinamiche e le esigenze del mondo aziendale,
 sviluppando competenze preziose in termini di organizzazione del lavoro, gestione autonoma delle attività e collaborazione all'interno di un team.
 In conclusione, posso definirmi molto soddisfatto di questa esperienza, sia per gli obiettivi raggiunti sia per le nuove conoscenze acquisite. Ho potuto approfondire un
-settore in continua evoluzione, comprendendo le sfide legate alla sicurezza applicativa e imparando concetti fondamentali che rappresentano solide basi per un mio
+settore in continua evoluzione, comprendendo le sfide legate ad essa e imparando concetti fondamentali che rappresentano solide basi per un mio
 possibile futuro percorso professionale.
