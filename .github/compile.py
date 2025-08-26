@@ -31,14 +31,15 @@ def main():
     html = path.Path('_site/index.html').read_text(encoding="utf8")
     pdfs = {}
 
-    BuildTyp(init_path,"/papers/logs", pdfs) # logs
-    BuildTyp(init_path,"/papers/docs", pdfs) # progect docs
-    BuildTyp(init_path,"/papers/thesis", pdfs) # thesis
+    BuildTyp(init_path,"/papers/logs", pdfs)
+    BuildTyp(init_path,"/papers/docs", pdfs)
+    BuildTyp(init_path,"/papers/thesis", pdfs)
+    BuildTyp(init_path,"/papers/presentation", pdfs)
 
     UpdateHtml(html,pdfs)
 
 
-def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list],):
+def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list]):
     logging.info(f'Building logs typ files')
     d_type = file_path.removeprefix("/papers/")
     pdfs[d_type]=[]
