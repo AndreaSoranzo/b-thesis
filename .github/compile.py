@@ -31,15 +31,15 @@ def main():
     html = path.Path('_site/index.html').read_text(encoding="utf8")
     pdfs = {}
 
-    BuildTyp(init_path,"/papers/logs", pdfs) # logs
-    BuildTyp(init_path,"/papers/docs", pdfs) # progect docs
-    BuildTyp(init_path,"/papers/thesis", pdfs) # thesis
+    BuildTyp(init_path,"/papers/logs", pdfs)
+    BuildTyp(init_path,"/papers/docs", pdfs)
+    BuildTyp(init_path,"/papers/thesis", pdfs)
 
     UpdateHtml(html,pdfs)
 
 
-def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list],):
-    logging.info(f'Building logs typ files')
+def BuildTyp(init_path:str, file_path:str, pdfs:dict[str, list]):
+    logging.info(f'Building logs typ files in {file_path}')
     d_type = file_path.removeprefix("/papers/")
     pdfs[d_type]=[]
     os.chdir(path.Path(init_path+file_path))
@@ -64,12 +64,10 @@ def UpdateHtml(html:str,pdfs:dict[str, list]):
     logging.info(f'Updating the HTML')
     for d_type in pdfs:
         t_doc = d_type.upper()
-
         html = html.replace("{{"+ t_doc +"}}","\n".join(MakeLink(pdf) for pdf in pdfs[d_type]))
     path.Path('_site/index.html').write_text(html, encoding='utf8')
 
 def MakeLink(pdf:PDF):
-    print(pdf.GetName(True))
     if "piano_di_lavoro" in pdf.GetName(True):
         return LIST_TEMPLATE.replace("{{doc_link}}",pdf.GetName(True)).replace("{{doc_name}}",pdf.GetName())
     return "<li>"+LIST_TEMPLATE.replace("{{doc_link}}",pdf.GetName(True)).replace("{{doc_name}}",pdf.GetName())+"</li>"
