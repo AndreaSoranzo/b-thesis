@@ -17,7 +17,7 @@
 #let unipdColor = rgb("#9B0014")
 
 #let slide(title, body) = {
-  set text(10pt, font: "Merriweather 24pt")
+  set text(14pt, font: "Merriweather 24pt")
   set rect(
     width: 183%,
     height: 100%,
@@ -31,11 +31,11 @@
       #grid(
         columns: 100%,
         rows: 100%,
-        align(left + horizon)[#text(2em)[#title]]
+        align(left + horizon)[#text(1.5em, weight: "bold")[#title]]
       )],
 
     footer: [
-      #set text(fill: black)
+      #set text(0.7em, fill: black)
       #let currentPage = context (counter(page).display())
       #let lastPage = context (counter(page).final().at(0))
       #move(dx: -57pt, dy: 0pt)[#line(length: 90%, stroke: 2pt + unipdColor)]
@@ -53,7 +53,7 @@
         inset: 4pt,
       )
 
-      #move(dx: 345pt, dy: -112pt)[
+      #move(dx: 345pt, dy: -107pt)[
         #rect(fill: unipdColor)
       ]
 
@@ -84,7 +84,7 @@
 
   align(center)[#v(1em) #image("../../public/media/unipd-alt.png", width: 40%) #v(1em)]
 
-  align(center)[#text(size: 2em)[#title]]
+  align(center)[#text(size: 2em, weight: "bold")[#title]]
 
   line(length: 100%, stroke: white)
 
