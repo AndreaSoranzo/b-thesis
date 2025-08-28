@@ -160,10 +160,10 @@ main {
 main #box {
     width: 100%;
     margin: auto auto 3rem auto;
-    background-color: rgba(53, 39, 66, 0.15);
-    border-radius: 16px;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(6px);
+    background-color: rgba(53, 39, 66, 0.2);
+    border-radius: 45px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 2rem 3rem 3rem 3rem;
     position: relative;
     overflow: hidden;
@@ -328,21 +328,48 @@ main #repo-btn::before {
 
 main #repo-btn {
     background-color: var(--color-3);
+    position: relative;
     color: black;
     font-size: 1.3rem;
     font-weight: 700;
-    padding: 1.3rem 1.5rem;
+    padding: 1.3rem 3rem;
     display: block;
     width: fit-content;
     border-radius: 10px;
     text-decoration: none;
     margin: auto;
+    rotate: -5deg;
+    position: relative;
+    transition: all .4s;
 }
+
+main #repo-btn:after {
+    content: "";
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    border: 3px var(--color-2) solid;
+    rotate: 13deg;
+    transition: all .4s;
+    box-sizing: border-box;
+    box-shadow: #000 -4px 4px 50px 10px;
+}
+
 
 main #repo-btn:hover {
     text-decoration: underline;
+    rotate: 0deg;
 }
 
+main #repo-btn:hover:after {
+    transform: translate(5px, -5px);
+    rotate: 0deg;
+    box-shadow: var(--color-2) -4px 4px 50px 10px;
+}
 
 footer {
     z-index: 999;
