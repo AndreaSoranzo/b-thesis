@@ -17,16 +17,16 @@
 #let unipdColor = rgb("#9B0014")
 
 #let slide(title, body) = {
-  set text(14pt, font: "Merriweather 24pt")
+  set text(15pt, font: "Merriweather 24pt")
   set rect(
     width: 183%,
     height: 100%,
     inset: 4pt,
   )
+  show link: set text(fill: rgb(0, 0, 255), weight: "bold")
   set page(
     paper: "presentation-16-9",
     margin: (top: 2.3cm, bottom: 2.3cm),
-
     header: [#set text(fill: white)
       #grid(
         columns: 100%,
@@ -35,7 +35,7 @@
       )],
 
     footer: [
-      #set text(0.7em, fill: black)
+      #set text(0.65em, fill: black)
       #let currentPage = context (counter(page).display())
       #let lastPage = context (counter(page).final().at(0))
       #move(dx: -57pt, dy: 0pt)[#line(length: 90%, stroke: 2pt + unipdColor)]
@@ -53,13 +53,13 @@
         inset: 4pt,
       )
 
-      #move(dx: 345pt, dy: -107pt)[
+      #move(dx: 345pt, dy: -121pt)[
         #rect(fill: unipdColor)
       ]
 
       #move(dx: 370pt, dy: 165pt)[
         #image("../../public/media/unipd.png", width: 20%)
-      ],
+      ]
     ],
   )
   body
@@ -88,5 +88,5 @@
 
   line(length: 100%, stroke: white)
 
-  align(center)[#text(size: 1.4em)[#myName #myMatricola \ Esame di Laurea \ #data.display("[day] Settembre [year]")]]
+  align(center)[#text(size: 1.44em)[#myName #myMatricola \ Esame di Laurea \ #data.display("[day] Settembre [year]")]]
 }
