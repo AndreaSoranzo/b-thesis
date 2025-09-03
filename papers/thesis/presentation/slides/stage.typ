@@ -13,7 +13,7 @@
         - *Formazione di risorse* interna per gestione tecnologia all'avanguardia
         \
         - Durata tirocinio:
-          - *300 ore*, prevalentemente da *remoto*
+          - *300 ore*, distribuite in 8 settimane
       ],
     )
   ]
