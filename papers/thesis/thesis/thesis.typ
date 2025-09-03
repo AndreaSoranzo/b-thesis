@@ -10,10 +10,12 @@
 #pagebreak()
 
 #include "sections/stage.typ"
-#pagebreak()
+
+\
 
 #include "sections/process_met.typ"
-#pagebreak()
+
+\
 
 #include "sections/study.typ"
 #pagebreak()
