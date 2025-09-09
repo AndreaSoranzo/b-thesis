@@ -7,7 +7,7 @@
       gutter: 5%,
       text[
         - *Obiettivo raggiunto* con successo
-          - Protezione NodeGoat *conforme a 10/10* standard sicurezza
+          - Protezione NodeGoat *conforme a 10/10* rispetto alla OWASP top 10
         \
         - Importanza del *fine-tuning* per ridurre falsi positivi e migliorare esperienza utenti
         \

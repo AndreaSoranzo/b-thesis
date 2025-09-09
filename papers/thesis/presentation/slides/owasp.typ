@@ -15,9 +15,9 @@
         \
         - WAF sviluppato *progettato per riconoscere e bloccare questi attacchi* specifici
         \
-        - Versione *2021* adottata come standard per il progetto
-        \
         - Rapporto aggiornato *annualmente*
+        \
+        - Versione *2021* adottata come standard per il progetto
       ],
     )
   ]

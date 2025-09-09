@@ -14,7 +14,7 @@
         - Difficoltà incontrate:
           - Complessità iniziale di F5 e *vasta gamma di opzioni nella GUI*
           - *Studio autonomo* di networking per configurare WAF
-          - Lavoro completamente da *remoto* per un mese a causa di ristrutturazione
+        // - Lavoro completamente da *remoto* per un mese a causa di ristrutturazione
       ],
     )
   ]

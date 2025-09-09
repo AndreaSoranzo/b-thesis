@@ -9,7 +9,7 @@
         - *System integrator* con radici italiane e presenza globale
         \
         - Servizi proposti:
-          - Data & AI, Cloud, Software Dev, *Cybersecurity*, Infrastructure
+          - Data & AI, Cloud, Software Dev, *Cybersecurity*
         \
         - Mercati principali:
           - finanziario, retail, PA, moda

@@ -7,10 +7,10 @@
       gutter: 5%,
       image("../img/offer.png"),
       text[
-        - Protezione applicazioni web con WAF F5 contro *OWASP Top 10*
+        - Protezione applicazioni web con WAF F5 rispettando la conformità alle *OWASP Top 10*
           - Sicurezza avanzata a livello applicativo e API protection
         \
-        - *Formazione di risorse* interna per gestione tecnologia all'avanguardia
+        - *Formazione di risorse* interna per l'utilizzo di una tecnologia all'avanguardia
         \
         - Durata tirocinio:
           - *300 ore*, distribuite in 8 settimane

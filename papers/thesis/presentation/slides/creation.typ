@@ -18,8 +18,9 @@
         - Configurazione iniziale F5:
           - *Policy*
           - *Virtual server*
+          - *IP intelligence*
         \
-        - Conformità OWASP 2021:
+        - Conformità OWASP 2021
         \
         - *Simulazioni attacchi*:
           - #link("../videos/dos_attack.mp4")[DoS]

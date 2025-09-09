@@ -7,7 +7,7 @@
       gutter: 5%,
       image("../img/work.jpg"),
       text[
-        - *Processo iterativo* con adattamenti basati su nuove competenze
+        - *Processo iterativo* con adattamenti basati su competenze
         \
         - *Studio* tecnologie, networking e attacchi comuni
         \

@@ -20,7 +20,8 @@
         - *Python*
           - Attacchi di login-stuffing e invio richieste HTTP e analisi risposte
       ],
-      place(bottom)[#image("../img/tech.jpg")],
+      [#image("../img/tech.jpg")],
     )
   ]
+
 ])
