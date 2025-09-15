@@ -8,7 +8,7 @@
       image("../img/offer.png"),
       text[
         - Protezione applicazioni web con WAF F5 rispettando la conformità alle *OWASP Top 10*
-          - Sicurezza avanzata a livello applicativo e API protection
+          - Sicurezza avanzata a livello applicativo e API
         \
         - *Formazione di risorse* interna per l'utilizzo di una tecnologia all'avanguardia
         \
