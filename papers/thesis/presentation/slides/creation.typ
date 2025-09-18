@@ -23,10 +23,8 @@
         - Conformità OWASP 2021
         \
         - *Simulazioni attacchi*:
-          // - #link("../videos/dos_attack.mp4")[DoS]
-          // - #link("../videos/bot_attack.mp4")[BOT]
-          - DoS
-          - BOT
+          - #link("../videos/dos_attack.mp4")[DoS]
+          - #link("../videos/bot_attack.mp4")[BOT]
           - Credential stuffing
       ],
     )
